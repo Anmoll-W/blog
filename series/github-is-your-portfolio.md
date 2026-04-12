@@ -4,6 +4,8 @@ How to use GitHub as a primary professional presence instead of a portfolio webs
 
 This is not about having a clean commit history. It is about using the profile README and repository READMEs as case studies that tell the story of what you build, why you built it, and what you learned.
 
+> **Related project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile this series documents building
+
 ## Posts in This Series
 
 1. [GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README](../posts/2026-04-08-github-as-your-portfolio.md)
@@ -22,4 +24,4 @@ This is not about having a clean commit history. It is about using the profile R
 
 ---
 
-*[All posts](../README.md)*
+*[All posts](../README.md) · [Anmoll Wadhwa](https://github.com/Anmoll-W)*

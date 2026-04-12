@@ -72,3 +72,7 @@ Discovering that a problem does not exist is a good outcome, not a wasted plan. 
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the dashboard built in this post, now live 🔒

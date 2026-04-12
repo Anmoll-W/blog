@@ -73,3 +73,7 @@ Third-party compatibility failures are invisible until you look for them. The si
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Projects:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) 🔒 · [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) 🔒

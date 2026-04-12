@@ -153,3 +153,7 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 ---
 
 *Building in public from an Obsidian vault. I am Anmoll, a product manager who ships products using AI tools. [All posts](../README.md)*
+
+---
+
+**→ Project:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — the codebase where these AI-generated wrong fixes were caught 🔒

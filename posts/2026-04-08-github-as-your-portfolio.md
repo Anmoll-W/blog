@@ -89,3 +89,7 @@ The portfolio site repository will stay public with an archived notice. The code
 ---
 
 *Building in public from an Obsidian vault. I am Anmoll, a product manager who ships products using AI tools. [All posts](../README.md)*
+
+---
+
+**→ Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile this post argues for

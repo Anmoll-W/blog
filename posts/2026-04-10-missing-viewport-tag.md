@@ -89,3 +89,7 @@ Silent rendering failures are the hardest to locate not because they are subtle 
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — the WordPress plugin prototype where this mobile rendering bug was found 🔒

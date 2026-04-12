@@ -4,6 +4,8 @@ Bugs that do not throw obvious errors. They pass tests, they compile cleanly, an
 
 This series documents specific cases from real projects. Each post covers one bug, why it was invisible in development, and the exact fix.
 
+> **Related projects:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) 🔒 · [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) 🔒 · [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) 🔒 — the codebases where these bugs were found
+
 ## Posts in This Series
 
 1. [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](../posts/2026-04-04-claude-appends-text-after-json.md)
@@ -31,4 +33,4 @@ This series documents specific cases from real projects. Each post covers one bu
 
 ---
 
-*[All posts](../README.md)*
+*[All posts](../README.md) · [Anmoll Wadhwa](https://github.com/Anmoll-W)*

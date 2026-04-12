@@ -6,6 +6,8 @@ The system today runs three automated agents on schedule, routes every daily not
 
 This series documents how each layer was built, what broke along the way, and what the architecture looks like now.
 
+> **System:** Built around an Obsidian vault. See [Anmoll Wadhwa](https://github.com/Anmoll-W) for context on the full toolchain.
+
 ## Posts in This Series
 
 0. [Three Claude Tools, One Vault: The Architecture Behind the System](../posts/2026-03-25-three-claude-tools-one-vault.md)
@@ -30,4 +32,4 @@ This series documents how each layer was built, what broke along the way, and wh
 
 ---
 
-*[All posts](../README.md)*
+*[All posts](../README.md) · [Anmoll Wadhwa](https://github.com/Anmoll-W)*

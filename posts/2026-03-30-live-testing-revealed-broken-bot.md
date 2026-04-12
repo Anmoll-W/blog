@@ -65,3 +65,7 @@ Tracing a form submit handler to the database write, rather than watching the UI
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot whose first live test is documented in this post 🔒

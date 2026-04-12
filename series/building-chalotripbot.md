@@ -4,6 +4,8 @@ ChalotripBot is an AI-powered group travel coordinator for Telegram. You add it 
 
 This series documents the build from a broken first version to a working product, including every silent failure that only appeared under real conditions, the sprint strategy that compressed an 8-day estimate into 4 days, and the Telegram platform constraints that forced the core UX to be redesigned before the product could ship.
 
+> **Related project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the Telegram bot documented in this series 🔒
+
 ## Posts in This Series
 
 1. [Live Testing Revealed the Bot Was Fundamentally Broken](../posts/2026-03-30-live-testing-revealed-broken-bot.md)
@@ -20,4 +22,4 @@ This series documents the build from a broken first version to a working product
 
 ---
 
-*[All posts](../README.md)*
+*[All posts](../README.md) · [Anmoll Wadhwa](https://github.com/Anmoll-W)*

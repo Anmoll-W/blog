@@ -67,3 +67,7 @@ Hosting assets inside the repo and referencing them via raw.githubusercontent.co
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile rebuilt as a Wikipedia article in this post

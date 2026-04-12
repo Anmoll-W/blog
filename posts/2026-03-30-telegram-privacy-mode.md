@@ -85,3 +85,7 @@ A parser validated against one format is validated against nothing. Format norma
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Telegram setting silently broke all natural language input 🔒

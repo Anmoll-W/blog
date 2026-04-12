@@ -67,3 +67,7 @@ The constraint of standard markdown is a feature. It forces every design decisio
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the profile README built in this post

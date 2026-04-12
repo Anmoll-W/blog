@@ -77,3 +77,7 @@ Font rendering failures in the Turbopack pipeline are silent. If a section of a 
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+---
+
+**→ Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the dashboard where these three cascading bugs appeared 🔒

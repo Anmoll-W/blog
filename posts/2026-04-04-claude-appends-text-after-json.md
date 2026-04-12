@@ -108,3 +108,7 @@ This matters: your test pass or fail logic must account for what the framework a
 ---
 
 *Building in public from an Obsidian vault. I am Anmoll, a product manager who ships products using AI tools. [All posts](../README.md)*
+
+---
+
+**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Claude API bug was found 🔒
