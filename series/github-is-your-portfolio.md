@@ -17,11 +17,6 @@ This is not about having a clean commit history. It is about using the profile R
 3. [Why I Rebuilt My GitHub Profile as a Wikipedia Article](../posts/2026-04-10-wikipedia-style-readme.md)
    Two days after the narrative README, the profile was rebuilt again. The shift from a standalone document to a node in a network. Covers the infobox design for two reading patterns, the hub architecture, and what makes a GitHub presence feel like Wikipedia instead of just resembling it.
 
-## What Is Coming
-
-- ChalotripBot case study README: the second article in the network, which the profile already links to by name
-- Repository README as case study: a repeatable format for documenting product decisions alongside technical ones
-
 ---
 
 *[All posts](../README.md) · [Anmoll Wadhwa](https://github.com/Anmoll-W)*

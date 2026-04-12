@@ -85,7 +85,7 @@ Product manager. In 2024 I started building products with AI tools — by 2025 t
 - [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — AI Telegram bot; 6 posts in this blog cover its build and bugs 🔒
 - [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — WordPress plugin prototype; 4 posts cover work done with this codebase 🔒
 - [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — support dashboard; 3 posts cover the build and analysis sprint 🔒
-- [prompt-generator-skill](https://github.com/Anmoll-W/prompt-generator-skill) — Claude Code skill for structured prompt generation
+- [prompt-generator-skill](https://github.com/Anmoll-W/prompt-generator-skill) — Claude Code skill for structured prompt generation; used for all Claude API calls in ChalotripBot
 
 ## Linked From
 
