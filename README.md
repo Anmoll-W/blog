@@ -1,5 +1,5 @@
 <table align="right" width="320">
-<tr><th colspan="2" align="center">Building in Public</th></tr>
+<tr><th colspan="2" align="center">Learning in Public</th></tr>
 <tr><td colspan="2" align="center"><em>Anmoll Wadhwa's technical writing</em></td></tr>
 <tr><td><b>Posts</b></td><td>22</td></tr>
 <tr><td><b>Series</b></td><td>4</td></tr>
@@ -11,7 +11,7 @@
 
 > *This is Anmoll Wadhwa's public writing. For an overview of all projects, see [Anmoll Wadhwa](https://github.com/Anmoll-W). For a specific project, navigate from the [Projects Directory](https://github.com/Anmoll-W#projects-directory).*
 
-# Building in Public
+# Learning in Public
 
 Writing about systems, silent bugs, and shipping products with AI tools.
 
@@ -100,4 +100,4 @@ Product manager. In 2024 I started building products with AI tools — by 2025 t
 ![Category: AI](https://img.shields.io/badge/Category-AI-7b2ff7?style=flat-square)
 ![Category: Engineering](https://img.shields.io/badge/Category-Engineering-24292f?style=flat-square)
 ![Category: Product](https://img.shields.io/badge/Category-Product-0a66c2?style=flat-square)
-![Building in Public](https://img.shields.io/badge/Building%20in%20Public-2ea44f?style=flat-square)
+![Learning in Public](https://img.shields.io/badge/Learning%20in%20Public-2ea44f?style=flat-square)
