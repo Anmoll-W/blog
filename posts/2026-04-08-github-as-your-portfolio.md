@@ -6,6 +6,8 @@ series: github-is-your-portfolio
 series_order: 1
 source_session: 2026-04-08_github-only-portfolio-strategy
 related:
+  - 2026-04-08-github-profile-rebuild.md
+  - 2026-04-10-wikipedia-style-readme.md
   - 2026-04-10-building-an-ai-agent-team.md
 ---
 
@@ -80,7 +82,9 @@ The portfolio site repository will stay public with an archived notice. The code
 
 ## Related
 
-- [Building an 11-Agent AI Team](2026-04-10-building-an-ai-agent-team.md) - the build that made the most sense to showcase first on a GitHub portfolio
+- [Building the GitHub Profile README](2026-04-08-github-profile-rebuild.md) — the execution session that followed this strategic decision
+- [Why I Rebuilt My GitHub Profile as a Wikipedia Article](2026-04-10-wikipedia-style-readme.md) — the second iteration two days later
+- [Building an 11-Agent AI Team](2026-04-10-building-an-ai-agent-team.md) — the build that made the most sense to showcase first on a GitHub portfolio
 
 ---
 

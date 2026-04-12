@@ -6,7 +6,10 @@ series: vault-as-os
 series_order: 1
 source_session: 2026-04-05_vault-os-complete
 related:
+  - 2026-03-25-three-claude-tools-one-vault.md
+  - 2026-04-08-how-i-retired-notion.md
   - 2026-04-10-building-an-ai-agent-team.md
+  - 2026-04-12-persona-layer-architecture.md
 ---
 
 # From Manual to Automatic: How I Built a Vault OS That Runs Itself
@@ -105,7 +108,10 @@ This is what a knowledge system should feel like: ambient, not demanding.
 
 ## Related
 
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](2026-04-10-building-an-ai-agent-team.md) - the next step after automating individual workflows was building a coordinated team of AI personas that share knowledge
+- [Three Claude Tools, One Vault](2026-03-25-three-claude-tools-one-vault.md) — the shared context architecture this automation runs on top of
+- [How I Retired Notion in One Session](2026-04-08-how-i-retired-notion.md) — consolidating the knowledge base that feeds these automated agents
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](2026-04-10-building-an-ai-agent-team.md) — the next step after automating individual workflows was building a coordinated team of AI personas that share knowledge
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](2026-04-12-persona-layer-architecture.md) — the v3 agent architecture that runs inside this system
 
 ---
 

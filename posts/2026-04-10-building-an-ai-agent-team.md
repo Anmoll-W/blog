@@ -6,8 +6,12 @@ series: vault-as-os
 series_order: 2
 source_session: 2026-04-10_agent-team-v2-launch
 related:
+  - 2026-03-25-three-claude-tools-one-vault.md
   - 2026-04-05-vault-os-that-runs-itself.md
-  - 2026-04-08-github-as-your-portfolio.md
+  - 2026-04-08-how-i-retired-notion.md
+  - 2026-04-12-persona-layer-architecture.md
+  - 2026-03-31-parallel-agents-ai-stack.md
+  - 2026-04-10-formula-hooks-kill-metrics.md
 ---
 
 # Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas
@@ -78,8 +82,12 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 
 ## Related
 
-- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](2026-04-05-vault-os-that-runs-itself.md) - the automation layer that runs the agents on schedule
-- [GitHub as Your Portfolio](2026-04-08-github-as-your-portfolio.md) - how this kind of building in public translates to a portfolio presence
+- [Three Claude Tools, One Vault](2026-03-25-three-claude-tools-one-vault.md) — the shared context architecture this team runs on
+- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](2026-04-05-vault-os-that-runs-itself.md) — the automation layer that runs the agents on schedule
+- [How I Retired Notion in One Session](2026-04-08-how-i-retired-notion.md) — the vault consolidation that gave the team brain a clean foundation
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](2026-04-12-persona-layer-architecture.md) — the v3 redesign of this system
+- [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](2026-03-31-parallel-agents-ai-stack.md) — the parallel agent pattern that this team architecture evolved from
+- [Formula Hooks Kill the Metric They Optimize For](2026-04-10-formula-hooks-kill-metrics.md) — what happens when an agent executes policy without understanding intent
 
 ---
 
