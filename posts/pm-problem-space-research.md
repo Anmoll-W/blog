@@ -5,7 +5,7 @@ tags: [product, ai, pm, research]
 series: ""
 series_order: 0
 source_session: 2026-04-09_problem-space-research
-related: ["2026-04-10-spec-to-codebase-one-day.md"]
+related: ["spec-to-codebase-one-day.md"]
 ---
 
 # Research Before Building: How I Map a Problem Space from Scratch
@@ -74,7 +74,7 @@ The paid-tier assumption is almost always wrong on the first pass. Who you think
 
 ## Related
 
-- [From Problem Space to Working Codebase in One Day](2026-04-10-spec-to-codebase-one-day.md) — what happened on Day 2, when the research turned into a running application
+- [From Problem Space to Working Codebase in One Day](spec-to-codebase-one-day.md) — what happened on Day 2, when the research turned into a running application
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

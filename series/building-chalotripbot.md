@@ -8,10 +8,10 @@ This series documents the build from a broken first version to a working product
 
 ## Posts in This Series
 
-1. [Live Testing Revealed the Bot Was Fundamentally Broken](../posts/2026-03-30-live-testing-revealed-broken-bot.md)
+1. [Live Testing Revealed the Bot Was Fundamentally Broken](../posts/live-testing-revealed-broken-bot.md)
    The first real multi-user test exposed six critical failures: the primary action silently no-opped, RSVPs only captured the organiser, no one could actually join, voting completed after one response, the waitlist form faked success, and the mobile layout was broken. Every failure was invisible in single-account development testing.
 
-2. [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](../posts/2026-03-31-parallel-agents-ai-stack.md)
+2. [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](../posts/parallel-agents-ai-stack.md)
    After the live test forced a rebuild, the six feature areas were decomposed into genuinely parallel workstreams using git worktrees and focused CLAUDE.md files per agent. The key design work was identifying cross-cutting constraints before the agents started, not after. Also covers an AI tool stack audit that replaced two tools.
 
 ## What Is Coming

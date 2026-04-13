@@ -5,7 +5,7 @@ tags: [github, portfolio, personal-branding]
 series: github-is-your-portfolio
 series_order: 2
 source_session: 2026-04-08_github-profile-rebuild
-related: ["2026-04-08-github-as-your-portfolio.md", "2026-04-10-wikipedia-style-readme.md"]
+related: ["github-as-your-portfolio.md", "wikipedia-style-readme.md"]
 ---
 
 # Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything
@@ -62,8 +62,8 @@ The constraint of standard markdown is a feature. It forces every design decisio
 
 ## Related
 
-- [GitHub Is Your Portfolio](2026-04-08-github-as-your-portfolio.md) — the strategic decision that preceded this build session
-- [Why I Rebuilt My GitHub Profile as a Wikipedia Article](2026-04-10-wikipedia-style-readme.md) — the next iteration, two days later, and why the format changed again
+- [GitHub Is Your Portfolio](github-as-your-portfolio.md) — the strategic decision that preceded this build session
+- [Why I Rebuilt My GitHub Profile as a Wikipedia Article](wikipedia-style-readme.md) — the next iteration, two days later, and why the format changed again
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

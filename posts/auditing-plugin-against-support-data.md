@@ -5,7 +5,7 @@ tags: [engineering, product, debugging, wordpress]
 series: ""
 series_order: 0
 source_session: 2026-04-08_codebase-audit-bug-fixes
-related: ["2026-04-08-support-tickets-root-causes.md", "2026-04-09-when-the-ai-fix-is-wrong.md"]
+related: ["support-tickets-root-causes.md", "when-the-ai-fix-is-wrong.md"]
 ---
 
 # How to Audit a Production Codebase Against Its Own Support Data
@@ -78,8 +78,8 @@ Ruling out false positives is as important as finding real bugs. Fixing code tha
 
 ## Related
 
-- [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](2026-04-08-support-tickets-root-causes.md) — the follow-up session where these findings were extended into a full fix batch
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — one of the fixes in this audit (SQL escaping) had an error that was caught in review the next day
+- [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](support-tickets-root-causes.md) — the follow-up session where these findings were extended into a full fix batch
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — one of the fixes in this audit (SQL escaping) had an error that was caught in review the next day
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

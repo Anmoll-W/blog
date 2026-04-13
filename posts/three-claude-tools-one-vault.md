@@ -6,10 +6,10 @@ series: vault-as-os
 series_order: 0
 source_session: 2026-03-25_claude-dispatch-obsidian-vault
 related:
-  - 2026-04-05-vault-os-that-runs-itself.md
-  - 2026-04-08-how-i-retired-notion.md
-  - 2026-04-10-building-an-ai-agent-team.md
-  - 2026-04-12-persona-layer-architecture.md
+  - vault-os-that-runs-itself.md
+  - how-i-retired-notion.md
+  - building-an-ai-agent-team.md
+  - persona-layer-architecture.md
 ---
 
 # Three Claude Tools, One Vault: The Architecture Behind the System
@@ -52,10 +52,10 @@ The insight that unlocked this system: context does not belong in each tool. It 
 
 ## Related
 
-- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](2026-04-05-vault-os-that-runs-itself.md) — the automation layer built on top of this architecture
-- [How I Retired Notion in One Session](2026-04-08-how-i-retired-notion.md) — consolidating all knowledge into one vault
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](2026-04-10-building-an-ai-agent-team.md) — the coordination layer
-- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](2026-04-12-persona-layer-architecture.md) — the v3 redesign of the agent architecture
+- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer built on top of this architecture
+- [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating all knowledge into one vault
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the coordination layer
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 redesign of the agent architecture
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

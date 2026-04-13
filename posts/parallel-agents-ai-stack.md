@@ -5,7 +5,7 @@ tags: [ai, engineering, product, systems]
 series: building-chalotripbot
 series_order: 2
 source_session: 2026-03-31_chalo-strategy-ai-stack-audit
-related: ["2026-03-30-live-testing-revealed-broken-bot.md", "2026-04-10-building-an-ai-agent-team.md"]
+related: ["live-testing-revealed-broken-bot.md", "building-an-ai-agent-team.md"]
 ---
 
 # Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams
@@ -81,8 +81,8 @@ Tool audits have more value when paired with a pruning rule. Adding tools is eas
 
 ## Related
 
-- [Live Testing Revealed a Broken Bot](2026-03-30-live-testing-revealed-broken-bot.md) — the session that surfaced the failures that made this sprint necessary
-- [Building an AI Agent Team](2026-04-10-building-an-ai-agent-team.md) — how the parallel agent pattern evolved into a repeatable system
+- [Live Testing Revealed a Broken Bot](live-testing-revealed-broken-bot.md) — the session that surfaced the failures that made this sprint necessary
+- [Building an AI Agent Team](building-an-ai-agent-team.md) — how the parallel agent pattern evolved into a repeatable system
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

@@ -6,11 +6,11 @@ series: silent-failures
 series_order: 1
 source_session: 2026-04-04_e2e-testing-and-json-fix
 related:
-  - 2026-04-09-when-the-ai-fix-is-wrong.md
-  - 2026-03-29-three-cascading-bugs.md
-  - 2026-03-30-telegram-privacy-mode.md
-  - 2026-04-04-telegram-bots-cant-dm.md
-  - 2026-04-10-missing-viewport-tag.md
+  - when-the-ai-fix-is-wrong.md
+  - three-cascading-bugs.md
+  - telegram-privacy-mode.md
+  - telegram-bots-cant-dm.md
+  - missing-viewport-tag.md
 ---
 
 # Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites
@@ -99,11 +99,11 @@ This matters: your test pass or fail logic must account for what the framework a
 
 ## Related
 
-- [When the AI Fix is Wrong: What Senior Review Catches](2026-04-09-when-the-ai-fix-is-wrong.md) — a companion piece about the other side of AI-assisted coding: when the AI introduces bugs it cannot see
-- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](2026-03-29-three-cascading-bugs.md) — three more bugs that looked fine until production
-- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](2026-03-30-telegram-privacy-mode.md) — a platform-level silent failure in the same project
-- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](2026-04-04-telegram-bots-cant-dm.md) — another class of silent failure from the same session
-- [Missing Viewport Tag: The Silent Root of All Mobile Failures](2026-04-10-missing-viewport-tag.md) — a different rendering-layer silent failure
+- [When the AI Fix is Wrong: What Senior Review Catches](when-the-ai-fix-is-wrong.md) — a companion piece about the other side of AI-assisted coding: when the AI introduces bugs it cannot see
+- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](three-cascading-bugs.md) — three more bugs that looked fine until production
+- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure in the same project
+- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another class of silent failure from the same session
+- [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a different rendering-layer silent failure
 
 ---
 

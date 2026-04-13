@@ -6,11 +6,11 @@ series: silent-failures
 series_order: 3
 source_session: 2026-03-29_boarding-pass-redesign
 related:
-  - 2026-04-04-claude-appends-text-after-json.md
-  - 2026-04-09-when-the-ai-fix-is-wrong.md
-  - 2026-03-30-telegram-privacy-mode.md
-  - 2026-04-04-telegram-bots-cant-dm.md
-  - 2026-04-10-missing-viewport-tag.md
+  - claude-appends-text-after-json.md
+  - when-the-ai-fix-is-wrong.md
+  - telegram-privacy-mode.md
+  - telegram-bots-cant-dm.md
+  - missing-viewport-tag.md
 ---
 
 # Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font
@@ -69,11 +69,11 @@ Font rendering failures in the Turbopack pipeline are silent. If a section of a 
 
 ## Related
 
-- [Claude Appends Text After JSON](2026-04-04-claude-appends-text-after-json.md) — another silent failure pattern: output that looks correct but breaks downstream parsing
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — what happens when the suggested fix addresses the symptom, not the cause
-- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](2026-03-30-telegram-privacy-mode.md) — a platform-level silent failure from the same session context
-- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](2026-04-04-telegram-bots-cant-dm.md) — another invisible failure class in the same project
-- [Missing Viewport Tag: The Silent Root of All Mobile Failures](2026-04-10-missing-viewport-tag.md) — a rendering-layer failure that produced zero error output
+- [Claude Appends Text After JSON](claude-appends-text-after-json.md) — another silent failure pattern: output that looks correct but breaks downstream parsing
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — what happens when the suggested fix addresses the symptom, not the cause
+- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure from the same session context
+- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another invisible failure class in the same project
+- [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure that produced zero error output
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

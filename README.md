@@ -35,28 +35,29 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
-| 2026-04-12 | [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](posts/2026-04-12-persona-layer-architecture.md) | Vault as OS | vault, ai, systems |
-| 2026-04-10 | [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](posts/2026-04-10-building-an-ai-agent-team.md) | Vault as OS | ai-agents, personas, vault |
-| 2026-04-10 | [Missing Viewport Tag: The Silent Root of All Mobile Failures](posts/2026-04-10-missing-viewport-tag.md) | Silent Failures | css, mobile, silent-bugs |
-| 2026-04-10 | [Formula Hooks Kill the Metric They Optimize For](posts/2026-04-10-formula-hooks-kill-metrics.md) | — | ai, systems, content |
-| 2026-04-10 | [From Problem Space to Working Codebase in One Day](posts/2026-04-10-spec-to-codebase-one-day.md) | — | engineering, product, ai |
-| 2026-04-10 | [Why I Rebuilt My GitHub Profile as a Wikipedia Article](posts/2026-04-10-wikipedia-style-readme.md) | GitHub is Your Portfolio | github, portfolio |
-| 2026-04-09 | [When the AI Fix is Wrong: What Senior Review Catches](posts/2026-04-09-when-the-ai-fix-is-wrong.md) | Silent Failures | code-review, ai-coding |
-| 2026-04-09 | [Research Before Building: How I Map a Problem Space from Scratch](posts/2026-04-09-pm-problem-space-research.md) | — | product, ai, pm |
-| 2026-04-08 | [How I Retired Notion in One Session](posts/2026-04-08-how-i-retired-notion.md) | Vault as OS | vault, systems, obsidian |
-| 2026-04-08 | [GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README](posts/2026-04-08-github-as-your-portfolio.md) | GitHub is Your Portfolio | github, portfolio |
-| 2026-04-08 | [Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything](posts/2026-04-08-github-profile-rebuild.md) | GitHub is Your Portfolio | github, portfolio |
-| 2026-04-08 | [How to Audit a Production Codebase Against Its Own Support Data](posts/2026-04-08-auditing-plugin-against-support-data.md) | — | engineering, debugging |
-| 2026-04-08 | [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](posts/2026-04-08-support-tickets-root-causes.md) | — | engineering, debugging |
-| 2026-04-05 | [From Manual to Automatic: How I Built a Vault OS That Runs Itself](posts/2026-04-05-vault-os-that-runs-itself.md) | Vault as OS | vault, automation |
-| 2026-04-04 | [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](posts/2026-04-04-claude-appends-text-after-json.md) | Silent Failures | claude-api, json, debugging |
-| 2026-04-04 | [Telegram Bots Cannot DM Users Who Have Not Pressed Start](posts/2026-04-04-telegram-bots-cant-dm.md) | Silent Failures | telegram, silent-bugs |
-| 2026-04-01 | [Building an Internal Support Dashboard: From Broken Scaffold to Live Data](posts/2026-04-01-building-internal-dashboard.md) | — | engineering, supabase, nextjs |
-| 2026-03-31 | [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](posts/2026-03-31-parallel-agents-ai-stack.md) | Building ChalotripBot | ai, engineering, product |
-| 2026-03-30 | [Live Testing Revealed the Bot Was Fundamentally Broken](posts/2026-03-30-live-testing-revealed-broken-bot.md) | Building ChalotripBot | engineering, testing |
-| 2026-03-30 | [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](posts/2026-03-30-telegram-privacy-mode.md) | Silent Failures | telegram, silent-bugs |
-| 2026-03-29 | [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](posts/2026-03-29-three-cascading-bugs.md) | Silent Failures | engineering, silent-failures |
-| 2026-03-25 | [Three Claude Tools, One Vault: The Architecture Behind the System](posts/2026-03-25-three-claude-tools-one-vault.md) | Vault as OS | vault, ai, systems |
+| 2026-04-13 | [The Eval Agent: Adding a Quality Gate to an AI Workflow](posts/the-eval-agent.md) | Vault as OS | vault, ai, systems |
+| 2026-04-12 | [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](posts/persona-layer-architecture.md) | Vault as OS | vault, ai, systems |
+| 2026-04-10 | [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](posts/building-an-ai-agent-team.md) | Vault as OS | ai-agents, personas, vault |
+| 2026-04-10 | [Missing Viewport Tag: The Silent Root of All Mobile Failures](posts/missing-viewport-tag.md) | Silent Failures | css, mobile, silent-bugs |
+| 2026-04-10 | [Formula Hooks Kill the Metric They Optimize For](posts/formula-hooks-kill-metrics.md) | — | ai, systems, content |
+| 2026-04-10 | [From Problem Space to Working Codebase in One Day](posts/spec-to-codebase-one-day.md) | — | engineering, product, ai |
+| 2026-04-10 | [Why I Rebuilt My GitHub Profile as a Wikipedia Article](posts/wikipedia-style-readme.md) | GitHub is Your Portfolio | github, portfolio |
+| 2026-04-09 | [When the AI Fix is Wrong: What Senior Review Catches](posts/when-the-ai-fix-is-wrong.md) | Silent Failures | code-review, ai-coding |
+| 2026-04-09 | [Research Before Building: How I Map a Problem Space from Scratch](posts/pm-problem-space-research.md) | — | product, ai, pm |
+| 2026-04-08 | [How I Retired Notion in One Session](posts/how-i-retired-notion.md) | Vault as OS | vault, systems, obsidian |
+| 2026-04-08 | [GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README](posts/github-as-your-portfolio.md) | GitHub is Your Portfolio | github, portfolio |
+| 2026-04-08 | [Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything](posts/github-profile-rebuild.md) | GitHub is Your Portfolio | github, portfolio |
+| 2026-04-08 | [How to Audit a Production Codebase Against Its Own Support Data](posts/auditing-plugin-against-support-data.md) | — | engineering, debugging |
+| 2026-04-08 | [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](posts/support-tickets-root-causes.md) | — | engineering, debugging |
+| 2026-04-05 | [From Manual to Automatic: How I Built a Vault OS That Runs Itself](posts/vault-os-that-runs-itself.md) | Vault as OS | vault, automation |
+| 2026-04-04 | [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](posts/claude-appends-text-after-json.md) | Silent Failures | claude-api, json, debugging |
+| 2026-04-04 | [Telegram Bots Cannot DM Users Who Have Not Pressed Start](posts/telegram-bots-cant-dm.md) | Silent Failures | telegram, silent-bugs |
+| 2026-04-01 | [Building an Internal Support Dashboard: From Broken Scaffold to Live Data](posts/building-internal-dashboard.md) | — | engineering, supabase, nextjs |
+| 2026-03-31 | [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](posts/parallel-agents-ai-stack.md) | Building ChalotripBot | ai, engineering, product |
+| 2026-03-30 | [Live Testing Revealed the Bot Was Fundamentally Broken](posts/live-testing-revealed-broken-bot.md) | Building ChalotripBot | engineering, testing |
+| 2026-03-30 | [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](posts/telegram-privacy-mode.md) | Silent Failures | telegram, silent-bugs |
+| 2026-03-29 | [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](posts/three-cascading-bugs.md) | Silent Failures | engineering, silent-failures |
+| 2026-03-25 | [Three Claude Tools, One Vault: The Architecture Behind the System](posts/three-claude-tools-one-vault.md) | Vault as OS | vault, ai, systems |
 
 ---
 

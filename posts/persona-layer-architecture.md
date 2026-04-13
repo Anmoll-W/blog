@@ -6,10 +6,10 @@ series: vault-as-os
 series_order: 5
 source_session: 2026-04-12_agent-management-v3-complete
 related:
-  - 2026-03-25-three-claude-tools-one-vault.md
-  - 2026-04-05-vault-os-that-runs-itself.md
-  - 2026-04-08-how-i-retired-notion.md
-  - 2026-04-10-building-an-ai-agent-team.md
+  - three-claude-tools-one-vault.md
+  - vault-os-that-runs-itself.md
+  - how-i-retired-notion.md
+  - building-an-ai-agent-team.md
 ---
 
 # From Identity Files to Persona Stubs: Redesigning the Vault Agent System
@@ -78,10 +78,10 @@ Approach rejection is part of the design artifact. I evaluated five approaches a
 
 ## Related
 
-- [Three Claude Tools, One Vault](2026-03-25-three-claude-tools-one-vault.md) — the original shared context architecture this builds on
-- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](2026-04-05-vault-os-that-runs-itself.md) — the broader automated system Approach E fits inside
-- [How I Retired Notion in One Session](2026-04-08-how-i-retired-notion.md) — the vault consolidation that preceded this redesign
-- [Building an AI Agent Team](2026-04-10-building-an-ai-agent-team.md) — the v2 system this redesign replaced
+- [Three Claude Tools, One Vault](three-claude-tools-one-vault.md) — the original shared context architecture this builds on
+- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the broader automated system Approach E fits inside
+- [How I Retired Notion in One Session](how-i-retired-notion.md) — the vault consolidation that preceded this redesign
+- [Building an AI Agent Team](building-an-ai-agent-team.md) — the v2 system this redesign replaced
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

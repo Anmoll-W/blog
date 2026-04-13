@@ -6,10 +6,10 @@ series: vault-as-os
 series_order: 3
 source_session: 2026-04-08_vault-audit-notion-migration
 related:
-  - 2026-03-25-three-claude-tools-one-vault.md
-  - 2026-04-05-vault-os-that-runs-itself.md
-  - 2026-04-10-building-an-ai-agent-team.md
-  - 2026-04-12-persona-layer-architecture.md
+  - three-claude-tools-one-vault.md
+  - vault-os-that-runs-itself.md
+  - building-an-ai-agent-team.md
+  - persona-layer-architecture.md
 ---
 
 # How I Retired Notion in One Session
@@ -60,10 +60,10 @@ One more pattern: the stale path problem is invisible until it breaks something.
 
 ## Related
 
-- [Three Claude Tools, One Vault](2026-03-25-three-claude-tools-one-vault.md) — why the vault became the shared memory layer in the first place
-- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](2026-04-05-vault-os-that-runs-itself.md) — the automation layer that now runs on top of this structure
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](2026-04-10-building-an-ai-agent-team.md) — the agent coordination layer that runs on top of this consolidated vault
-- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](2026-04-12-persona-layer-architecture.md) — the v3 agent redesign that depends on this structure
+- [Three Claude Tools, One Vault](three-claude-tools-one-vault.md) — why the vault became the shared memory layer in the first place
+- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer that now runs on top of this structure
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the agent coordination layer that runs on top of this consolidated vault
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 agent redesign that depends on this structure
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

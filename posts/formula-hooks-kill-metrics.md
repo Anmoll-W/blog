@@ -6,7 +6,7 @@ series: ""
 series_order: 0
 source_session: 2026-04-10_mac-cleanup-and-maya-feedback
 related:
-  - 2026-04-10-building-an-ai-agent-team.md
+  - building-an-ai-agent-team.md
 ---
 
 # Formula Hooks Kill the Metric They Optimize For
@@ -58,7 +58,7 @@ Content type should gate format selection. An agent that ignores content type wh
 
 ## Related
 
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](2026-04-10-building-an-ai-agent-team.md) — what happens when agents execute policy correctly but the policy was wrong
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — what happens when agents execute policy correctly but the policy was wrong
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

@@ -6,11 +6,11 @@ series: silent-failures
 series_order: 6
 source_session: 2026-04-10_footer-badges-viewport-fix
 related:
-  - 2026-03-29-three-cascading-bugs.md
-  - 2026-04-04-claude-appends-text-after-json.md
-  - 2026-03-30-telegram-privacy-mode.md
-  - 2026-04-04-telegram-bots-cant-dm.md
-  - 2026-04-09-when-the-ai-fix-is-wrong.md
+  - three-cascading-bugs.md
+  - claude-appends-text-after-json.md
+  - telegram-privacy-mode.md
+  - telegram-bots-cant-dm.md
+  - when-the-ai-fix-is-wrong.md
 ---
 
 # Missing Viewport Tag: The Silent Root of All Mobile Failures
@@ -81,11 +81,11 @@ Silent rendering failures are the hardest to locate not because they are subtle 
 
 ## Related
 
-- [Three Cascading Bugs](2026-03-29-three-cascading-bugs.md) — another case where multiple silent failures stacked on top of each other before surfacing
-- [Claude Appends Text After JSON](2026-04-04-claude-appends-text-after-json.md) — a different class of silent failure in a development tool context
-- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](2026-03-30-telegram-privacy-mode.md) — a platform-level silent failure with the same structure
-- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](2026-04-04-telegram-bots-cant-dm.md) — another invisible failure class
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — when the analysis of a silent failure is itself incorrect
+- [Three Cascading Bugs](three-cascading-bugs.md) — another case where multiple silent failures stacked on top of each other before surfacing
+- [Claude Appends Text After JSON](claude-appends-text-after-json.md) — a different class of silent failure in a development tool context
+- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure with the same structure
+- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another invisible failure class
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — when the analysis of a silent failure is itself incorrect
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

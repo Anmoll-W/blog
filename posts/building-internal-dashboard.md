@@ -5,7 +5,7 @@ tags: [engineering, supabase, nextjs, ai]
 series: ""
 series_order: 0
 source_session: 2026-04-01_supportdash-initial-setup
-related: ["2026-04-09-when-the-ai-fix-is-wrong.md"]
+related: ["when-the-ai-fix-is-wrong.md"]
 ---
 
 # Building an Internal Support Dashboard: From Broken Scaffold to Live Data
@@ -68,7 +68,7 @@ Discovering that a problem does not exist is a good outcome, not a wasted plan. 
 
 ## Related
 
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — what happens when you trust the AI's diagnosis without verifying it against the actual system state
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — what happens when you trust the AI's diagnosis without verifying it against the actual system state
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

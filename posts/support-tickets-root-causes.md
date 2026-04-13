@@ -5,7 +5,7 @@ tags: [engineering, debugging, wordpress, product]
 series: ""
 series_order: 0
 source_session: 2026-04-08_bug-fix-pr6167
-related: ["2026-04-08-auditing-plugin-against-support-data.md", "2026-04-09-when-the-ai-fix-is-wrong.md"]
+related: ["auditing-plugin-against-support-data.md", "when-the-ai-fix-is-wrong.md"]
 ---
 
 # From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint
@@ -20,7 +20,7 @@ Nine bugs were identified, fixed, and shipped in a single session. They are docu
 
 **Double-wrapped JSON response.** A single character change in `Maintenance.php:76`: removing the array wrapper from `wp_send_json([$plan])` so it returns `wp_send_json($plan)`. The wrapped response was causing the JavaScript client to receive `[[{...}]]` instead of `{...}`. Every property access returned `undefined`. The AI maintenance process appeared to start and then immediately hung or showed a generic error with no recovery path. This one line accounts for a disproportionate share of the 70 reports, including all complaints about one-click AI features failing, maintenance dashboard crashes, and processes stuck at 1%.
 
-**SQL escaping for keywords.** Three sites in `Keyword.php` (lines 1592, 1622, 1648) where keywords were interpolated directly into SQL. The fix introduces `esc_sql(stripslashes($keyword->keyword))` at each site. The `stripslashes` call is necessary because WordPress applies magic-quote slashes to stored data, and `esc_sql` alone would double-escape them. This fix was initially applied without the `stripslashes` step, which would have introduced a different bug. The correction was made the next day after review caught it. The post [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) documents that specifically. Apostrophes are common enough in English keywords that a conservative estimate puts the affected user base at 10 to 20 percent.
+**SQL escaping for keywords.** Three sites in `Keyword.php` (lines 1592, 1622, 1648) where keywords were interpolated directly into SQL. The fix introduces `esc_sql(stripslashes($keyword->keyword))` at each site. The `stripslashes` call is necessary because WordPress applies magic-quote slashes to stored data, and `esc_sql` alone would double-escape them. This fix was initially applied without the `stripslashes` step, which would have introduced a different bug. The correction was made the next day after review caught it. The post [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) documents that specifically. Apostrophes are common enough in English keywords that a conservative estimate puts the affected user base at 10 to 20 percent.
 
 **License grace period extension.** Two threshold checks in `License.php` at lines 142 and 164 were changed from 10 consecutive failures to 30. The previous threshold meant that 10 daily cron failures (roughly 10 days of connectivity issues to the license server) would write `'invalid'` to the license status option and silently deactivate the plugin. Users returned to a license invalid screen with no explanation. Extending to 30 failures gives users on hosts with aggressive firewall rules or intermittent connectivity significantly more runway before deactivation.
 
@@ -68,8 +68,8 @@ Third-party compatibility failures are invisible until you look for them. The si
 
 ## Related
 
-- [How to Audit a Production Codebase Against Its Own Support Data](2026-04-08-auditing-plugin-against-support-data.md) — the preceding session that identified the first set of bugs and defined the audit method
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — the SQL escaping fix in this batch had an error that was caught in review the next day
+- [How to Audit a Production Codebase Against Its Own Support Data](auditing-plugin-against-support-data.md) — the preceding session that identified the first set of bugs and defined the audit method
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — the SQL escaping fix in this batch had an error that was caught in review the next day
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

@@ -6,12 +6,12 @@ series: silent-failures
 series_order: 2
 source_session: 2026-04-09_pr6167-cto-review-corrections
 related:
-  - 2026-04-04-claude-appends-text-after-json.md
-  - 2026-03-29-three-cascading-bugs.md
-  - 2026-03-30-telegram-privacy-mode.md
-  - 2026-04-04-telegram-bots-cant-dm.md
-  - 2026-04-10-missing-viewport-tag.md
-  - 2026-04-08-support-tickets-root-causes.md
+  - claude-appends-text-after-json.md
+  - three-cascading-bugs.md
+  - telegram-privacy-mode.md
+  - telegram-bots-cant-dm.md
+  - missing-viewport-tag.md
+  - support-tickets-root-causes.md
 ---
 
 # When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses
@@ -143,12 +143,12 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 
 ## Related
 
-- [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](2026-04-04-claude-appends-text-after-json.md) — another case where the bug was invisible until full context was examined
-- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](2026-03-29-three-cascading-bugs.md) — three more failures that passed the build but broke in production
-- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](2026-03-30-telegram-privacy-mode.md) — a platform-level silent failure
-- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](2026-04-04-telegram-bots-cant-dm.md) — another class of invisible failure
-- [Missing Viewport Tag: The Silent Root of All Mobile Failures](2026-04-10-missing-viewport-tag.md) — a rendering-layer failure with no error output
-- [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](2026-04-08-support-tickets-root-causes.md) — the full bug sprint this review was part of
+- [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md) — another case where the bug was invisible until full context was examined
+- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](three-cascading-bugs.md) — three more failures that passed the build but broke in production
+- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure
+- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another class of invisible failure
+- [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure with no error output
+- [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](support-tickets-root-causes.md) — the full bug sprint this review was part of
 
 ---
 

@@ -6,11 +6,11 @@ series: silent-failures
 series_order: 5
 source_session: 2026-04-04_in-group-preference-collection
 related:
-  - 2026-03-30-telegram-privacy-mode.md
-  - 2026-04-04-claude-appends-text-after-json.md
-  - 2026-03-29-three-cascading-bugs.md
-  - 2026-04-09-when-the-ai-fix-is-wrong.md
-  - 2026-04-10-missing-viewport-tag.md
+  - telegram-privacy-mode.md
+  - claude-appends-text-after-json.md
+  - three-cascading-bugs.md
+  - when-the-ai-fix-is-wrong.md
+  - missing-viewport-tag.md
 ---
 
 # Telegram Bots Cannot DM Users Who Have Not Pressed Start
@@ -71,11 +71,11 @@ Document platform constraints in a testable form, not just a note form. "Bots ca
 
 ## Related
 
-- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](2026-03-30-telegram-privacy-mode.md) — another platform constraint that only surfaces in real group contexts
-- [Claude Appends Text After JSON](2026-04-04-claude-appends-text-after-json.md) — a different class of silent failure, same session
-- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](2026-03-29-three-cascading-bugs.md) — three more failures that were invisible during development
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — what happens when a fix addresses symptoms rather than cause
-- [Missing Viewport Tag: The Silent Root of All Mobile Failures](2026-04-10-missing-viewport-tag.md) — a rendering-layer failure with no visible error
+- [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — another platform constraint that only surfaces in real group contexts
+- [Claude Appends Text After JSON](claude-appends-text-after-json.md) — a different class of silent failure, same session
+- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](three-cascading-bugs.md) — three more failures that were invisible during development
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — what happens when a fix addresses symptoms rather than cause
+- [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure with no visible error
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

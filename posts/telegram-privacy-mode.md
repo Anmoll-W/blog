@@ -6,12 +6,12 @@ series: silent-failures
 series_order: 4
 source_session: 2026-03-30_live-testing-and-nlp-fixes
 related:
-  - 2026-03-30-live-testing-revealed-broken-bot.md
-  - 2026-04-04-claude-appends-text-after-json.md
-  - 2026-03-29-three-cascading-bugs.md
-  - 2026-04-04-telegram-bots-cant-dm.md
-  - 2026-04-09-when-the-ai-fix-is-wrong.md
-  - 2026-04-10-missing-viewport-tag.md
+  - live-testing-revealed-broken-bot.md
+  - claude-appends-text-after-json.md
+  - three-cascading-bugs.md
+  - telegram-bots-cant-dm.md
+  - when-the-ai-fix-is-wrong.md
+  - missing-viewport-tag.md
 ---
 
 # Telegram Privacy Mode: The Silent Setting That Broke Natural Language
@@ -76,12 +76,12 @@ A parser validated against one format is validated against nothing. Format norma
 
 ## Related
 
-- [Live Testing Revealed the Bot Was Fundamentally Broken](2026-03-30-live-testing-revealed-broken-bot.md) — the broader live testing session this debugging came from
-- [Claude Appends Text After JSON](2026-04-04-claude-appends-text-after-json.md) — another silent failure at a different layer: model output that breaks downstream parsing without signaling an error
-- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](2026-03-29-three-cascading-bugs.md) — three more build failures that were invisible until production
-- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](2026-04-04-telegram-bots-cant-dm.md) — another Telegram platform constraint that only surfaces under real conditions
-- [When the AI Fix Is Wrong](2026-04-09-when-the-ai-fix-is-wrong.md) — what happens when a fix addresses symptoms rather than cause
-- [Missing Viewport Tag: The Silent Root of All Mobile Failures](2026-04-10-missing-viewport-tag.md) — a different rendering-layer failure with no error output
+- [Live Testing Revealed the Bot Was Fundamentally Broken](live-testing-revealed-broken-bot.md) — the broader live testing session this debugging came from
+- [Claude Appends Text After JSON](claude-appends-text-after-json.md) — another silent failure at a different layer: model output that breaks downstream parsing without signaling an error
+- [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](three-cascading-bugs.md) — three more build failures that were invisible until production
+- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another Telegram platform constraint that only surfaces under real conditions
+- [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — what happens when a fix addresses symptoms rather than cause
+- [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a different rendering-layer failure with no error output
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

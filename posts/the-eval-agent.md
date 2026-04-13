@@ -6,9 +6,9 @@ series: vault-as-os
 series_order: 6
 source_session: 2026-04-13_vera-and-output-measurement
 related:
-  - 2026-04-10-building-an-ai-agent-team.md
-  - 2026-04-12-persona-layer-architecture.md
-  - 2026-04-05-vault-os-that-runs-itself.md
+  - building-an-ai-agent-team.md
+  - persona-layer-architecture.md
+  - vault-os-that-runs-itself.md
 ---
 
 # The Eval Agent: Adding a Quality Gate to an AI Workflow
@@ -75,9 +75,9 @@ The blind-spot question is not optional. Checking known criteria is necessary bu
 
 ## Related
 
-- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](2026-04-12-persona-layer-architecture.md) — the architecture Vera sits on top of
-- [Building an AI Agent Team](2026-04-10-building-an-ai-agent-team.md) — the v2 system that preceded this redesign
-- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](2026-04-05-vault-os-that-runs-itself.md) — the broader automated system this fits inside
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the architecture Vera sits on top of
+- [Building an AI Agent Team](building-an-ai-agent-team.md) — the v2 system that preceded this redesign
+- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the broader automated system this fits inside
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

@@ -6,10 +6,10 @@ series: building-chalotripbot
 series_order: 1
 source_session: 2026-03-30_bug-fixes-and-deploy
 related:
-  - 2026-03-29-three-cascading-bugs.md
-  - 2026-03-30-telegram-privacy-mode.md
-  - 2026-03-31-parallel-agents-ai-stack.md
-  - 2026-04-04-telegram-bots-cant-dm.md
+  - three-cascading-bugs.md
+  - telegram-privacy-mode.md
+  - parallel-agents-ai-stack.md
+  - telegram-bots-cant-dm.md
 ---
 
 # Live Testing Revealed the Bot Was Fundamentally Broken
@@ -58,10 +58,10 @@ Tracing a form submit handler to the database write, rather than watching the UI
 
 ## Related
 
-- [Three Cascading Bugs](2026-03-29-three-cascading-bugs.md) — silent failures at the infrastructure level, same session context
-- [Telegram Privacy Mode](2026-03-30-telegram-privacy-mode.md) — another class of silent failure from the same live testing session, this time at the Telegram delivery layer
-- [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](2026-03-31-parallel-agents-ai-stack.md) — the sprint strategy this session made necessary
-- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](2026-04-04-telegram-bots-cant-dm.md) — the follow-on Telegram platform constraint that reshaped the preference collection flow
+- [Three Cascading Bugs](three-cascading-bugs.md) — silent failures at the infrastructure level, same session context
+- [Telegram Privacy Mode](telegram-privacy-mode.md) — another class of silent failure from the same live testing session, this time at the Telegram delivery layer
+- [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](parallel-agents-ai-stack.md) — the sprint strategy this session made necessary
+- [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — the follow-on Telegram platform constraint that reshaped the preference collection flow
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

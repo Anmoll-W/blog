@@ -5,7 +5,7 @@ tags: [engineering, product, ai, buildathon]
 series: ""
 series_order: 0
 source_session: 2026-04-10_design-and-build
-related: ["2026-04-09-pm-problem-space-research.md", "2026-03-31-parallel-agents-ai-stack.md"]
+related: ["pm-problem-space-research.md", "parallel-agents-ai-stack.md"]
 ---
 
 # From Problem Space to Working Codebase in One Day
@@ -76,8 +76,8 @@ The separation of designer and engineer personas prevents the most common Day 2 
 
 ## Related
 
-- [Research Before Building: How I Map a Problem Space from Scratch](2026-04-09-pm-problem-space-research.md) — the Day 1 research session that preceded this build
-- [Running Parallel Agents on a Real AI Stack](2026-03-31-parallel-agents-ai-stack.md) — the infrastructure approach behind running designer and engineer as separate agents
+- [Research Before Building: How I Map a Problem Space from Scratch](pm-problem-space-research.md) — the Day 1 research session that preceded this build
+- [Running Parallel Agents on a Real AI Stack](parallel-agents-ai-stack.md) — the infrastructure approach behind running designer and engineer as separate agents
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
