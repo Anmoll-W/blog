@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-13 | [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](posts/dashboard-to-digest.md) | — | engineering, product, ai, helpscout |
 | 2026-04-13 | [The Eval Agent: Adding a Quality Gate to an AI Workflow](posts/the-eval-agent.md) | Vault as OS | vault, ai, systems |
 | 2026-04-12 | [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](posts/persona-layer-architecture.md) | Vault as OS | vault, ai, systems |
 | 2026-04-10 | [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](posts/building-an-ai-agent-team.md) | Vault as OS | ai-agents, personas, vault |

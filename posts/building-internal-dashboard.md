@@ -69,6 +69,7 @@ Discovering that a problem does not exist is a good outcome, not a wasted plan. 
 ## Related
 
 - [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — what happens when you trust the AI's diagnosis without verifying it against the actual system state
+- [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — what happened three months later: nobody used the dashboard, so the database was deleted and replaced with a 7 AM digest cron
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
