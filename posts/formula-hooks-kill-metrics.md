@@ -7,6 +7,7 @@ series_order: 0
 source_session: 2026-04-10_mac-cleanup-and-maya-feedback
 related:
   - building-an-ai-agent-team.md
+  - the-eval-agent.md
 ---
 
 # Formula Hooks Kill the Metric They Optimize For
@@ -59,6 +60,7 @@ Content type should gate format selection. An agent that ignores content type wh
 ## Related
 
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — what happens when agents execute policy correctly but the policy was wrong
+- [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — the structural fix: an agent whose job is to evaluate output rather than produce it
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
