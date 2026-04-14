@@ -1,16 +1,9 @@
 ---
-title: "launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent"
 date: 2026-04-14
 tags: [engineering, silent-failures, macos, launchd, automation]
 series: silent-failures
-series_order: 7
-source_session: 2026-04-14_vault-automation-audit-and-fix
-related:
-  - three-cascading-bugs.md
-  - missing-viewport-tag.md
-  - vault-os-that-runs-itself.md
-  - building-an-ai-agent-team.md
 ---
+<!-- source_session: 2026-04-14_vault-automation-audit-and-fix -->
 
 # launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent
 

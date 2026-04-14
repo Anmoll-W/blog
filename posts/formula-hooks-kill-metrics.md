@@ -1,14 +1,9 @@
 ---
-title: "Formula Hooks Kill the Metric They Optimize For"
 date: 2026-04-10
 tags: [ai, systems, content, product]
 series: ""
-series_order: 0
-source_session: 2026-04-10_mac-cleanup-and-maya-feedback
-related:
-  - building-an-ai-agent-team.md
-  - the-eval-agent.md
 ---
+<!-- source_session: 2026-04-10_mac-cleanup-and-maya-feedback -->
 
 # Formula Hooks Kill the Metric They Optimize For
 

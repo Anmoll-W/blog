@@ -1,12 +1,9 @@
 ---
-title: "How to Audit a Production Codebase Against Its Own Support Data"
 date: 2026-04-08
 tags: [engineering, product, debugging, wordpress]
 series: ""
-series_order: 0
-source_session: 2026-04-08_codebase-audit-bug-fixes
-related: ["support-tickets-root-causes.md", "when-the-ai-fix-is-wrong.md", "dashboard-to-digest.md"]
 ---
+<!-- source_session: 2026-04-08_codebase-audit-bug-fixes -->
 
 # How to Audit a Production Codebase Against Its Own Support Data
 

@@ -1,17 +1,9 @@
 ---
-title: "Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites"
 date: 2026-04-04
 tags: [claude-api, debugging, json, silent-bugs, typescript, ai-engineering]
 series: silent-failures
-series_order: 1
-source_session: 2026-04-04_e2e-testing-and-json-fix
-related:
-  - when-the-ai-fix-is-wrong.md
-  - three-cascading-bugs.md
-  - telegram-privacy-mode.md
-  - telegram-bots-cant-dm.md
-  - missing-viewport-tag.md
 ---
+<!-- source_session: 2026-04-04_e2e-testing-and-json-fix -->
 
 # Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites
 

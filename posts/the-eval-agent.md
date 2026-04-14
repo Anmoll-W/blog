@@ -1,15 +1,9 @@
 ---
-title: "The Eval Agent: Adding a Quality Gate to an AI Workflow"
 date: 2026-04-13
 tags: [vault, ai, systems, prompt-engineering]
 series: vault-as-os
-series_order: 6
-source_session: 2026-04-13_vera-and-output-measurement
-related:
-  - building-an-ai-agent-team.md
-  - persona-layer-architecture.md
-  - vault-os-that-runs-itself.md
 ---
+<!-- source_session: 2026-04-13_vera-and-output-measurement -->
 
 # The Eval Agent: Adding a Quality Gate to an AI Workflow
 

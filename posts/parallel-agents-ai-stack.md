@@ -1,12 +1,9 @@
 ---
-title: "Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams"
 date: 2026-03-31
 tags: [ai, engineering, product, systems]
 series: building-chalotripbot
-series_order: 2
-source_session: 2026-03-31_chalo-strategy-ai-stack-audit
-related: ["live-testing-revealed-broken-bot.md", "building-an-ai-agent-team.md"]
 ---
+<!-- source_session: 2026-03-31_chalo-strategy-ai-stack-audit -->
 
 # Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams
 

@@ -1,18 +1,9 @@
 ---
-title: "Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font"
 date: 2026-03-29
 tags: [engineering, silent-failures, nextjs, debugging]
 series: silent-failures
-series_order: 3
-source_session: 2026-03-29_boarding-pass-redesign
-related:
-  - claude-appends-text-after-json.md
-  - when-the-ai-fix-is-wrong.md
-  - telegram-privacy-mode.md
-  - telegram-bots-cant-dm.md
-  - missing-viewport-tag.md
-  - launchd-icloud-silent-block.md
 ---
+<!-- source_session: 2026-03-29_boarding-pass-redesign -->
 
 # Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font
 

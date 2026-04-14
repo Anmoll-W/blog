@@ -1,17 +1,9 @@
 ---
-title: "Telegram Bots Cannot DM Users Who Have Not Pressed Start"
 date: 2026-04-04
 tags: [engineering, telegram, silent-failures, product]
 series: silent-failures
-series_order: 5
-source_session: 2026-04-04_in-group-preference-collection
-related:
-  - telegram-privacy-mode.md
-  - claude-appends-text-after-json.md
-  - three-cascading-bugs.md
-  - when-the-ai-fix-is-wrong.md
-  - missing-viewport-tag.md
 ---
+<!-- source_session: 2026-04-04_in-group-preference-collection -->
 
 # Telegram Bots Cannot DM Users Who Have Not Pressed Start
 

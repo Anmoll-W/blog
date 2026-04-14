@@ -1,12 +1,9 @@
 ---
-title: "From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint"
 date: 2026-04-08
 tags: [engineering, debugging, wordpress, product]
 series: ""
-series_order: 0
-source_session: 2026-04-08_bug-fix-pr6167
-related: ["auditing-plugin-against-support-data.md", "when-the-ai-fix-is-wrong.md", "dashboard-to-digest.md"]
 ---
+<!-- source_session: 2026-04-08_bug-fix-pr6167 -->
 
 # From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint
 

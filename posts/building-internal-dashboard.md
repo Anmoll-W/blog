@@ -1,12 +1,9 @@
 ---
-title: "Building an Internal Support Dashboard: From Broken Scaffold to Live Data"
 date: 2026-04-01
 tags: [engineering, supabase, nextjs, ai]
 series: ""
-series_order: 0
-source_session: 2026-04-01_supportdash-initial-setup
-related: ["when-the-ai-fix-is-wrong.md"]
 ---
+<!-- source_session: 2026-04-01_supportdash-initial-setup -->
 
 # Building an Internal Support Dashboard: From Broken Scaffold to Live Data
 

@@ -1,12 +1,9 @@
 ---
-title: "From Problem Space to Working Codebase in One Day"
 date: 2026-04-10
 tags: [engineering, product, ai, buildathon]
 series: ""
-series_order: 0
-source_session: 2026-04-10_design-and-build
-related: ["pm-problem-space-research.md", "parallel-agents-ai-stack.md"]
 ---
+<!-- source_session: 2026-04-10_design-and-build -->
 
 # From Problem Space to Working Codebase in One Day
 

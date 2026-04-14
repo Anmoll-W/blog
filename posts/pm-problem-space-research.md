@@ -1,12 +1,9 @@
 ---
-title: "Research Before Building: How I Map a Problem Space from Scratch"
 date: 2026-04-09
 tags: [product, ai, pm, research]
 series: ""
-series_order: 0
-source_session: 2026-04-09_problem-space-research
-related: ["spec-to-codebase-one-day.md"]
 ---
+<!-- source_session: 2026-04-09_problem-space-research -->
 
 # Research Before Building: How I Map a Problem Space from Scratch
 

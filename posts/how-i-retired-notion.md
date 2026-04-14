@@ -1,16 +1,9 @@
 ---
-title: "How I Retired Notion in One Session"
 date: 2026-04-08
 tags: [vault, systems, obsidian, ai]
 series: vault-as-os
-series_order: 3
-source_session: 2026-04-08_vault-audit-notion-migration
-related:
-  - three-claude-tools-one-vault.md
-  - vault-os-that-runs-itself.md
-  - building-an-ai-agent-team.md
-  - persona-layer-architecture.md
 ---
+<!-- source_session: 2026-04-08_vault-audit-notion-migration -->
 
 # How I Retired Notion in One Session
 

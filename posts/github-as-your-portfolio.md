@@ -1,15 +1,9 @@
 ---
-title: "GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README"
 date: 2026-04-08
 tags: [github, portfolio, personal-branding, product-management, building-in-public]
 series: github-is-your-portfolio
-series_order: 1
-source_session: 2026-04-08_github-only-portfolio-strategy
-related:
-  - github-profile-rebuild.md
-  - wikipedia-style-readme.md
-  - building-an-ai-agent-team.md
 ---
+<!-- source_session: 2026-04-08_github-only-portfolio-strategy -->
 
 # GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README
 

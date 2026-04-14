@@ -1,16 +1,9 @@
 ---
-title: "Three Claude Tools, One Vault: The Architecture Behind the System"
 date: 2026-03-25
 tags: [vault, ai, systems, obsidian]
 series: vault-as-os
-series_order: 0
-source_session: 2026-03-25_claude-dispatch-obsidian-vault
-related:
-  - vault-os-that-runs-itself.md
-  - how-i-retired-notion.md
-  - building-an-ai-agent-team.md
-  - persona-layer-architecture.md
 ---
+<!-- source_session: 2026-03-25_claude-dispatch-obsidian-vault -->
 
 # Three Claude Tools, One Vault: The Architecture Behind the System
 

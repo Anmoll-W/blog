@@ -49,12 +49,10 @@ When a new post is published:
 - Read the new post's topic, series, and tags
 - Identify 2-5 existing posts that are topically related
 - Add them to the `## Related` section at the bottom of the new post
-- Also add them to the frontmatter `related:` list
-
 **Step B — link TO the new post from existing posts:**
 - For each related post identified in Step A, read its `## Related` section
 - If the new post is relevant to that existing post's reader, add a link back
-- Update both the `## Related` section body and the frontmatter `related:` list
+- Update the `## Related` section body only (no frontmatter `related:` field)
 - Prioritise: posts in the same series, posts covering the same system, posts that are the "before" to this post's "after"
 
 **Cross-link quality bar:**
@@ -74,7 +72,7 @@ When a new post is published:
 Run a quick check against these before every commit:
 
 - [ ] Filename is slug-only (no date)
-- [ ] Frontmatter has: title, date, tags, series (or ""), series_order (or 0), source_session, related
+- [ ] Frontmatter has: date, tags, series (or "") — nothing else; source_session goes in an HTML comment below the closing `---`
 - [ ] Post has a `## Related` section with at least 2 links
 - [ ] Blog README updated
 - [ ] Series file updated (if applicable)

@@ -1,18 +1,9 @@
 ---
-title: "Telegram Privacy Mode: The Silent Setting That Broke Natural Language"
 date: 2026-03-30
 tags: [engineering, silent-failures, telegram, debugging]
 series: silent-failures
-series_order: 4
-source_session: 2026-03-30_live-testing-and-nlp-fixes
-related:
-  - live-testing-revealed-broken-bot.md
-  - claude-appends-text-after-json.md
-  - three-cascading-bugs.md
-  - telegram-bots-cant-dm.md
-  - when-the-ai-fix-is-wrong.md
-  - missing-viewport-tag.md
 ---
+<!-- source_session: 2026-03-30_live-testing-and-nlp-fixes -->
 
 # Telegram Privacy Mode: The Silent Setting That Broke Natural Language
 

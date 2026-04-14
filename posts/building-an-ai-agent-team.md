@@ -1,20 +1,9 @@
 ---
-title: "Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas"
 date: 2026-04-10
 tags: [ai-agents, personas, prompt-engineering, vault, obsidian, knowledge-management]
 series: vault-as-os
-series_order: 2
-source_session: 2026-04-10_agent-team-v2-launch
-related:
-  - three-claude-tools-one-vault.md
-  - vault-os-that-runs-itself.md
-  - how-i-retired-notion.md
-  - persona-layer-architecture.md
-  - parallel-agents-ai-stack.md
-  - formula-hooks-kill-metrics.md
-  - the-eval-agent.md
-  - launchd-icloud-silent-block.md
 ---
+<!-- source_session: 2026-04-10_agent-team-v2-launch -->
 
 # Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas
 

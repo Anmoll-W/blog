@@ -1,17 +1,9 @@
 ---
-title: "From Manual to Automatic: How I Built a Vault OS That Runs Itself"
 date: 2026-04-05
 tags: [vault, obsidian, automation, launchagent, ai, knowledge-management]
 series: vault-as-os
-series_order: 1
-source_session: 2026-04-05_vault-os-complete
-related:
-  - three-claude-tools-one-vault.md
-  - how-i-retired-notion.md
-  - building-an-ai-agent-team.md
-  - persona-layer-architecture.md
-  - launchd-icloud-silent-block.md
 ---
+<!-- source_session: 2026-04-05_vault-os-complete -->
 
 # From Manual to Automatic: How I Built a Vault OS That Runs Itself
 

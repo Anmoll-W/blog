@@ -1,12 +1,9 @@
 ---
-title: "Why I Rebuilt My GitHub Profile as a Wikipedia Article"
 date: 2026-04-10
 tags: [github, portfolio, personal-branding]
 series: github-is-your-portfolio
-series_order: 3
-source_session: 2026-04-10_wikipedia-style-readme
-related: ["github-profile-rebuild.md", "github-as-your-portfolio.md"]
 ---
+<!-- source_session: 2026-04-10_wikipedia-style-readme -->
 
 # Why I Rebuilt My GitHub Profile as a Wikipedia Article
 

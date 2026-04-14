@@ -1,18 +1,9 @@
 ---
-title: "Missing Viewport Tag: The Silent Root of All Mobile Failures"
 date: 2026-04-10
 tags: [engineering, silent-failures, css, mobile]
 series: silent-failures
-series_order: 6
-source_session: 2026-04-10_footer-badges-viewport-fix
-related:
-  - three-cascading-bugs.md
-  - claude-appends-text-after-json.md
-  - telegram-privacy-mode.md
-  - telegram-bots-cant-dm.md
-  - when-the-ai-fix-is-wrong.md
-  - launchd-icloud-silent-block.md
 ---
+<!-- source_session: 2026-04-10_footer-badges-viewport-fix -->
 
 # Missing Viewport Tag: The Silent Root of All Mobile Failures
 

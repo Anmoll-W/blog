@@ -1,19 +1,9 @@
 ---
-title: "When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses"
 date: 2026-04-09
 tags: [code-review, ai-coding, wordpress, debugging, silent-bugs, php]
 series: silent-failures
-series_order: 2
-source_session: 2026-04-09_pr6167-cto-review-corrections
-related:
-  - claude-appends-text-after-json.md
-  - three-cascading-bugs.md
-  - telegram-privacy-mode.md
-  - telegram-bots-cant-dm.md
-  - missing-viewport-tag.md
-  - support-tickets-root-causes.md
-  - dashboard-to-digest.md
 ---
+<!-- source_session: 2026-04-09_pr6167-cto-review-corrections -->
 
 # When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses
 

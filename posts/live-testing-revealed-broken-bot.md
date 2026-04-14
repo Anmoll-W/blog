@@ -1,16 +1,9 @@
 ---
-title: "Live Testing Revealed the Bot Was Fundamentally Broken"
 date: 2026-03-30
 tags: [engineering, testing, telegram, debugging]
 series: building-chalotripbot
-series_order: 1
-source_session: 2026-03-30_bug-fixes-and-deploy
-related:
-  - three-cascading-bugs.md
-  - telegram-privacy-mode.md
-  - parallel-agents-ai-stack.md
-  - telegram-bots-cant-dm.md
 ---
+<!-- source_session: 2026-03-30_bug-fixes-and-deploy -->
 
 # Live Testing Revealed the Bot Was Fundamentally Broken
 

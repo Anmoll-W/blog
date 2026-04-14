@@ -1,17 +1,9 @@
 ---
-title: "From Identity Files to Persona Stubs: Redesigning the Vault Agent System"
 date: 2026-04-12
 tags: [vault, ai, systems, prompt-engineering]
 series: vault-as-os
-series_order: 5
-source_session: 2026-04-12_agent-management-v3-complete
-related:
-  - three-claude-tools-one-vault.md
-  - vault-os-that-runs-itself.md
-  - how-i-retired-notion.md
-  - building-an-ai-agent-team.md
-  - the-eval-agent.md
 ---
+<!-- source_session: 2026-04-12_agent-management-v3-complete -->
 
 # From Identity Files to Persona Stubs: Redesigning the Vault Agent System
 

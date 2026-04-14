@@ -1,12 +1,9 @@
 ---
-title: "Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead"
 date: 2026-04-13
 tags: [engineering, product, ai, helpscout, vercel]
 series: ""
-series_order: 0
-source_session: 2026-04-13_digest-pipeline-smoke-test
-related: ["building-internal-dashboard.md", "support-tickets-root-causes.md", "auditing-plugin-against-support-data.md", "when-the-ai-fix-is-wrong.md"]
 ---
+<!-- source_session: 2026-04-13_digest-pipeline-smoke-test -->
 
 # Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead
 

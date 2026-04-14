@@ -1,12 +1,9 @@
 ---
-title: "Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything"
 date: 2026-04-08
 tags: [github, portfolio, personal-branding]
 series: github-is-your-portfolio
-series_order: 2
-source_session: 2026-04-08_github-profile-rebuild
-related: ["github-as-your-portfolio.md", "wikipedia-style-readme.md"]
 ---
+<!-- source_session: 2026-04-08_github-profile-rebuild -->
 
 # Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything
 
