@@ -1,8 +1,3 @@
----
-date: 2026-04-14
-tags: [engineering, silent-failures, macos, launchd, automation]
-series: silent-failures
----
 <!-- source_session: 2026-04-14_vault-automation-audit-and-fix -->
 
 # launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent
@@ -54,6 +49,12 @@ A loaded plist is not evidence that the agent can run. `launchctl list` only pro
 Silent success is almost as dangerous as silent failure. Three of my four agents were producing some output, so I assumed the system was healthy. The one producing no output was invisible because there was nothing to react to. Scheduled jobs need explicit absence-of-artifact checks, not just error watching. If a weekly report is supposed to land every Sunday, something in the system has to notice when it does not, because launchd will not.
 
 The absence of a file is not a signal unless you are looking for it. I am adding the watchdog this week.
+
+---
+
+**[2026-04-14](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![macos](https://img.shields.io/badge/macos-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![launchd](https://img.shields.io/badge/launchd-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![automation](https://img.shields.io/badge/automation-2ea44f?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 

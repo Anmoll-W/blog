@@ -1,8 +1,3 @@
----
-date: 2026-03-30
-tags: [engineering, testing, telegram, debugging]
-series: building-chalotripbot
----
 <!-- source_session: 2026-03-30_bug-fixes-and-deploy -->
 
 # Live Testing Revealed the Bot Was Fundamentally Broken
@@ -48,6 +43,12 @@ Live testing with real users who are not the builder reveals failure paths that 
 Silent no-ops are corrosive to user trust in a way that errors are not. An error gives the user something to report. A silent no-op gives them nothing, and they leave assuming the product does not work, because it does not.
 
 Tracing a form submit handler to the database write, rather than watching the UI, is the only reliable way to verify that a form is working. A convincing success state proves nothing about what happened in the backend.
+
+---
+
+**[2026-03-30](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![testing](https://img.shields.io/badge/testing-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![telegram](https://img.shields.io/badge/telegram-0088cc?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Building ChalotripBot →](../series/building-chalotripbot.md)
 
 ## Related
 

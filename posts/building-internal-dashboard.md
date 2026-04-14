@@ -1,8 +1,3 @@
----
-date: 2026-04-01
-tags: [engineering, supabase, nextjs, ai]
-series: ""
----
 <!-- source_session: 2026-04-01_supportdash-initial-setup -->
 
 # Building an Internal Support Dashboard: From Broken Scaffold to Live Data
@@ -62,6 +57,10 @@ Inheriting a scaffold means auditing its assumptions before writing a line of fe
 Silent failures require explicit output verification. An app that loads without errors is not the same as an app that is working correctly. Checking actual rendered values and actual database query results is not optional in early setup sessions.
 
 Discovering that a problem does not exist is a good outcome, not a wasted plan. The sync layer was dropped cleanly once the evidence showed it was unnecessary. Updating the plan and moving on was faster than building something that was not needed.
+
+---
+
+**[2026-04-01](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![supabase](https://img.shields.io/badge/supabase-3ecf8e?style=flat-square&logoColor=white)](../README.md#all-posts) [![nextjs](https://img.shields.io/badge/nextjs-000000?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

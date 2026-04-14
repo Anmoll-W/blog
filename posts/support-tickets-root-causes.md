@@ -1,8 +1,3 @@
----
-date: 2026-04-08
-tags: [engineering, debugging, wordpress, product]
-series: ""
----
 <!-- source_session: 2026-04-08_bug-fix-pr6167 -->
 
 # From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint
@@ -62,6 +57,10 @@ The ratio of reported issues to root causes is rarely 1:1. Mapping 70 reports to
 Failure cache TTLs deserve explicit review separate from success cache TTLs. The question to ask at every cache write is: if this cached value is wrong, what is the user experience, and for how long? That question produces different answers for success states and failure states.
 
 Third-party compatibility failures are invisible until you look for them. The signal is support volume from a specific user segment (Divi users, Elementor users) that emerges after a major third-party release. The investigation starts at the integration layer, not at the plugin's own code.
+
+---
+
+**[2026-04-08](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![wordpress](https://img.shields.io/badge/wordpress-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

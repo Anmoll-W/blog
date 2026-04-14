@@ -1,8 +1,3 @@
----
-date: 2026-03-30
-tags: [engineering, silent-failures, telegram, debugging]
-series: silent-failures
----
 <!-- source_session: 2026-03-30_live-testing-and-nlp-fixes -->
 
 # Telegram Privacy Mode: The Silent Setting That Broke Natural Language
@@ -64,6 +59,12 @@ When a subset of input types works and another does not, look at the delivery or
 Every state in a state machine that can receive user input needs an explicit response. A missing case is a bug, not a gap to fill later.
 
 A parser validated against one format is validated against nothing. Format normalization for real user input requires testing with the full range of ways a human would actually express the concept.
+
+---
+
+**[2026-03-30](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![telegram](https://img.shields.io/badge/telegram-0088cc?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 

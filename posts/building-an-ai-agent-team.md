@@ -1,8 +1,3 @@
----
-date: 2026-04-10
-tags: [ai-agents, personas, prompt-engineering, vault, obsidian, knowledge-management]
-series: vault-as-os
----
 <!-- source_session: 2026-04-10_agent-team-v2-launch -->
 
 # Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas
@@ -70,6 +65,12 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 **Harper's 3-evidence rule prevents premature agent creation.** Do not create a new agent until you have seen the same need arise three times across different sessions. Agent proliferation is a real risk.
 
 **Flat over hierarchical for small teams.** Hierarchy adds coordination overhead. At under 15 agents, clear domain ownership and a routing table is enough.
+
+---
+
+**[2026-04-10](../README.md#all-posts)** · [![ai-agents](https://img.shields.io/badge/ai--agents-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![personas](https://img.shields.io/badge/personas-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![prompt-engineering](https://img.shields.io/badge/prompt--engineering-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![obsidian](https://img.shields.io/badge/obsidian-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![knowledge-management](https://img.shields.io/badge/knowledge--management-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Vault as OS →](../series/vault-as-os.md)
 
 ## Related
 

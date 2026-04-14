@@ -1,8 +1,3 @@
----
-date: 2026-03-29
-tags: [engineering, silent-failures, nextjs, debugging]
-series: silent-failures
----
 <!-- source_session: 2026-03-29_boarding-pass-redesign -->
 
 # Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font
@@ -58,6 +53,12 @@ The build succeeding is not evidence that the page works. In all three cases, th
 When debugging layout issues in Next.js, the overflow properties at every level of the component tree matter. One `overflow: visible` on a parent can expose bleed from multiple children simultaneously.
 
 Font rendering failures in the Turbopack pipeline are silent. If a section of a page is blank with no console error and the DOM is correct, test a font swap before investigating CSS.
+
+---
+
+**[2026-03-29](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![nextjs](https://img.shields.io/badge/nextjs-000000?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 

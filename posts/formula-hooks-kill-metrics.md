@@ -1,8 +1,3 @@
----
-date: 2026-04-10
-tags: [ai, systems, content, product]
-series: ""
----
 <!-- source_session: 2026-04-10_mac-cleanup-and-maya-feedback -->
 
 # Formula Hooks Kill the Metric They Optimize For
@@ -51,6 +46,10 @@ Performance data is a prior, not a policy. When you encode "X always wins" into 
 Hook types are perishable. Format fatigue is real on LinkedIn and every other feed-based platform. A format that earns reposts because it is surprising stops earning reposts once the audience has seen it 20 times. Rotation is not a creative preference. It is how you keep the signal alive.
 
 Content type should gate format selection. An agent that ignores content type when choosing hooks will produce technically correct and contextually wrong output every time the content is personal, operational, or confessional. The routing logic needs to be explicit, not implied.
+
+---
+
+**[2026-04-10](../README.md#all-posts)** · [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![content](https://img.shields.io/badge/content-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

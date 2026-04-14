@@ -1,8 +1,3 @@
----
-date: 2026-04-05
-tags: [vault, obsidian, automation, launchagent, ai, knowledge-management]
-series: vault-as-os
----
 <!-- source_session: 2026-04-05_vault-os-complete -->
 
 # From Manual to Automatic: How I Built a Vault OS That Runs Itself
@@ -98,6 +93,12 @@ This is what a knowledge system should feel like: ambient, not demanding.
 **UTC conversion for IST requires care.** IST is UTC+5:30. Always document the conversion explicitly in the plist file or the shell script header. A missed 30 minutes will shift your scheduled run by half an hour every day.
 
 **Verify actual state after an agent runs.** The completion notification tells you the job finished. It does not tell you the job succeeded. Always read the output.
+
+---
+
+**[2026-04-05](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![obsidian](https://img.shields.io/badge/obsidian-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![automation](https://img.shields.io/badge/automation-2ea44f?style=flat-square&logoColor=white)](../README.md#all-posts) [![launchagent](https://img.shields.io/badge/launchagent-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![knowledge-management](https://img.shields.io/badge/knowledge--management-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Vault as OS →](../series/vault-as-os.md)
 
 ## Related
 

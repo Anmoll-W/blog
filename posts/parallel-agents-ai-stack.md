@@ -1,8 +1,3 @@
----
-date: 2026-03-31
-tags: [ai, engineering, product, systems]
-series: building-chalotripbot
----
 <!-- source_session: 2026-03-31_chalo-strategy-ai-stack-audit -->
 
 # Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams
@@ -75,6 +70,12 @@ Parallel agents require shared domain constraints documented before work starts,
 Genuine parallelism requires streams with no shared working-tree dependencies. Streams that share schema or state are serialized work in disguise.
 
 Tool audits have more value when paired with a pruning rule. Adding tools is easy. The constraint that each addition must displace something else forces actual tradeoff thinking.
+
+---
+
+**[2026-03-31](../README.md#all-posts)** · [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Building ChalotripBot →](../series/building-chalotripbot.md)
 
 ## Related
 

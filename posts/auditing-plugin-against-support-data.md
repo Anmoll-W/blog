@@ -1,8 +1,3 @@
----
-date: 2026-04-08
-tags: [engineering, product, debugging, wordpress]
-series: ""
----
 <!-- source_session: 2026-04-08_codebase-audit-bug-fixes -->
 
 # How to Audit a Production Codebase Against Its Own Support Data
@@ -72,6 +67,10 @@ The most dangerous production bugs are the ones that produce no errors. Silent f
 Support category distribution is a better audit entry point than code architecture documentation. The categories reflect where users are actually experiencing pain, not where the engineers think the complexity is.
 
 Ruling out false positives is as important as finding real bugs. Fixing code that is working correctly based on a surface-level read is worse than leaving it alone.
+
+---
+
+**[2026-04-08](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![wordpress](https://img.shields.io/badge/wordpress-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

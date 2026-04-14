@@ -1,8 +1,3 @@
----
-date: 2026-04-12
-tags: [vault, ai, systems, prompt-engineering]
-series: vault-as-os
----
 <!-- source_session: 2026-04-12_agent-management-v3-complete -->
 
 # From Identity Files to Persona Stubs: Redesigning the Vault Agent System
@@ -68,6 +63,12 @@ Stub layers are underused in agent design. Most systems I have seen either load 
 Descriptive naming pays compound interest. Arbitrary names (Kai, Ren, Noor) are fine when you designed the system and have it memorized. They are friction for every future session where you need to reason about routing. Domain labels in the stub cost almost nothing and make the routing table self-documenting.
 
 Approach rejection is part of the design artifact. I evaluated five approaches and rejected four before landing on Approach E. That rejection history is worth keeping. When someone asks why the system does not use a single router agent, the answer is in the decisions file, not lost to memory.
+
+---
+
+**[2026-04-12](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![prompt-engineering](https://img.shields.io/badge/prompt--engineering-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Vault as OS →](../series/vault-as-os.md)
 
 ## Related
 

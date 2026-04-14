@@ -1,8 +1,3 @@
----
-date: 2026-04-08
-tags: [github, portfolio, personal-branding, product-management, building-in-public]
-series: github-is-your-portfolio
----
 <!-- source_session: 2026-04-08_github-only-portfolio-strategy -->
 
 # GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README
@@ -73,6 +68,12 @@ The portfolio site repository will stay public with an archived notice. The code
 **Your tool list is a positioning statement.** It communicates your perspective before anyone reads a word. Choose it deliberately.
 
 **An incomplete but focused presence beats a complete but scattered one.** A well-crafted GitHub profile with three great project READMEs is more credible than a polished portfolio site and a mediocre GitHub profile.
+
+---
+
+**[2026-04-08](../README.md#all-posts)** · [![github](https://img.shields.io/badge/github-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![portfolio](https://img.shields.io/badge/portfolio-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![personal-branding](https://img.shields.io/badge/personal--branding-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product-management](https://img.shields.io/badge/product--management-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![building-in-public](https://img.shields.io/badge/building--in--public-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [GitHub is Your Portfolio →](../series/github-is-your-portfolio.md)
 
 ## Related
 

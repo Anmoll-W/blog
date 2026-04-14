@@ -1,8 +1,3 @@
----
-date: 2026-04-09
-tags: [code-review, ai-coding, wordpress, debugging, silent-bugs, php]
-series: silent-failures
----
 <!-- source_session: 2026-04-09_pr6167-cto-review-corrections -->
 
 # When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses
@@ -131,6 +126,12 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 **Read the consumer before changing output shape.** PHP and JavaScript form a contract. Both sides need to match.
 
 **Ask AI to trace, not just fix.** "Trace the data path and tell me its state at each step" produces better analysis than "find and fix bugs."
+
+---
+
+**[2026-04-09](../README.md#all-posts)** · [![code-review](https://img.shields.io/badge/code--review-e65c00?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai-coding](https://img.shields.io/badge/ai--coding-e65c00?style=flat-square&logoColor=white)](../README.md#all-posts) [![wordpress](https://img.shields.io/badge/wordpress-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-bugs](https://img.shields.io/badge/silent--bugs-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![php](https://img.shields.io/badge/php-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 

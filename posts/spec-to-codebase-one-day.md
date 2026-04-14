@@ -1,8 +1,3 @@
----
-date: 2026-04-10
-tags: [engineering, product, ai, buildathon]
-series: ""
----
 <!-- source_session: 2026-04-10_design-and-build -->
 
 # From Problem Space to Working Codebase in One Day
@@ -70,6 +65,10 @@ The design session and the build session are most valuable when they happen on t
 Mock data first is not a shortcut. It is a deliberate prioritization of navigability over correctness. A product you can navigate produces better feedback earlier. Correct data in a product no one has seen yet is expensive inventory.
 
 The separation of designer and engineer personas prevents the most common Day 2 failure mode: designs that get simplified during build for reasons that have nothing to do with user needs and everything to do with the builder's energy level.
+
+---
+
+**[2026-04-10](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![buildathon](https://img.shields.io/badge/buildathon-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

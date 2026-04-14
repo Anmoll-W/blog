@@ -1,8 +1,3 @@
----
-date: 2026-04-08
-tags: [github, portfolio, personal-branding]
-series: github-is-your-portfolio
----
 <!-- source_session: 2026-04-08_github-profile-rebuild -->
 
 # Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything
@@ -56,6 +51,12 @@ Running a visual design session before writing produces better structure. Decidi
 Rejecting GitHub stats widgets is not a preference, it is a product decision. The metric you choose to display shapes how a reader interprets everything else on the page. Commit frequency is the wrong metric for a PM portfolio.
 
 The constraint of standard markdown is a feature. It forces every design decision to be a content decision.
+
+---
+
+**[2026-04-08](../README.md#all-posts)** · [![github](https://img.shields.io/badge/github-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![portfolio](https://img.shields.io/badge/portfolio-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![personal-branding](https://img.shields.io/badge/personal--branding-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [GitHub is Your Portfolio →](../series/github-is-your-portfolio.md)
 
 ## Related
 

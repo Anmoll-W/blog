@@ -1,8 +1,3 @@
----
-date: 2026-04-10
-tags: [github, portfolio, personal-branding]
-series: github-is-your-portfolio
----
 <!-- source_session: 2026-04-10_wikipedia-style-readme -->
 
 # Why I Rebuilt My GitHub Profile as a Wikipedia Article
@@ -56,6 +51,12 @@ The shift from narrative format to Wikipedia format was not an aesthetic upgrade
 The infobox solves a real problem: two readers arrive at a profile with different intentions and different amounts of time. Serving both without asking either to adapt requires separating the fact layer from the narrative layer. The infobox is the fact layer.
 
 Hosting assets inside the repo and referencing them via raw.githubusercontent.com is the correct choice for any image that needs to be permanently available. The short-term convenience of an external CDN link is not worth the long-term fragility.
+
+---
+
+**[2026-04-10](../README.md#all-posts)** · [![github](https://img.shields.io/badge/github-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![portfolio](https://img.shields.io/badge/portfolio-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![personal-branding](https://img.shields.io/badge/personal--branding-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [GitHub is Your Portfolio →](../series/github-is-your-portfolio.md)
 
 ## Related
 

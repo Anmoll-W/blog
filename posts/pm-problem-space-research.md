@@ -1,8 +1,3 @@
----
-date: 2026-04-09
-tags: [product, ai, pm, research]
-series: ""
----
 <!-- source_session: 2026-04-09_problem-space-research -->
 
 # Research Before Building: How I Map a Problem Space from Scratch
@@ -68,6 +63,10 @@ The archetypes that get cut matter as much as the archetypes that survive. When 
 Secondary research shapes thinking before it is validated. The original document was not wrong, but it was accepted at face value by the team. Rebuilding it from scratch found the same problem statement through a different path, which strengthened confidence in the statement, and found the archetype gaps that the original had missed.
 
 The paid-tier assumption is almost always wrong on the first pass. Who you think will pay is usually the person who talks loudest about the problem. Who actually pays is usually the person with the hardest deadline.
+
+---
+
+**[2026-04-09](../README.md#all-posts)** · [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![pm](https://img.shields.io/badge/pm-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![research](https://img.shields.io/badge/research-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

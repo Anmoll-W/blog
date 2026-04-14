@@ -1,8 +1,3 @@
----
-date: 2026-03-25
-tags: [vault, ai, systems, obsidian]
-series: vault-as-os
----
 <!-- source_session: 2026-03-25_claude-dispatch-obsidian-vault -->
 
 # Three Claude Tools, One Vault: The Architecture Behind the System
@@ -42,6 +37,12 @@ The vault is not a notes app anymore. It is a shared memory layer that all three
 Reliability matters more than capability on mobile. Dispatch works well for inbox triage, lookups, and meeting prep. Multi-step file organization and cross-app chains fail unpredictably. Keep mobile tasks simple and single-step.
 
 The insight that unlocked this system: context does not belong in each tool. It belongs in a shared file system that all tools read. Once that shift happened, the tools stopped feeling disconnected.
+
+---
+
+**[2026-03-25](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![obsidian](https://img.shields.io/badge/obsidian-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Vault as OS →](../series/vault-as-os.md)
 
 ## Related
 

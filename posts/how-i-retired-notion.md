@@ -1,8 +1,3 @@
----
-date: 2026-04-08
-tags: [vault, systems, obsidian, ai]
-series: vault-as-os
----
 <!-- source_session: 2026-04-08_vault-audit-notion-migration -->
 
 # How I Retired Notion in One Session
@@ -50,6 +45,12 @@ The migration did not take long because most of the Notion content was already s
 The rule that emerged: any knowledge that needs to be readable by Claude Code must live as Markdown in the vault. Everything else is optional. Notion had become a graveyard for context that the system could not use.
 
 One more pattern: the stale path problem is invisible until it breaks something. After any vault restructure, run a search for old folder names before moving on. Silent misdirections are worse than obvious errors.
+
+---
+
+**[2026-04-08](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![obsidian](https://img.shields.io/badge/obsidian-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Vault as OS →](../series/vault-as-os.md)
 
 ## Related
 

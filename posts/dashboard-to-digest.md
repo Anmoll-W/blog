@@ -1,8 +1,3 @@
----
-date: 2026-04-13
-tags: [engineering, product, ai, helpscout, vercel]
-series: ""
----
 <!-- source_session: 2026-04-13_digest-pipeline-smoke-test -->
 
 # Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead
@@ -74,6 +69,10 @@ The fix is a GitHub Action at 01:00 UTC — 30 minutes before the cron:
 3. Triggers a Vercel production redeployment to pick up the new value
 
 The system is fully autonomous. No manual token management, no expiry monitoring, no intervention needed.
+
+---
+
+**[2026-04-13](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![helpscout](https://img.shields.io/badge/helpscout-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![vercel](https://img.shields.io/badge/vercel-24292f?style=flat-square&logoColor=white)](../README.md#all-posts)
 
 ## Related
 

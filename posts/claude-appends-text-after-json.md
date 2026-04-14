@@ -1,8 +1,3 @@
----
-date: 2026-04-04
-tags: [claude-api, debugging, json, silent-bugs, typescript, ai-engineering]
-series: silent-failures
----
 <!-- source_session: 2026-04-04_e2e-testing-and-json-fix -->
 
 # Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites
@@ -88,6 +83,12 @@ This matters: your test pass or fail logic must account for what the framework a
 **Verify test assertions against framework behavior.** An empty 200 from grammY is a success. A test that expects `{"ok": true}` and gets `""` will report a false failure.
 
 **Apply the fix at every parse site, not just the one that triggered the error.** Once you understand the root cause, audit all similar patterns. There were 8 call sites. All 8 needed the fix.
+
+---
+
+**[2026-04-04](../README.md#all-posts)** · [![claude-api](https://img.shields.io/badge/claude--api-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![json](https://img.shields.io/badge/json-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-bugs](https://img.shields.io/badge/silent--bugs-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![typescript](https://img.shields.io/badge/typescript-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai-engineering](https://img.shields.io/badge/ai--engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 

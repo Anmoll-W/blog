@@ -1,8 +1,3 @@
----
-date: 2026-04-13
-tags: [vault, ai, systems, prompt-engineering]
-series: vault-as-os
----
 <!-- source_session: 2026-04-13_vera-and-output-measurement -->
 
 # The Eval Agent: Adding a Quality Gate to an AI Workflow
@@ -66,6 +61,12 @@ Production and evaluation are separate roles, and mixing them into one agent doe
 The rubric is the memory. An eval agent without a rubric is just free-form feedback, which decays into opinion. The rubric captures what has gone wrong before, and makes sure the same class of mistake gets checked every time.
 
 The blind-spot question is not optional. Checking known criteria is necessary but not sufficient. The hardest mistakes to catch are the ones that no criterion covers yet — the assumption so embedded in the work that it never got questioned. Forcing that question, even when the answer is "nothing, this looks fine," is the check that matters most.
+
+---
+
+**[2026-04-13](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![prompt-engineering](https://img.shields.io/badge/prompt--engineering-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Vault as OS →](../series/vault-as-os.md)
 
 ## Related
 

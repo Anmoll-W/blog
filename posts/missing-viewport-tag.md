@@ -1,8 +1,3 @@
----
-date: 2026-04-10
-tags: [engineering, silent-failures, css, mobile]
-series: silent-failures
----
 <!-- source_session: 2026-04-10_footer-badges-viewport-fix -->
 
 # Missing Viewport Tag: The Silent Root of All Mobile Failures
@@ -70,6 +65,12 @@ Prototype-to-production migrations need an explicit HTML document parity check. 
 Browser devtools responsive emulation does not test for a missing viewport tag. It applies its own viewport handling. Physical device testing or a strict emulation mode is required to surface this failure.
 
 Silent rendering failures are the hardest to locate not because they are subtle but because they produce no signal. No error, no warning, no broken state indicator. The correct investigation path when CSS behavior diverges between environments is: verify the base HTML before examining the CSS.
+
+---
+
+**[2026-04-10](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![css](https://img.shields.io/badge/css-264de4?style=flat-square&logoColor=white)](../README.md#all-posts) [![mobile](https://img.shields.io/badge/mobile-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 

@@ -1,8 +1,3 @@
----
-date: 2026-04-04
-tags: [engineering, telegram, silent-failures, product]
-series: silent-failures
----
 <!-- source_session: 2026-04-04_in-group-preference-collection -->
 
 # Telegram Bots Cannot DM Users Who Have Not Pressed Start
@@ -60,6 +55,12 @@ Telegram DM blocking is silent. The API returns success. There is no error to ca
 In-group inline keyboards with per-user popups are a cleaner pattern for group preference collection than individual DMs. The group counter creates social accountability that actually improves completion rates.
 
 Document platform constraints in a testable form, not just a note form. "Bots cannot DM users who have not pressed START" is a note. "Before shipping any flow that sends DMs to group members, test with one account that has never pressed START" is a test.
+
+---
+
+**[2026-04-04](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![telegram](https://img.shields.io/badge/telegram-0088cc?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts)
+
+**Series:** [Silent Failures →](../series/silent-failures.md)
 
 ## Related
 
