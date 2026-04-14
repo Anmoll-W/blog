@@ -12,7 +12,7 @@ related: ["building-internal-dashboard.md", "support-tickets-root-causes.md", "a
 
 ## What I Built (and Why It Was Wrong)
 
-Three months ago I built a support dashboard. Charts, category breakdowns, response time percentiles, ticket volumes by day. It pulled data from the support inbox, stored every ticket in Supabase, and surfaced everything in a Next.js interface with filters and drill-downs.
+Twelve days ago I built a support dashboard. Charts, category breakdowns, response time percentiles, ticket volumes by day. It pulled data from the support inbox, stored every ticket in Supabase, and surfaced everything in a Next.js interface with filters and drill-downs.
 
 It looked like exactly what a data-driven team should have.
 
