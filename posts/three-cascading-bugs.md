@@ -11,6 +11,7 @@ related:
   - telegram-privacy-mode.md
   - telegram-bots-cant-dm.md
   - missing-viewport-tag.md
+  - launchd-icloud-silent-block.md
 ---
 
 # Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font
@@ -74,6 +75,7 @@ Font rendering failures in the Turbopack pipeline are silent. If a section of a 
 - [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure from the same session context
 - [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another invisible failure class in the same project
 - [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure that produced zero error output
+- [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — an infrastructure version of the same pattern: a clean `launchctl list` was not evidence the agent could run
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

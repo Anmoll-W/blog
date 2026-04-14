@@ -11,6 +11,7 @@ related:
   - telegram-privacy-mode.md
   - telegram-bots-cant-dm.md
   - when-the-ai-fix-is-wrong.md
+  - launchd-icloud-silent-block.md
 ---
 
 # Missing Viewport Tag: The Silent Root of All Mobile Failures
@@ -86,6 +87,7 @@ Silent rendering failures are the hardest to locate not because they are subtle 
 - [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure with the same structure
 - [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another invisible failure class
 - [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — when the analysis of a silent failure is itself incorrect
+- [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — another "nothing to react to" failure, this time at the OS scheduling layer instead of the render layer
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

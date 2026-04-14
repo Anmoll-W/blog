@@ -23,7 +23,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
 | [Vault as OS](series/vault-as-os.md) | 5 | Building an Obsidian vault into an automated knowledge system with 11 AI personas running on schedule |
-| [Silent Failures](series/silent-failures.md) | 6 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress |
+| [Silent Failures](series/silent-failures.md) | 7 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
 
@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-14 | [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](posts/launchd-icloud-silent-block.md) | Silent Failures | engineering, silent-failures, macos, launchd |
 | 2026-04-13 | [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](posts/dashboard-to-digest.md) | — | engineering, product, ai, helpscout |
 | 2026-04-13 | [The Eval Agent: Adding a Quality Gate to an AI Workflow](posts/the-eval-agent.md) | Vault as OS | vault, ai, systems |
 | 2026-04-12 | [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](posts/persona-layer-architecture.md) | Vault as OS | vault, ai, systems |

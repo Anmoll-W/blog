@@ -10,6 +10,7 @@ related:
   - how-i-retired-notion.md
   - building-an-ai-agent-team.md
   - persona-layer-architecture.md
+  - launchd-icloud-silent-block.md
 ---
 
 # From Manual to Automatic: How I Built a Vault OS That Runs Itself
@@ -112,6 +113,7 @@ This is what a knowledge system should feel like: ambient, not demanding.
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating the knowledge base that feeds these automated agents
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the next step after automating individual workflows was building a coordinated team of AI personas that share knowledge
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 agent architecture that runs inside this system
+- [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — what broke in the scheduling layer of this exact system, how it was diagnosed, and why "registered" is not "running"
 
 ---
 

@@ -26,6 +26,9 @@ This series documents specific cases from real projects. Each post covers one bu
 6. [Missing Viewport Tag: The Silent Root of All Mobile Failures](../posts/missing-viewport-tag.md)
    A production site missing the viewport meta tag: every CSS breakpoint fires against a 980-pixel virtual viewport, not the device. The development environment injected the tag automatically, making the bug invisible until physical device testing. One line in `header.php` restored full mobile responsiveness.
 
+7. [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](../posts/launchd-icloud-silent-block.md)
+   Scheduled vault automations that were registered with `launchctl list` but never actually running. launchd exec returned EPERM because the runner scripts lived inside an iCloud-synced folder. A second finding in the same audit: a plist that had been loaded pointing at a shell script that never existed. Fix required moving every runner out of iCloud and adding artifact checks, not just error checks.
+
 ## What Is Coming
 
 - PHP magic quotes: when the data you are about to sanitize is already sanitized

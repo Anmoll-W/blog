@@ -13,6 +13,7 @@ related:
   - parallel-agents-ai-stack.md
   - formula-hooks-kill-metrics.md
   - the-eval-agent.md
+  - launchd-icloud-silent-block.md
 ---
 
 # Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas
@@ -90,6 +91,7 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 - [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](parallel-agents-ai-stack.md) — the parallel agent pattern that this team architecture evolved from
 - [Formula Hooks Kill the Metric They Optimize For](formula-hooks-kill-metrics.md) — what happens when an agent executes policy without understanding intent
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — the quality layer built on top of this team: a 13th agent whose only job is to stress-test what the other twelve produce
+- [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — what happens when the scheduler that invokes this team silently refuses to run, and the audit that surfaced it
 
 ---
 
