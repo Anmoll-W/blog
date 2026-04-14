@@ -4,6 +4,8 @@
 
 Every session that boots with 12 full agent identity files is a session that started with a context window already under pressure. I ran that system for two months before I sat down to fix it.
 
+The cost was not always visible. But there were sessions where a long-running task would degrade halfway through, or where the agent would lose track of earlier instructions, and I would wonder whether the 24 KB of persona context loaded at the start had anything to do with it. I had built a system optimised for agent readiness and accepted context pressure as the price. I had not stopped to ask whether I needed all twelve agents ready for a session that only needed one.
+
 ## The Problem with Version 2
 
 The previous agent system had 12 personas living in an `Agents/[Name]/` folder structure. Each persona had an `identity.md` file with their domain, decision-making style, never-do rules, and accumulated memory. When Claude started a session inside the vault, the boot sequence loaded all of them.
@@ -58,11 +60,13 @@ The old `Agents/` folder is archived at `Assets/archive/agents-v2/`. Not deleted
 
 ## What I Learned
 
-Stub layers are underused in agent design. Most systems I have seen either load everything or load nothing. The middle ground, always-load a routing summary and on-demand-load the full definition, is the right default for any system with more than three or four agents.
+Stub layers are underused in agent design. Most systems I have seen either load everything or load nothing. The middle ground — always-load a routing summary and on-demand-load the full definition — is the right default for any system with more than three or four agents.
 
-Descriptive naming pays compound interest. Arbitrary names (Kai, Ren, Noor) are fine when you designed the system and have it memorized. They are friction for every future session where you need to reason about routing. Domain labels in the stub cost almost nothing and make the routing table self-documenting.
+Descriptive naming pays compound interest. Arbitrary names (Kai, Ren, Noor) are fine when you designed the system and have it memorised. They are friction for every future session where you need to reason about routing. Domain labels in the stub cost almost nothing and make the routing table self-documenting.
 
 Approach rejection is part of the design artifact. I evaluated five approaches and rejected four before landing on Approach E. That rejection history is worth keeping. When someone asks why the system does not use a single router agent, the answer is in the decisions file, not lost to memory.
+
+On decisions: the right question when a system feels slow or expensive is not "how do I make this faster?" It is "what am I loading that I do not need?" I had been treating agent readiness as a binary — either loaded or not loaded. The decision that changed the system was separating routing depth from context depth. Most sessions need routing. Few sessions need the full identity. Building a layer for each, instead of collapsing them together, is a design pattern that applies well beyond agent systems. Any time the cost of "ready for everything" is being paid on sessions that only need one thing, the right move is a stub layer, not a bigger context window.
 
 ---
 

@@ -2,17 +2,21 @@
 
 # Research Before Building: How I Map a Problem Space from Scratch
 
-The worst research habit I have seen in product work is inheriting a problem statement and treating it as settled. Someone writes a document, it circulates, it earns a few comments, and then the team starts building against it. The document was never validated. The archetypes in it were never stress-tested. The problem framing was never challenged. It just accumulated gravity by existing.
+On Day 1 of a six-day buildathon, the team had a secondary research document with a problem statement and three user archetypes. The document was well-written. The framing was credible. Everyone had read it. And the team was about to spend the next six days building against it without checking whether the archetypes were right, the paid-tier assumption was grounded, or the problem statement could survive contact with independent data.
 
-This post is about what I did instead, and what it revealed.
+That is the moment I have seen go wrong the most in product work. A document circulates, earns a few comments, accumulates gravity by existing, and then becomes the foundation for a product nobody has actually validated. The problem framing was never challenged. The archetypes were never stress-tested. The research was inherited, not earned.
+
+This post is about the decision I made instead, and what it revealed.
 
 ## The Starting Point
 
-This was Day 1 of the PM Learning Companion buildathon (Rethink Systems Cohort 7, April 9-14, 2026). The team had a secondary research document with a problem statement and three user archetypes: Climber, Specialist, Scanner. Reasonable starting point. The document was well-written. The problem framing was credible.
+This was Day 1 of the PM Learning Companion buildathon (Rethink Systems Cohort 7, April 9-14, 2026). The team had a secondary research document with a problem statement and three user archetypes: Climber, Specialist, Scanner.
 
-I set it aside and rebuilt the analysis from scratch using live web research across eight dimensions: market size for PM learning tools, the PM skills gap between what employers report and what PMs believe about themselves, content consumption habits, newsletter readership patterns, the forgetting curve and knowledge degradation timelines, promotion failure patterns from hiring managers, the rate at which AI is shifting the required PM skill set, and interview preparation behavior.
+The decision: set it aside and rebuild the analysis from scratch.
 
-The goal was not to disprove the original document. The goal was to arrive at the problem statement independently, so that any agreement would be grounded rather than inherited.
+Not to disprove it. The document was not wrong. The tradeoff was between speed (refine the existing document and move to solution space) and confidence (arrive at the problem statement independently, so any agreement is grounded rather than inherited). I chose confidence. If the independent research arrived at the same problem statement, that agreement would mean something. If it diverged, the team needed to know before Day 2.
+
+The rebuild used live web research across eight dimensions: market size for PM learning tools, the PM skills gap between what employers report and what PMs believe about themselves, content consumption habits, newsletter readership patterns, the forgetting curve and knowledge degradation timelines, promotion failure patterns from hiring managers, the rate at which AI is shifting the required PM skill set, and interview preparation behavior.
 
 ## What the Research Produced
 
@@ -58,11 +62,11 @@ That convergence would not have appeared if I had accepted the original framing 
 
 ## What I Learned
 
-The archetypes that get cut matter as much as the archetypes that survive. When you trim a user population to three personas, you are making a claim about who the product is not for. That claim should be deliberate, not a side effect of stopping research early.
+**The archetypes that get cut matter as much as the archetypes that survive.** When you trim a user population to three personas, you are making a claim about who the product is not for. That claim should be deliberate, not a side effect of stopping research early. The decision-making principle: whenever you see three or fewer archetypes in a research document, ask what was excluded, not just what survived. The cut is where the assumptions hide.
 
-Secondary research shapes thinking before it is validated. The original document was not wrong, but it was accepted at face value by the team. Rebuilding it from scratch found the same problem statement through a different path, which strengthened confidence in the statement, and found the archetype gaps that the original had missed.
+**Secondary research shapes thinking before it is validated.** The original document was not wrong, but it was accepted at face value by the team. Rebuilding from scratch found the same problem statement through a different path — which strengthened confidence in the statement — and found the archetype gaps the original had missed. The rule this adds to the PM checklist: if a research document is the first thing a team reads together, it will become the foundation for every subsequent decision before anyone has pressure-tested it. Arriving at the problem statement independently is not redundancy. It is verification.
 
-The paid-tier assumption is almost always wrong on the first pass. Who you think will pay is usually the person who talks loudest about the problem. Who actually pays is usually the person with the hardest deadline.
+**The paid-tier assumption is almost always wrong on the first pass.** Who you think will pay is usually the person who talks loudest about the problem. Who actually pays is usually the person with the hardest deadline. The research discipline that surfaces this: do not ask who has the problem. Ask who has the problem and a deadline, and what they have already paid to solve it.
 
 ---
 

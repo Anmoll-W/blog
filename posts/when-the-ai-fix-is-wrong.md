@@ -6,11 +6,11 @@
 
 ## Context
 
-In April 2026 I submitted a pull request to the LinkWhisper WordPress plugin codebase. The PR contained 9 bug fixes across multiple files, all generated with AI assistance by tracing 1,165 support tickets back to root causes in the PHP code.
+I had been using AI tools to triage 1,165 support tickets and trace them back to root causes in the PHP codebase of a WordPress SEO plugin. The output was a PR with 9 fixes. I reviewed the AI's reasoning on each one. The code looked correct. I submitted it.
 
-Most of the fixes were correct. The CTO reviewed the PR, made corrections via a separate commit directly to the branch, and provided detailed feedback on what had been wrong.
+The decision I had made, implicitly, was to trust the AI's analysis without a full data-path trace on each fix. That decision cost me three reverts.
 
-Three fixes were reverted. One was corrected. The pattern behind all four errors was the same: the AI pattern-matched on the surface appearance of the code without tracing data lifecycle, reading domain semantics, or checking the math.
+The CTO reviewed the PR, made corrections via a separate commit directly to the branch, and provided detailed feedback on what had been wrong. Three fixes were reverted. One was corrected. The pattern behind all four errors was the same: the AI pattern-matched on the surface appearance of the code without tracing data lifecycle, reading domain semantics, or checking the math.
 
 This post documents each case in detail. If you are using AI tools for code review or bug fixing, this is what you need to watch for.
 
@@ -126,6 +126,8 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 **Read the consumer before changing output shape.** PHP and JavaScript form a contract. Both sides need to match.
 
 **Ask AI to trace, not just fix.** "Trace the data path and tell me its state at each step" produces better analysis than "find and fix bugs."
+
+**Reviewing AI-generated fixes requires a different checklist than reviewing human-written fixes.** When a human engineer adds escaping or changes a timeout value, they have usually read the surrounding context. When an AI does it, it has pattern-matched on a single line. The decision going forward: every AI-generated fix in a codebase I did not write gets a manual data-path trace before it goes into a PR. The AI surfaces candidates. I verify the context. These are two separate steps, not one.
 
 ---
 

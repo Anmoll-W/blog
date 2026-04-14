@@ -4,23 +4,13 @@
 
 ## What I Built (and Why It Was Wrong)
 
-Twelve days ago I built a support dashboard. Charts, category breakdowns, response time percentiles, ticket volumes by day. It pulled data from the support inbox, stored every ticket in Supabase, and surfaced everything in a Next.js interface with filters and drill-downs.
+Twelve days ago I built a support dashboard. I had just shipped it. I thought it was useful. When I checked the access logs to see who was using it, the answer was nobody. The dashboard had three users. Two of them were me on different machines. The third had not logged in since the day I sent the link.
 
-It looked like exactly what a data-driven team should have.
+The thing I had not asked before building it: what job does this tool need to do, and does a dashboard actually do that job?
 
-The problem: when I checked who was actually logging into it, the answer was nobody. Including me.
+The dashboard answered: "What does the last month of support data look like if you navigate to a URL and interact with filters?" That is a legitimate question. It was not the question anyone on the team was asking. The question that actually needed answering was: "What do I need to act on this morning, before my first call?" Those are different products. One lives in a browser. The other lives in your inbox. I had built the browser one — charts, category breakdowns, response time percentiles, ticket volumes by day, filters and drill-downs — without verifying that anyone wanted to visit a URL to get this information.
 
-I had built a product nobody asked for. The dashboard answered a question the team was not asking.
-
-The question it answered: "What does the last month of support data look like if you navigate to a URL and interact with filters?"
-
-The question that actually needed answering: "What do I need to act on this morning, before my first call?"
-
-Those are different products. One lives in a browser. The other lives in your inbox. I had built the browser one.
-
-The mistake was assuming that "access to data" and "making data useful" were the same problem. They are not. Access to data means building a place where data can be viewed. Making data useful means delivering the right signal to the right person at the right moment, without requiring any action from them.
-
-A dashboard requires the user to decide to open it, navigate to it, and then figure out what they are looking at. A digest removes all three steps.
+The decision I had deferred was whether to make support data available or make support data useful. I assumed they were the same problem. They are not. Access to data means building a place where data can be viewed. Making data useful means delivering the right signal to the right person at the right moment, without requiring any action from them. A dashboard requires the user to decide to open it, navigate to it, and then figure out what they are looking at. A digest removes all three steps.
 
 ## What I Changed
 
@@ -38,11 +28,11 @@ Total infrastructure cost: roughly one dollar a month in API calls.
 
 ## What I Learned
 
-**The job to be done is not "view dashboard."** It is "know what to act on this morning." Designing around the wrong job produces the wrong product. The right question before building any internal tool is not "how do we make the data available" but "what action does this data need to enable, and how close to that action does the delivery need to be?"
+**The job to be done is not "view dashboard."** It is "know what to act on this morning." Designing around the wrong job produces the wrong product. The technical lesson: before instrumenting any data pipeline, write out the specific moment of use — who is reading this, when, and what decision does it need to enable? If that moment requires the user to navigate somewhere, the delivery mechanism is probably wrong.
 
 **Storage costs are a product signal.** The database was growing because every ticket was being persisted on the assumption that it might be needed someday. It never was. If infrastructure is growing while usage is flat, that is not a capacity problem — it is a design problem. The data was being stored for a use case that did not exist.
 
-**Deletion is a product decision.** Removing the database was the highest-leverage thing shipped that week. Not a new feature, not an optimisation — a subtraction. The instinct in product work is almost always to add. But finding the thing that should not exist and removing it cleanly is also a product decision, and sometimes it is the right one.
+**Deletion is a product decision.** Removing the database was the highest-leverage thing shipped that week. Not a new feature, not an optimisation — a subtraction. The instinct in product work is almost always to add. The decision-making principle it exposed: before building any internal tool, ask whether the right move is to build at all, or whether the problem disappears if you change the delivery mechanism. The dashboard was not a bad implementation. It was the wrong answer to a question nobody had asked out loud.
 
 ## The HelpScout API Problems
 

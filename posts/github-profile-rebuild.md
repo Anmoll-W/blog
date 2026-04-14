@@ -2,7 +2,7 @@
 
 # Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything
 
-The previous session settled the strategic question: archive the React portfolio site, make GitHub the primary presence. This session was about execution. Going from that decision to a live profile README that could actually carry the weight the strategy assigned it.
+The strategic call had been made: archive the React portfolio site, make GitHub the primary presence. Now the profile README had to actually carry that weight. The risk was doing what most developers do by default — open the file, start writing, and end up with something that reads like a formatted CV. I had just archived a polished portfolio site for this. A CV-shaped README would make that tradeoff pointless.
 
 The first thing I did was not write markdown. It was run a structured design session to decide what the profile should feel like before a single line of content got written. That sequence matters. Writing before deciding on voice and structure produces something that reads like a first draft forever.
 
@@ -15,6 +15,8 @@ The data dashboard was rejected immediately. GitHub stats widgets measure commit
 The minimal editorial style has real appeal. Clean, hard to get wrong, does not overreach. But it leaves the reader doing all the interpretive work. A PM portfolio needs to show thinking, not just list outputs.
 
 Narrative story won. The profile should read like a PM presenting their work to a senior stakeholder: context first, then what was built, then why it mattered.
+
+This was not a neutral aesthetic preference. Rejecting the data dashboard was a product decision about what signal to send. Every PM who has had to argue against vanity metrics in a product review has been in this same position: the number is right there, it is easy to show, and it measures the wrong thing. Choosing not to display commit streaks on a PM portfolio is the same call. The metric you choose to display shapes how a reader interprets everything else on the page.
 
 ## The Specific Decisions Made
 
@@ -51,6 +53,8 @@ Running a visual design session before writing produces better structure. Decidi
 Rejecting GitHub stats widgets is not a preference, it is a product decision. The metric you choose to display shapes how a reader interprets everything else on the page. Commit frequency is the wrong metric for a PM portfolio.
 
 The constraint of standard markdown is a feature. It forces every design decision to be a content decision.
+
+The decision lesson: the format you choose is the argument you are making before anyone reads a word. A data dashboard argues "I commit frequently." A narrative profile argues "I think clearly and I know what my work means." Before choosing any format for any artifact — a deck, a README, a spec — the question worth asking first is: what claim does this format make by itself? Getting that question wrong is how you end up with a polished artifact that signals the opposite of what you intended.
 
 ---
 

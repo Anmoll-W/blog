@@ -2,9 +2,9 @@
 
 # Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font
 
-The build succeeded. The page loaded. Nothing on the surface indicated anything was wrong.
+I had shipped the boarding pass redesign. The build succeeded. The page loaded. I had told myself it was done.
 
-That is the setup for all three bugs from a boarding pass redesign session. The page was a full-viewport layout reimagined as a boarding pass: left 62% with editorial display headlines and flight data, right 38% stub with monospace labels and a call-to-action button. After deploying, three distinct failures appeared in sequence. None of them threw a visible error. Each one required a different diagnostic lens.
+It was not done. Three separate failures were waiting in production, none of them throwing an error, none of them visible in the development environment where the work had happened. The page was a full-viewport layout reimagined as a boarding pass: left 62% with editorial display headlines and flight data, right 38% stub with monospace labels and a call-to-action button. After deploying, each failure appeared in sequence. "The build succeeded" had turned out to mean very little about whether the page worked.
 
 ## Bug 1: Module-Level SDK Breaks the Build
 
@@ -53,6 +53,8 @@ The build succeeding is not evidence that the page works. In all three cases, th
 When debugging layout issues in Next.js, the overflow properties at every level of the component tree matter. One `overflow: visible` on a parent can expose bleed from multiple children simultaneously.
 
 Font rendering failures in the Turbopack pipeline are silent. If a section of a page is blank with no console error and the DOM is correct, test a font swap before investigating CSS.
+
+**"The build passed" is a claim, not a status.** Each of these failures was downstream of a clean build, which means a clean build had become my signal for "done." It was not. The decision I am carrying forward: any time I ship a visual redesign, the definition of done includes loading it on the actual target environment and scrolling through it, not just running the build. A five-minute check after deploy catches what a clean build cannot see.
 
 ---
 

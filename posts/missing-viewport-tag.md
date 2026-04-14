@@ -2,9 +2,9 @@
 
 # Missing Viewport Tag: The Silent Root of All Mobile Failures
 
-The breakpoints were correct. The media queries were correct. The Tailwind classes were correct. The prototype worked fine on mobile. None of that mattered, because the production site was missing one line of HTML that it had never had.
+I had built and tested a mobile-responsive UI. Multiple pages. Working breakpoints. I had checked it in devtools. When the CSS was ported into the production WordPress site, every mobile layout stopped working — on every page, on every device. The production site had never been tested on a real mobile device, and it had apparently never had a viewport tag.
 
-This is the story of a bug that is invisible by design, and the environment gap that made it possible.
+The breakpoints were correct. The media queries were correct. The Tailwind classes were correct. The prototype worked fine on mobile. None of that mattered, because the production site was missing one line of HTML that it had never had. I had designed and shipped a mobile experience on top of an HTML foundation I had never examined.
 
 ## What Happened
 
@@ -65,6 +65,8 @@ Prototype-to-production migrations need an explicit HTML document parity check. 
 Browser devtools responsive emulation does not test for a missing viewport tag. It applies its own viewport handling. Physical device testing or a strict emulation mode is required to surface this failure.
 
 Silent rendering failures are the hardest to locate not because they are subtle but because they produce no signal. No error, no warning, no broken state indicator. The correct investigation path when CSS behavior diverges between environments is: verify the base HTML before examining the CSS.
+
+**Shipping a feature into a new environment requires verifying the environment, not just the feature.** The mobile CSS worked. The HTML it depended on had never been checked. The decision I made — implicitly — was to treat the prototype environment and the production environment as equivalent for testing purposes. They were not. Prototype-to-production migrations now include a deliberate step: load the production HTML on a real device before marking anything mobile-responsive as done.
 
 ---
 

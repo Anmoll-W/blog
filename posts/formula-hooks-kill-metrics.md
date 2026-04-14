@@ -2,7 +2,11 @@
 
 # Formula Hooks Kill the Metric They Optimize For
 
-An AI agent will execute the policy you give it, not the intent behind the policy. When those two things diverge, the agent keeps executing and the metric quietly dies.
+I had a rule in my LinkedIn content system that said: "Reframe hooks are the top repost driver." The rule was true. It was based on real data. And it was quietly killing the metric it was trying to protect.
+
+I had not looked at post-level performance in a few weeks. The aggregate engagement numbers were up. What I had not checked was whether the Reframe format was still earning those reposts, or whether something else was carrying the aggregate while the format itself was becoming invisible. When I went back and looked at the last seven posts, six of them had Myth / Reality openers. Repost rate on that format had dropped. I had been watching the aggregate and assuming the formula was still working.
+
+This is not a story about an AI getting something wrong. It is a story about a rule that was correct at the time it was written, then applied at a scale the data did not anticipate, until the rule itself became the problem.
 
 ## What Happened
 
@@ -28,7 +32,7 @@ This is not a problem with Maya specifically. It is a structural problem in any 
 
 ## How I Fixed the Instruction
 
-The fix was not to remove the Reframe rule. It was to constrain it and add routing logic.
+The decision was not to delete the Reframe rule. The tradeoff: deleting it would have meant throwing away real signal about what earns reposts. Keeping it as-is would have meant the agent continued applying it indiscriminately. The right move was to constrain it and add routing logic — preserving the insight while adding the conditions the original rule had implicitly assumed but never stated.
 
 New rules in Maya's memory:
 
@@ -41,11 +45,11 @@ The Reframe rule did not disappear. It became a conditional. Apply it when the c
 
 ## What I Learned
 
-Performance data is a prior, not a policy. When you encode "X always wins" into an agent's instructions, you are describing past behavior in a low-competition environment. The rule will be applied in a future environment that the data did not observe.
+**Performance data is a prior, not a policy.** When you encode "X always wins" into an agent's instructions, you are describing past behavior in a low-competition environment. The rule will be applied in a future environment that the data did not observe. The technical lesson: every performance rule in an agent's skill file needs an expiry condition — a recency check, a frequency cap, or a content-type gate — because the conditions that made the rule true will not hold indefinitely.
 
-Hook types are perishable. Format fatigue is real on LinkedIn and every other feed-based platform. A format that earns reposts because it is surprising stops earning reposts once the audience has seen it 20 times. Rotation is not a creative preference. It is how you keep the signal alive.
+**Hook types are perishable.** Format fatigue is real on LinkedIn and every other feed-based platform. A format that earns reposts because it is surprising stops earning reposts once the audience has seen it 20 times. Rotation is not a creative preference. It is how you keep the signal alive. The decision-making principle: if a format has been your default for more than a month, the performance data justifying it is already stale. Check at the post level, not the aggregate.
 
-Content type should gate format selection. An agent that ignores content type when choosing hooks will produce technically correct and contextually wrong output every time the content is personal, operational, or confessional. The routing logic needs to be explicit, not implied.
+**Content type should gate format selection.** An agent that ignores content type when choosing hooks will produce technically correct and contextually wrong output every time the content is personal, operational, or confessional. The routing logic needs to be explicit, not implied. Aggregate metrics will not surface this — the format that fails on personal posts may still look fine in the totals if other posts carry the number.
 
 ---
 

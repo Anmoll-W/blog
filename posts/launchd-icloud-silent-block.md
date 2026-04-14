@@ -2,11 +2,9 @@
 
 # launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent
 
-The plist was loaded. The script was executable. The schedule was correct. `launchctl list` showed the job was registered. And the agent was doing nothing at all.
+I had been telling people the vault runs itself. The morning brief, the inbox processor, the weekly review, a LinkedIn analyst that surfaces what the feed is missing — all scheduled, all unattended, all working. I had written about this system. I had described it out loud as running.
 
-I had four automations scheduled through macOS launchd, each invoking a Claude CLI session against my Obsidian vault: a morning briefing, an inbox processor, a weekly review, and a LinkedIn analyst. The system was supposed to run itself. I had written about that system. I had told people it was running.
-
-Then I went to look at the outputs and realised I had been assuming more than I could prove.
+When I went to actually check the outputs, the agent that mattered most for distribution had never produced a single artifact. Not once. The plist was loaded, the schedule was correct, and the system had been silently failing for as long as I had been describing it as working.
 
 ## The Audit
 
@@ -49,6 +47,8 @@ A loaded plist is not evidence that the agent can run. `launchctl list` only pro
 Silent success is almost as dangerous as silent failure. Three of my four agents were producing some output, so I assumed the system was healthy. The one producing no output was invisible because there was nothing to react to. Scheduled jobs need explicit absence-of-artifact checks, not just error watching. If a weekly report is supposed to land every Sunday, something in the system has to notice when it does not, because launchd will not.
 
 The absence of a file is not a signal unless you are looking for it. I am adding the watchdog this week.
+
+**"The system runs itself" is a claim, not a status — and claims require evidence.** I had been treating "running" as a description of the architecture rather than a verified state of the system. The LinkedIn analyst had a plist, a schedule, and a purpose, and it had never run once. Going forward: every system I describe as autonomous needs an explicit artifact check before I describe it that way out loud. Registration is not running. A launchctl list is not proof. The artifact is proof.
 
 ---
 

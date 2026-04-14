@@ -2,15 +2,15 @@
 
 # From Manual to Automatic: How I Built a Vault OS That Runs Itself
 
-> I stopped using AI and started letting it run for me. Here is exactly how.
+I had built a system that required me to remember to use it. That is not a system. That is a checklist with extra steps.
 
 ## Context
 
 For years, the promise of a personal knowledge system was: write everything down, and you will have access to it later. The reality was: write everything down, forget where it is, and spend 10 minutes at the start of every working session reconstructing what you were doing last time.
 
-I use Obsidian as my vault and Claude Code as my AI coding and thinking partner. By April 2026 I had built up a real system, but it still required me to manually trigger every AI workflow. I had to remember to run the morning briefing. I had to remember to process my daily note captures. I had to remember to do the weekly review.
+By April 2026 I had built a real vault system with AI agents for my morning briefing, daily captures, and weekly review. But every one of them sat idle unless I remembered to run it. On the days I was busy or distracted, they did not run. On the days I was tired and most needed the brief, I was the least likely to trigger it.
 
-That is not a system. That is a checklist that depends on me.
+The system was only as reliable as my willpower. That was the problem I had to fix.
 
 This post documents how I replaced that with three automated agents that run on schedule, without any manual triggering, and leave outputs in my vault where I can read them the next morning.
 
@@ -20,7 +20,7 @@ My first attempt at scheduling used Claude Code's built-in `CronCreate` tool wit
 
 After a session restart, every scheduled job was gone. The `durable` flag was silently unreliable.
 
-Once I stopped trying to fix that and looked for the right tool instead, the answer was obvious: macOS LaunchAgents. They are the native macOS primitive for scheduled background jobs. They persist across reboots. They have proper logging. They are what system services use.
+The decision at this point was: keep trying to make the in-session tool work, or move to the right primitive. I chose the latter. Automation infrastructure that depends on an AI session staying open is not automation — it is just a delayed manual trigger. The right tool for persistent scheduled jobs is the operating system's own scheduler. macOS LaunchAgents persist across reboots, have proper logging, and are what system services use. Moving to LaunchAgents was not a technical fix. It was a decision to put automation infrastructure where it belongs: outside the session lifecycle entirely.
 
 ## The Three Agents
 
@@ -93,6 +93,8 @@ This is what a knowledge system should feel like: ambient, not demanding.
 **UTC conversion for IST requires care.** IST is UTC+5:30. Always document the conversion explicitly in the plist file or the shell script header. A missed 30 minutes will shift your scheduled run by half an hour every day.
 
 **Verify actual state after an agent runs.** The completion notification tells you the job finished. It does not tell you the job succeeded. Always read the output.
+
+**On decisions:** a workflow that requires you to remember to run it is not a system — it is a habit. Before building more features into an existing workflow, ask whether the workflow itself is in the wrong place. I had been treating the scheduling problem as a tooling limitation. It was an architectural choice I had not made yet. Putting automation infrastructure on the operating system's scheduler, not inside the AI session, is the decision that made everything else reliable.
 
 ---
 

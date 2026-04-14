@@ -2,11 +2,13 @@
 
 # Why I Rebuilt My GitHub Profile as a Wikipedia Article
 
-Two days after shipping the narrative portfolio README, I rebuilt the profile again. Not because the first version was wrong, but because I had been looking at the wrong model. The narrative format worked as a standalone document. It did not work as the entry point to a network.
+Two days after shipping the narrative portfolio README, I looked at the pinned repos and realised I had built a good article sitting in the middle of nothing. Each repo told a story. None of them connected back to the profile. None of them connected to each other. Someone who arrived at ChalotripBot from a search had no path back to me, and no path sideways to anything else I had built. I had spent time getting one node right and had not thought about the network at all.
+
+The narrative format worked as a standalone document. It did not work as the entry point to a network.
 
 The gap became visible when I started thinking about the pinned repos. Each of them tells a story. But none of them connected back to the profile, none of them connected to each other, and there was no shared vocabulary across them. The profile was an article with no links out and no links in. Wikipedia is the inverse of that. Every article links outward and receives links in. The structure of the network is inseparable from the quality of any single page.
 
-That observation drove the rebuild.
+That observation drove the rebuild. The decision being made here was not cosmetic — it was to invest in the architecture of the network rather than further polishing any single node. That is a different kind of work, and it only becomes visible when you stop looking at the profile in isolation.
 
 ## What Changed Visually
 
@@ -51,6 +53,8 @@ The shift from narrative format to Wikipedia format was not an aesthetic upgrade
 The infobox solves a real problem: two readers arrive at a profile with different intentions and different amounts of time. Serving both without asking either to adapt requires separating the fact layer from the narrative layer. The infobox is the fact layer.
 
 Hosting assets inside the repo and referencing them via raw.githubusercontent.com is the correct choice for any image that needs to be permanently available. The short-term convenience of an external CDN link is not worth the long-term fragility.
+
+The decision lesson: optimising one node is not the same as building a system. I had spent a session on the narrative profile and considered the portfolio solved. It was not — it was one article in a namespace with no other articles. Any PM who has shipped a feature and then realised the user journey it sits inside was never designed will recognise this. The individual piece was fine. The system it was supposed to be part of did not exist yet. The rebuild was not a failure of the first version. It was the moment the scope of the actual job became clear.
 
 ---
 

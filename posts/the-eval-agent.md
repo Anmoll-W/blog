@@ -8,6 +8,8 @@ I ran my vault with twelve personas — Maya drafts content, Priya specs product
 
 The gap showed up when I measured my LinkedIn posts for the first time. Twelve posts, real impression data. The pattern was consistent: every post skipped the counterargument. Not occasionally. Every one. Maya would write a strong hook, a concrete story, a specific takeaway — and then make a claim in the third paragraph that a skeptical reader would immediately push back on, without addressing it.
 
+I had assumed that a system with twelve specialised agents would catch its own mistakes. It did not. Producing agents and evaluating agents have conflicting incentives, and I had not built any agent whose only incentive was to find problems.
+
 I had a production problem disguised as a content problem.
 
 ## Why Producing Agents Don't Catch Their Own Mistakes
@@ -15,6 +17,8 @@ I had a production problem disguised as a content problem.
 There is a structural reason this happens. An agent that produces output and evaluates output is doing two jobs with conflicting incentives. The producing agent is invested in the thing it made. Its goal is to get to "done." Surfacing a flaw means revising, which means more work, which runs against the grain of the goal.
 
 This is not a model limitation. It is an architecture problem. You would not ask a developer to write the code and also write the tests without any separation between those roles. The same logic applies here.
+
+The product decision was to add a thirteenth agent whose only goal is to find problems — and to accept that this adds a step. The alternative was to add an eval checklist to each producing agent. I rejected that for the same reason the self-review argument fails: an agent that produced the output will evaluate it with the same framing that produced it. The eval has to come from a different posture, not a different checklist on the same agent.
 
 I needed an agent whose only job was to look at finished output and say: what is wrong with this.
 
@@ -61,6 +65,8 @@ Production and evaluation are separate roles, and mixing them into one agent doe
 The rubric is the memory. An eval agent without a rubric is just free-form feedback, which decays into opinion. The rubric captures what has gone wrong before, and makes sure the same class of mistake gets checked every time.
 
 The blind-spot question is not optional. Checking known criteria is necessary but not sufficient. The hardest mistakes to catch are the ones that no criterion covers yet — the assumption so embedded in the work that it never got questioned. Forcing that question, even when the answer is "nothing, this looks fine," is the check that matters most.
+
+On decisions: a quality problem in a system with no quality role is not a content problem. It is a staffing decision you have not made. I had twelve agents and no one whose job was to say the thing was not good enough. Adding Vera was not a feature. It was closing an accountability gap that had been open the entire time the system was running. Before adding capability to a workflow, check whether the workflow has any mechanism for catching its own mistakes. If it does not, that is the first thing to build.
 
 ---
 

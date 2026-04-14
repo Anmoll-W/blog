@@ -2,9 +2,9 @@
 
 # Telegram Privacy Mode: The Silent Setting That Broke Natural Language
 
-During live testing of ChalotripBot, a pattern appeared that looked like the bot was fundamentally broken. Slash commands worked. Natural language did nothing.
+The entire value proposition of ChalotripBot was natural language. Type what you want in the group chat and the bot coordinates the trip. That was what I had built. That was what I had described to the people I was testing it with. During the first live test, none of it worked.
 
-Type `/cancel` and the bot cancelled the trip. Type `/help` and the bot responded. Type "plan a trip to Goa" and the bot was silent. Type "I want to go in April" and the bot was silent. The entire value proposition of the product was natural language trip coordination in a group chat. That capability was completely disabled.
+Slash commands worked. Type `/cancel` and the bot cancelled the trip. Type `/help` and the bot responded. But type "plan a trip to Goa" and the bot was silent. Type "I want to go in April" and the bot was silent. I had shipped a natural language product and natural language was completely disabled, by a platform setting I had never changed from its default.
 
 ## The Root Cause: BotFather Privacy Mode
 
@@ -59,6 +59,8 @@ When a subset of input types works and another does not, look at the delivery or
 Every state in a state machine that can receive user input needs an explicit response. A missing case is a bug, not a gap to fill later.
 
 A parser validated against one format is validated against nothing. Format normalization for real user input requires testing with the full range of ways a human would actually express the concept.
+
+**Platform defaults are product decisions you did not make.** Telegram privacy mode is on by default. That is a platform decision that directly overrode my product design without telling me. The decision I am carrying forward: any time a product feature depends on a platform's delivery behavior — what gets routed, what gets blocked, what format is expected — verify the platform's defaults before testing, not after. Reading the platform docs is not optional when the platform controls what your product can see.
 
 ---
 

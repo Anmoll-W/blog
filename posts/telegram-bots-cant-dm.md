@@ -2,15 +2,15 @@
 
 # Telegram Bots Cannot DM Users Who Have Not Pressed Start
 
-Six out of seven people received nothing. No error. No indication anything had gone wrong. The bot continued running as if the flow had succeeded.
+I had designed the preference collection flow around DMs because it felt right. Private questions should get private answers. I had tested it myself and it worked. In the first real group test with seven people, one person received the DM. The other six received nothing. No error. No indication anything had gone wrong. The bot continued running as if the flow had succeeded.
+
+The design I had made — DMs per member — was based entirely on testing with my own account, which had always interacted with the bot directly. I had not tested with anyone who had not already pressed START.
 
 ## What the Flow Was Supposed to Do
 
 The bot was designed to collect trip preferences from every group member individually. Budget, travel vibe, dietary restrictions. The UX reasoning was sound: you do not want everyone's preferences posted publicly in the group chat. A DM per member felt like the right design.
 
 The implementation sent a direct message to each group member as they were added to the trip. In solo testing, with a single organiser account that had always interacted with the bot, it worked every time.
-
-In the first real group test with seven people, one person received the DM. The other six received nothing.
 
 ## The Root Cause
 
@@ -55,6 +55,8 @@ Telegram DM blocking is silent. The API returns success. There is no error to ca
 In-group inline keyboards with per-user popups are a cleaner pattern for group preference collection than individual DMs. The group counter creates social accountability that actually improves completion rates.
 
 Document platform constraints in a testable form, not just a note form. "Bots cannot DM users who have not pressed START" is a note. "Before shipping any flow that sends DMs to group members, test with one account that has never pressed START" is a test.
+
+**A design tested only by the person who built it is not tested.** I had written down the DM constraint during planning. I had read about it. I still shipped a flow that failed for six out of seven users because every test I ran used my account — the one account guaranteed to work. The decision going forward: any flow that requires prior user action to succeed needs to be tested by someone who has not taken that action. That test cannot be done by the developer.
 
 ---
 

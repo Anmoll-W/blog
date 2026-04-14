@@ -2,15 +2,17 @@
 
 # How I Retired Notion in One Session
 
-For two years I maintained two knowledge systems in parallel. Notion held the structured, long-form content: project specs, roadmaps, strategy docs. Obsidian held session notes, quick captures, and the vault architecture. Every meaningful session created friction: where does this go?
+For two years I maintained two knowledge systems in parallel and told myself the split made sense. Notion for the structured, permanent work — project specs, roadmaps, strategy docs. Obsidian for session notes, daily captures, and the vault itself.
 
-One session ended that split permanently.
+What I did not account for was the cost that compounded quietly in the background: every time I built something that needed to know about my projects, it could only read one of the two systems. Claude Code can read Markdown files in a vault. It cannot read Notion. Every spec, every decision, every roadmap that lived in Notion was invisible to the tools I was relying on most.
+
+I had been building an AI-powered knowledge system on top of half my knowledge.
 
 ## What the Problem Actually Was
 
 The problem was not that Notion was bad. It was that two systems create a routing tax on every piece of information. Before writing anything I had to ask: is this a Notion thing or a vault thing? Sometimes I got it wrong and spent time later looking in the wrong place.
 
-More importantly: Claude Code cannot read Notion. Everything I wanted the AI system to know had to live in the vault as plain Markdown. Any knowledge sitting in Notion was invisible to the tools I rely on most.
+The decision to consolidate was a decision to define a rule: any knowledge that needs to be readable by Claude Code must live as Markdown in the vault. That rule made the choice obvious and eliminated the routing question permanently. Notion was not retired because it was worse. It was retired because it was on the wrong side of that rule, and maintaining a second system to house knowledge my tools could not use was not a cost I was willing to keep paying.
 
 ## What the Session Did
 
@@ -40,11 +42,13 @@ Finance tracking. Zara (the finance persona) needs structured data, not prose no
 
 ## What I Learned
 
-The migration did not take long because most of the Notion content was already stale. Two years of project docs, meeting notes, strategy drafts — almost none of it was relevant to current work. The act of migrating forced a cleanup that I had been deferring.
+The migration did not take long because most of the Notion content was already stale. Two years of project docs, meeting notes, strategy drafts — almost none of it was relevant to current work. The act of migrating forced a cleanup that I had been deferring. I had been maintaining a second system to house documents I was not using, and the cost had been invisible because neither system told me the other existed.
 
 The rule that emerged: any knowledge that needs to be readable by Claude Code must live as Markdown in the vault. Everything else is optional. Notion had become a graveyard for context that the system could not use.
 
-One more pattern: the stale path problem is invisible until it breaks something. After any vault restructure, run a search for old folder names before moving on. Silent misdirections are worse than obvious errors.
+One more technical pattern: the stale path problem is invisible until it breaks something. After any vault restructure, run a search for old folder names before moving on. Silent misdirections are worse than obvious errors.
+
+On the decision side: a two-system architecture is worth maintaining only if both systems serve the same consumers. The moment you build a workflow that can only read one of them, you have made a silent decision about which system actually matters. I had made that decision when I started relying on Claude Code — I just had not acted on it. The session that retired Notion was not about Notion. It was about catching up to a decision I had already made in practice but not yet in structure.
 
 ---
 

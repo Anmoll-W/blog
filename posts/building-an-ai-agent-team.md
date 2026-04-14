@@ -6,13 +6,13 @@
 
 ## Context
 
-By early April 2026, my Obsidian vault had seven AI agents: an engineer, a product manager for LinkWhisper, a marketing director, a finance expert, a business analyst, a travel planner, and a vault architect. Each one had an identity file and a memory file. Each one had accumulated real knowledge from real sessions.
+By early April 2026, my Obsidian vault had seven AI agents: an engineer, a product manager for a WordPress SEO plugin, a marketing director, a finance expert, a business analyst, a travel planner, and a vault architect. Each one had an identity file and a memory file. Each one had accumulated real knowledge from real sessions.
 
-The problem was isolation. Alex (the engineer) had learned that Supabase returns numeric columns as strings and you need to parse them explicitly before doing arithmetic. Maya (the marketing director) had learned that overusing a single hook type causes engagement to collapse even when the data said it was the top performer. These lessons were real and hard-won.
+The problem was that all of that accumulated knowledge was trapped. Alex (the engineer) had learned that Supabase returns numeric columns as strings and you need to parse them explicitly before doing arithmetic. Maya (the marketing director) had learned that overusing a single hook type causes engagement to collapse even when the data said it was the top performer. These lessons were real and hard-won.
 
 But Zara (the finance expert) started fresh every time. Sam (the business analyst) started fresh every time. When a project touched multiple domains, the relevant agent had to be manually loaded by name. There was no shared understanding. There was no memory that crossed agent boundaries.
 
-This was the core architectural problem: agents learning in isolation.
+I had been building a team of specialists and storing all the institutional knowledge in silos. Every cross-domain session started from scratch on half its context. The problem was not the agents. It was the file structure I had chosen for them.
 
 ## The New Architecture
 
@@ -42,9 +42,11 @@ Every agent reads the shared brain at session start. Every agent writes to it wh
 
 ## The Flat Structure Decision
 
-I chose a flat team with no hierarchy. The alternative was a hierarchical structure with lead agents that delegated to specialists.
+I chose a flat team with no hierarchy. This was an explicit choice, not a default.
 
-Hierarchy adds complexity without adding value when the team size is under 15. A flat team means every agent has clear ownership of one domain, and cross-domain work is handled by naming a primary agent (who leads) and secondary agents (who advise). The routing table in `team-roster.md` handles signal-to-persona matching.
+The alternative was a hierarchical structure with lead agents that delegated to specialists. That structure feels natural because it mirrors how human teams are organised. The reason I rejected it: a router agent at the top of the hierarchy needs enough knowledge of all the domains below it to make correct routing decisions. That means carrying a summary of every persona anyway. The hierarchy adds a coordination layer without reducing the context load. For a team under 15, that overhead is net negative.
+
+The flat structure trades elegant org charts for something more useful: clear domain ownership and a routing table that any agent can read directly. Cross-domain work is handled by naming a primary (who leads) and secondary (who advise) — no delegation chain required.
 
 Harper (HR) is the one exception with a constraint attached: Harper recommends but never creates or retires agents. Every agent change requires explicit approval. The purpose is to prevent the team from growing unchecked as new use cases appear. Agent creation has a real cost in maintenance overhead.
 
@@ -65,6 +67,8 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 **Harper's 3-evidence rule prevents premature agent creation.** Do not create a new agent until you have seen the same need arise three times across different sessions. Agent proliferation is a real risk.
 
 **Flat over hierarchical for small teams.** Hierarchy adds coordination overhead. At under 15 agents, clear domain ownership and a routing table is enough.
+
+**On decisions:** the structure of your file system is a product decision, not a housekeeping task. I had seven agents with real accumulated knowledge, and I had made a filing choice that prevented any of that knowledge from being useful across domain boundaries. Whenever a team of specialists is not performing as a team, the first question is not "what are the specialists missing?" It is "what does the structure prevent them from sharing?" The knowledge was there. The routing was missing.
 
 ---
 

@@ -6,15 +6,15 @@
 
 ## Context
 
-I was building ChalotripBot, a Telegram bot for group trip coordination. The bot uses the Claude API at 8 different points: extracting trip intent from natural language, generating itineraries, suggesting destinations, processing preferences, and more.
+I had built the core experience of ChalotripBot around a promise: natural language in, structured trip plans out. The entire product relied on Claude returning clean JSON at 8 different points in the flow. I had never explicitly verified that assumption would hold at scale. On submission day it did not.
 
-On submission day, running a full end-to-end test against a real Telegram group with real webhook payloads, every single itinerary generation call crashed with the same error:
+Running a full end-to-end test against a real Telegram group with real webhook payloads, every single itinerary generation call crashed with the same error:
 
 ```
 SyntaxError: Unexpected non-whitespace character after JSON at position 10997
 ```
 
-The fix took 30 minutes once I understood the cause. But finding it took longer, because the bug had been invisible during all earlier testing.
+The fix took 30 minutes once I understood the cause. But finding it took longer, because the bug had been invisible during all earlier testing. I had shipped eight call sites on the assumption that "Claude returns JSON when asked" — and I had tested that assumption only with short, simple prompts that never gave Claude a reason to elaborate.
 
 ## What Was Happening
 
@@ -83,6 +83,8 @@ This matters: your test pass or fail logic must account for what the framework a
 **Verify test assertions against framework behavior.** An empty 200 from grammY is a success. A test that expects `{"ok": true}` and gets `""` will report a false failure.
 
 **Apply the fix at every parse site, not just the one that triggered the error.** Once you understand the root cause, audit all similar patterns. There were 8 call sites. All 8 needed the fix.
+
+**Validate your assumptions about external services before you build a product feature on top of them.** "Claude returns JSON when asked" is a reasonable assumption for simple prompts. It is not a tested contract. Any time a product flow depends on a probabilistic output — from a language model, an external API, or a third-party service — the assumption needs to be verified against production-scale inputs before the feature ships, not discovered broken on the day it matters.
 
 ---
 

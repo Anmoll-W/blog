@@ -2,7 +2,7 @@
 
 # Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams
 
-The PRD had 6 major feature areas and an 8-day build estimate. The deadline was April 4. With 4 days left, the math did not work — unless I stopped working sequentially.
+I had a PRD with 6 major feature areas, an 8-day build estimate, and 4 days left before the April 4 deadline. The options were to cut scope, miss the deadline, or find a way to run work in parallel. Cutting scope meant shipping something that was not actually a group travel coordinator. Missing the deadline was not on the table. So I had to figure out what "parallel" actually meant for a single-developer AI-assisted build — and where it would break down if I got the decomposition wrong.
 
 ## Mapping the Problem
 
@@ -41,6 +41,8 @@ Agent 3 was building the RSVP and preference collection flow. Without knowing th
 
 This is the actual design work in a parallel architecture. Not the worktrees. Not the tooling. The hard part is identifying which constraints are cross-cutting and making sure every agent that touches the affected area has them before it starts.
 
+The product decision underneath the parallel setup was this: accept that integration bugs are inevitable on Day 3, budget a full day for them, and treat that day as a required cost rather than a risk to mitigate. The alternative — serializing the work to reduce integration risk — would have blown the deadline. Parallelism was not the safe choice. It was the only choice that fit the constraints, with a deliberate reserve built in for the day it would be most needed.
+
 ## The Revised Sprint
 
 Day 1: Agent 1 finishes the bot skeleton and Supabase schema. Agent 2 starts the itinerary engine in parallel, since it only needs the Claude API integration pattern, not the full schema.
@@ -70,6 +72,8 @@ Parallel agents require shared domain constraints documented before work starts,
 Genuine parallelism requires streams with no shared working-tree dependencies. Streams that share schema or state are serialized work in disguise.
 
 Tool audits have more value when paired with a pruning rule. Adding tools is easy. The constraint that each addition must displace something else forces actual tradeoff thinking.
+
+The decision lesson: when a deadline is fixed and scope cannot move, the PM's job is to find the parallelism — not to work longer hours on a sequential plan. The question is not "how do we go faster?" It is "what work can happen simultaneously, and what must it know before it starts?" Getting that answer wrong does not just slow the build. It produces integration failures that only show up at the worst possible moment — the live test.
 
 ---
 

@@ -2,7 +2,9 @@
 
 # From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint
 
-Seventy user-reported issues sound like a lot until you map them to root causes. When the mapping is done, the number that matters is not 70. It is the number of distinct structural problems producing that volume. In this case, nine fixes addressed the root cause behind 35 to 40 of the 70 reports.
+The support backlog had 70 reported issues. The question on the table was what to fix first — and more specifically, whether fixing individual tickets one by one was the right strategy at all. If each report was its own independent bug, 70 fixes was the scope. If some fraction of those reports shared a root cause, the math changed significantly. Before committing to a fix strategy, the mapping had to happen. That mapping decision — do the root-cause analysis before writing any fix code — is what made this session produce nine shipping fixes in a single day instead of two or three.
+
+In this case, nine fixes addressed the root cause behind 35 to 40 of the 70 reports.
 
 This post covers the fixes, the patterns they revealed, and two specific failure modes worth understanding in detail: the asymmetry between caching success and caching failure, and what happens when a third-party API changes its data shape without a breaking announcement.
 
@@ -34,9 +36,13 @@ Two of these fixes, the credits API cache and the subscription API error handlin
 
 When an API call returns a valid result, caching it aggressively is correct. The data is real, the cost of an extra API call is low, and you want to reduce load. But when an API call fails, the situation is inverted. You do not know whether the failure is transient or permanent. You cannot distinguish a network blip from a genuine state change. Caching the failure for 60 minutes or 24 hours means that every transient error becomes a guaranteed 60-minute or 24-hour user-facing outage.
 
+The product decision here is worth naming explicitly. The original 60-minute cache for the credits check was correct for its intended purpose: reduce load on the credits API. But that decision was made while implementing the success path. The error path inherited the same TTL without anyone asking the question: "if this value is wrong, what is the user experience, and for how long?" For a success cache, a wrong value means slightly stale data for 60 minutes. For a failure cache, a wrong value means a user who just purchased credits cannot access AI features for an hour with no explanation. Those are not the same decision. They were treated as one.
+
 The correct mental model for failure caches is: cache failures just long enough to avoid hammering a degraded API endpoint, and no longer. Five minutes for a credits check. Fifteen minutes for a subscription check. Not 60 minutes. Not 24 hours.
 
 This pattern appears frequently in production code. The developer sets the cache TTL while implementing the happy path, copies it to the error path without thinking about the consequences, and ships it. The error path only fires in rare conditions. Nobody tests it explicitly. The issue surfaces as user reports about features "randomly" not working and "randomly" recovering the next day.
+
+The relatable version of this mistake: the cache TTL had been reviewed in prior work. The assumption was that caching was handled correctly because the success case had been thought through. The error path had not been reviewed separately because it felt like a subset of the same logic. It is not. It is a different decision that deserves its own review.
 
 ## Third-Party API Changes as Silent Compatibility Failures
 
@@ -57,6 +63,8 @@ The ratio of reported issues to root causes is rarely 1:1. Mapping 70 reports to
 Failure cache TTLs deserve explicit review separate from success cache TTLs. The question to ask at every cache write is: if this cached value is wrong, what is the user experience, and for how long? That question produces different answers for success states and failure states.
 
 Third-party compatibility failures are invisible until you look for them. The signal is support volume from a specific user segment (Divi users, Elementor users) that emerges after a major third-party release. The investigation starts at the integration layer, not at the plugin's own code.
+
+The decision lesson: the choice to map first and fix second is a product prioritization decision, not just an engineering one. It determines which users get relief and in what order. Fixing the 70 reports sequentially — triaging by recency or ease — would have produced different fixes in a different order, with less impact. Doing the mapping upfront meant the first nine fixes covered the root causes behind half the reported volume. Any time there is a support backlog of more than 10 reports, the right first step is the map, not the fix list. The map is the product strategy. The fixes are the execution.
 
 ---
 

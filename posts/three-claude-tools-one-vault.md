@@ -2,7 +2,9 @@
 
 # Three Claude Tools, One Vault: The Architecture Behind the System
 
-Before I had automated agents and LaunchAgents running on schedule, I had a simpler question: how do I make all three Claude interfaces — mobile, desktop, and development — share the same brain?
+Every session I started with Claude felt like the first one. I would open a project, begin explaining the context, and realise I had typed nearly the same paragraph the week before. Decisions I had already made. Constraints I had already established. A project that was well underway, treated by the tool as brand new.
+
+That is not a capability problem. That is a design problem I had not solved yet.
 
 The answer was one Obsidian vault and a context cascade.
 
@@ -26,6 +28,14 @@ Every `.md` file I write makes all three tools smarter. Here is how.
 
 **Nick Milo dossier prompt.** One reusable prompt generates an "about me" context block — my role, active projects, goals, constraints. Every new conversation reads this first. Claude knows who I am before I say anything.
 
+## The Decision This Required
+
+The key product decision here was to stop trying to improve each tool individually and instead build one shared layer that all three tools read from. The alternative — improving memory within each tool separately — would have meant managing three distinct context systems and keeping them in sync manually. That would have been more work, not less.
+
+I had been treating the tools as the product. The decision was to treat the vault as the product. The tools became readers of a shared state rather than isolated systems I had to configure separately.
+
+I had been rebuilding context from scratch at the start of every session for months without registering it as a cost. That is the kind of friction that does not feel like a problem until you name it — and once you name it, it is obvious that it was the problem all along.
+
 ## What This Enabled
 
 The dispatch/desktop/code split works better with this in place. I can send a quick capture on my phone ("add this to the travel project backlog") and Claude Desktop will have context on it the next time I open that folder. Claude Code will read the same decisions and past mistakes files before touching anything.
@@ -37,6 +47,8 @@ The vault is not a notes app anymore. It is a shared memory layer that all three
 Reliability matters more than capability on mobile. Dispatch works well for inbox triage, lookups, and meeting prep. Multi-step file organization and cross-app chains fail unpredictably. Keep mobile tasks simple and single-step.
 
 The insight that unlocked this system: context does not belong in each tool. It belongs in a shared file system that all tools read. Once that shift happened, the tools stopped feeling disconnected.
+
+On the decision side: when a workflow feels effortful, the first question is not "how do I make this tool better?" It is "who should own this?" Rebuilding context was the tool's job. I had been doing that job manually, and I had not noticed how much of my working time I was spending on it. Before reaching for a new capability, check whether you have already assigned the wrong owner to an existing problem.
 
 ---
 

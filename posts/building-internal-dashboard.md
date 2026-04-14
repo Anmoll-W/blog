@@ -2,6 +2,8 @@
 
 # Building an Internal Support Dashboard: From Broken Scaffold to Live Data
 
+The goal for this session was to build a support dashboard that would surface ticket trends in realtime — a tool that could tell, at a glance, which feature areas were generating the most pain and whether a fix had actually moved the number. The business case was straightforward: stop guessing about support volume and start reading it. The risk was equally straightforward: ship a broken data layer and every insight the dashboard produces is wrong. Before writing a single feature, the foundation needed to be verified.
+
 The codebase already existed. An AI tool had scaffolded it, the folder structure looked reasonable, and the first instinct was to start building features. The second instinct, which arrived about ten minutes later, was to check what database driver the scaffold had actually used.
 
 It had used SQLite.
@@ -28,6 +30,8 @@ Halfway through the data layer migration, while reading the existing Supabase sc
 
 This changed the scope of the session entirely. Instead of building a sync layer, the work was to understand the existing table structure and build a query layer on top of it. Two to three hours of planned work evaporated. The right response was to update the plan immediately rather than keep building toward a problem that did not exist.
 
+The product decision: drop the sync layer entirely and treat the existing integration as the source of truth. This is a decision worth naming because the alternative — building the sync layer anyway for "completeness" or to match the original plan — is a real failure mode. Plans are wrong. When the evidence says a piece of planned work is unnecessary, the correct move is to update the plan, not defend it. The dashboard was going to be used for support triage, not as an exercise in building sync infrastructure. The scope that served that goal was the right scope.
+
 ## The Silent Bugs
 
 Getting to a running dashboard against real data involved four bugs that shared a common property: none of them produced an obvious error message.
@@ -48,6 +52,8 @@ The session ended with the dashboard running locally against 763 rows of seeded 
 
 What was discovered at the very end of the session: the dashboard had no authentication. It was publicly accessible. This had not been part of the original scaffold and had not been part of the session plan. The next step was clear — add authentication before mapping the real production table structure.
 
+That near-miss is the relatable moment from this session. The dashboard was running. It was showing real data. The session felt done. The only reason authentication was caught was that the end-of-session checklist included security review. Without that check, a dashboard with 763 rows of live support data would have been left publicly accessible while the next session moved on to feature work. The plan had no auth step because the scaffold had not included one, and the assumption was that the scaffold had handled the basics. It had not.
+
 The lesson from the session order: migrations first, then verify data, then map real structure, then auth. In practice, auth nearly got skipped entirely because it was not in the original plan and was only discovered by accident. It belongs in the plan from the beginning.
 
 ## What I Learned
@@ -57,6 +63,8 @@ Inheriting a scaffold means auditing its assumptions before writing a line of fe
 Silent failures require explicit output verification. An app that loads without errors is not the same as an app that is working correctly. Checking actual rendered values and actual database query results is not optional in early setup sessions.
 
 Discovering that a problem does not exist is a good outcome, not a wasted plan. The sync layer was dropped cleanly once the evidence showed it was unnecessary. Updating the plan and moving on was faster than building something that was not needed.
+
+The decision lesson: a plan built before a session starts does not know what the session will find. The sync layer was on the plan because the assumptions going in were wrong — the integration was assumed to not exist. When those assumptions were disproved, the plan should have been updated immediately, not preserved. Any session plan for infrastructure work should include an explicit verification step at the start: "does this problem already exist?" Security requirements like authentication should be in the plan by default, not discovered by accident at the end. If the checklist had not caught it, it would have shipped without it.
 
 ---
 

@@ -2,7 +2,7 @@
 
 # GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README
 
-> I had a full portfolio site with real interactive tools. I archived it. Here is why.
+I had a portfolio site that was 85 percent complete — real interactive tools, real product decisions, real work in it. I had a GitHub profile that read like a resume. I was spending attention on both and neither was getting what it deserved. The uncomfortable realisation was that the site, polished as it was, signalled the wrong thing: "I designed something to look impressive." The GitHub profile, rough as it was, was where the actual credibility would need to live. I had to pick one and commit.
 
 ## Context
 
@@ -28,6 +28,8 @@ A portfolio site signals "I designed something to look impressive." A well-craft
 The world is changing fast here. Non-technical PMs are now expected to understand engineering constraints more deeply. Companies want PMs who can evaluate technical tradeoffs, not just translate requirements. A GitHub presence that shows you genuinely build things is a stronger signal than a polished marketing site that describes it.
 
 Maintaining both was also a focus problem. Every hour spent on the portfolio site was an hour not spent building real projects. Two presences meant neither got the attention it deserved.
+
+The tradeoff accepted by this decision: the portfolio site had interactive tools that GitHub cannot replicate — a Decision Log where visitors could see real product decisions and compare their choices, a Tech Fluency Companion that explained technical terms at three levels for PMs. Those tools are gone from public view. The cost was real. The reasoning was that a strong GitHub presence with three great project READMEs would compound over time in a way the portfolio site would not, because GitHub is where work actually lives.
 
 ## What a GitHub Portfolio Actually Requires
 
@@ -68,6 +70,8 @@ The portfolio site repository will stay public with an archived notice. The code
 **Your tool list is a positioning statement.** It communicates your perspective before anyone reads a word. Choose it deliberately.
 
 **An incomplete but focused presence beats a complete but scattered one.** A well-crafted GitHub profile with three great project READMEs is more credible than a polished portfolio site and a mediocre GitHub profile.
+
+**The decision lesson: archiving something real costs something real.** This was not a clean choice between a bad option and a good one. The portfolio site had genuine value that no longer exists publicly. The decision was correct, but "correct" did not mean "free." Any PM who has had to sunset a feature their users liked knows this feeling. The right call is still a loss. Acknowledging that is part of making the next right call with clear eyes.
 
 ---
 
