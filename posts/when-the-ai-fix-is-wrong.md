@@ -12,6 +12,7 @@ related:
   - telegram-bots-cant-dm.md
   - missing-viewport-tag.md
   - support-tickets-root-causes.md
+  - dashboard-to-digest.md
 ---
 
 # When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses
@@ -149,6 +150,7 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 - [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another class of invisible failure
 - [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure with no error output
 - [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](support-tickets-root-causes.md) — the full bug sprint this review was part of
+- [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — what happened to the support infrastructure after the bug sprint: nobody was logging into the dashboard, so it was deleted and replaced with a cron digest
 
 ---
 

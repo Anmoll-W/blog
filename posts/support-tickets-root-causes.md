@@ -5,7 +5,7 @@ tags: [engineering, debugging, wordpress, product]
 series: ""
 series_order: 0
 source_session: 2026-04-08_bug-fix-pr6167
-related: ["auditing-plugin-against-support-data.md", "when-the-ai-fix-is-wrong.md"]
+related: ["auditing-plugin-against-support-data.md", "when-the-ai-fix-is-wrong.md", "dashboard-to-digest.md"]
 ---
 
 # From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint
@@ -70,6 +70,7 @@ Third-party compatibility failures are invisible until you look for them. The si
 
 - [How to Audit a Production Codebase Against Its Own Support Data](auditing-plugin-against-support-data.md) — the preceding session that identified the first set of bugs and defined the audit method
 - [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — the SQL escaping fix in this batch had an error that was caught in review the next day
+- [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — what the support data ultimately informed: the category groupings that shaped the 7 AM digest that replaced the full dashboard
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
