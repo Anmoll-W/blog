@@ -80,6 +80,7 @@ Run a quick check against these before every commit:
 - [ ] Series file updated (if applicable)
 - [ ] Profile README updated (latest 5 posts)
 - [ ] Existing posts updated with backlinks where relevant
+- [ ] All facts are exact — no fabricated durations, scale claims, or outcomes (polish writing, never facts)
 
 ---
 
