@@ -1,13 +1,5 @@
 <!-- source_session: 2026-04-15_vault-agent-automation-buildout -->
 
----
-title: "Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7"
-date: 2026-04-15
-tags: [vault, automation, ai, macos, launchagent, systems]
-series: Vault as OS
-series_order: 6
----
-
 # Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7
 
 The system was working. Three LaunchAgents fired on schedule: morning briefing at 8:30 AM, inbox processing at 9:30 PM, weekly review on Sundays. The vault was getting smarter without manual effort.
