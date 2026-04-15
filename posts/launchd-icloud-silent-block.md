@@ -62,6 +62,7 @@ The absence of a file is not a signal unless you are looking for it. I am adding
 - [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure that produced zero error output, same "nothing to react to" category
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer whose runners this audit was fixing
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the agent team whose members these launchd schedules are supposed to invoke
+- [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](second-automation-layer.md) — what was built after this audit: four more agents, Chrome guard clauses, and a sleep-gap fix that came directly from what was learned here
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

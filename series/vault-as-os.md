@@ -2,7 +2,7 @@
 
 How I turned an Obsidian vault into an automated knowledge system powered by AI agents.
 
-The system today runs three automated agents on schedule, routes every daily note capture to its destination without manual sorting, coordinates an 11-persona AI team across 14 projects, and compresses its own knowledge base weekly to stay lean as it grows.
+The system today runs seven automated agents on schedule, routes every daily note capture to its destination without manual sorting, coordinates an 11-persona AI team across 14 projects, and compresses its own knowledge base weekly to stay lean as it grows.
 
 This series documents how each layer was built, what broke along the way, and what the architecture looks like now.
 
@@ -28,10 +28,12 @@ This series documents how each layer was built, what broke along the way, and wh
 5. [The Eval Agent: Adding a Quality Gate to an AI Workflow](../posts/the-eval-agent.md)
    The evaluation layer: adding a 13th persona whose only job is to stress-test output. Covers the rubric system, why producing agents cannot eval their own work, and the blind-spot question pattern.
 
+6. [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](../posts/second-automation-layer.md)
+   The second automation layer: expanding from three scheduled agents to seven, adding Chrome-gated analytics sync, daily task migration, Monday content dispatch, and quality gates on code review and blog publishing. Covers the sleep-gap bug, guard clause patterns, and why monthly operations belong inside weekly runners.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization
-- The session-to-blog pipeline: turning vault session notes into public writing automatically
 
 ---
 
