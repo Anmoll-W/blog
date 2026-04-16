@@ -34,6 +34,9 @@ This series documents how each layer was built, what broke along the way, and wh
 7. [My AI Agents Had Identity. They Needed Methodology.](../posts/wiring-claude-skills-to-agents.md)
    The skills layer: installing six external Claude skills from GitHub and wiring them into the agent system. Covers the auto-invoke vs. situational distinction, how each of the three stateless agents changed, and why the QA agent had been starting from the wrong assumption.
 
+8. [My AI Agents Were Running. They Just Weren't Working.](../posts/self-correcting-agents.md)
+   The self-correction layer: what happens when you audit a 13-agent system and find five aren't doing their jobs. Covers the difference between a protocol and a reminder, how self-correcting behaviors are baked into agent identity, and why "operational" is a claim that needs evidence.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

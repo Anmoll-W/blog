@@ -135,3 +135,4 @@ I had built a QA agent and never wired in the thing that makes pre-mortem thinki
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — Vera, the eval persona, is one of the agents extended in this session; her `the-fool` integration is the most direct application
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer that runs these agents on schedule
 - [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](second-automation-layer.md) — the latest automation expansion, which added quality gates that now benefit from the skill wiring here
+- [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — what came next: a performance audit that found five agents not executing their protocols, and how self-correcting behaviors were baked into each identity
