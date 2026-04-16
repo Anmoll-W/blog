@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-16 | [My AI Agents Had Identity. They Needed Methodology.](posts/wiring-claude-skills-to-agents.md) | Vault as OS | vault, ai, systems, agents, skills |
 | 2026-04-15 | [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](posts/second-automation-layer.md) | Vault as OS | vault, automation, ai, macos, launchagent, systems |
 | 2026-04-14 | [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](posts/launchd-icloud-silent-block.md) | Silent Failures | engineering, silent-failures, macos, launchd |
 | 2026-04-13 | [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](posts/dashboard-to-digest.md) | — | engineering, product, ai, helpscout |

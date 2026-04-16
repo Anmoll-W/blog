@@ -79,6 +79,7 @@ On decisions: a quality problem in a system with no quality role is not a conten
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the architecture Vera sits on top of
 - [Building an AI Agent Team](building-an-ai-agent-team.md) — the v2 system that preceded this redesign
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the broader automated system this fits inside
+- [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — Vera gains `the-fool` skill in this session: a structured 5-mode critical reasoning framework wired as her primary stress-test tool
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

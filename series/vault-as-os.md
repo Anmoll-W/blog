@@ -31,6 +31,9 @@ This series documents how each layer was built, what broke along the way, and wh
 6. [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](../posts/second-automation-layer.md)
    The second automation layer: expanding from three scheduled agents to seven, adding Chrome-gated analytics sync, daily task migration, Monday content dispatch, and quality gates on code review and blog publishing. Covers the sleep-gap bug, guard clause patterns, and why monthly operations belong inside weekly runners.
 
+7. [My AI Agents Had Identity. They Needed Methodology.](../posts/wiring-claude-skills-to-agents.md)
+   The skills layer: installing six external Claude skills from GitHub and wiring them into the agent system. Covers the auto-invoke vs. situational distinction, how each of the three stateless agents changed, and why the QA agent had been starting from the wrong assumption.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

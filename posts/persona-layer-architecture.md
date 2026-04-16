@@ -81,6 +81,7 @@ On decisions: the right question when a system feels slow or expensive is not "h
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — the vault consolidation that preceded this redesign
 - [Building an AI Agent Team](building-an-ai-agent-team.md) — the v2 system this redesign replaced
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — Vera, persona #13, added as the evaluation layer on top of this stub architecture
+- [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — the next layer added on top of this architecture: external skills wired to each persona so agents auto-invoke structured methodology without being asked
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
