@@ -128,6 +128,50 @@ I had built a QA agent and never wired in the thing that makes pre-mortem thinki
 
 ---
 
+## The Second Pass: Going Beyond Dev Skills
+
+The first round covered development workflow. There was an obvious next question: what else is out there?
+
+[skills.sh](https://skills.sh) indexes 128,000+ skills. The same install pattern that worked for developer skills works across any category — design, marketing, writing, automation. So I ran a full audit.
+
+Three findings shaped what I installed next.
+
+**Finding 1: Most marketing skills were already there.** The `marketing-skills@marketingskills` plugin had been installed months earlier and quietly made 36 marketing skills available as `marketing-skills:skill-name`. Copywriting frameworks, email sequences, pricing strategy, churn prevention, SEO audit — all live. I had been underusing the system I had already built.
+
+**Finding 2: Health and wellness is a gap that cannot be filled by the marketplace.** The skills.sh ecosystem is almost entirely technical. There are no fitness tracking skills, no nutrition frameworks, no sleep optimization tools. The path there is to build them — using `skill-creator`, which builds and benchmarks custom `.skill` files. That work is pending.
+
+**Finding 3: The design and frontend layer was under-equipped.** The design persona had strong identity and a philosophy of referencing the best work in the industry. It had no structured color or typography reference database, and no mechanism for auditing code against design guidelines before handing work to the engineer.
+
+The six skills installed in this round:
+
+**`webapp-testing`** — Playwright-based browser test execution. Reconnaissance-then-action: screenshot, inspect DOM, identify selectors, execute. Now auto-invoked by the QA agent and available to Quinn on any UI feature. The difference is systematic browser state verification vs. "it looked fine when I clicked through it."
+
+**`find-bugs`** — static analysis pass focused on error handling, null safety, edge cases, and security surface. Now auto-invoked by Alex before dispatching Quinn. Quinn handles acceptance criteria. Find-bugs handles the class of issues that should never reach QA in the first place.
+
+**`code-simplifier`** — runs after the main code review pass. Checks for unnecessary abstraction, dead complexity, over-engineered patterns. It runs at step 3 of the code-review agent, after the main review and the security pass. Three distinct lenses on every diff.
+
+**`ui-ux-pro-max`** — a searchable reference database: 161 color palettes, 57 font pairings, 99 UX guidelines. Now available to the design persona when selecting a palette or type system for a new project. Having a reference database is different from relying on what the model remembered from training.
+
+**`web-design-guidelines`** — audits UI against Vercel design principles and accessibility rules. Wired to both the design persona (before handing to the engineer) and the engineering persona (before ship). Same check, two checkpoints.
+
+**`vercel-composition-patterns`** — React composition patterns at the implementation level: avoids boolean prop proliferation, prop drilling, and component interface anti-patterns. Available to the engineering persona when designing component APIs or refactoring a tangled component tree.
+
+---
+
+## What the Audit Also Found
+
+Running a systematic search revealed something that had nothing to do with skill installation.
+
+Eight persona files still used the old agent names — Ren (the designer, now Lux) and Kai (the AI architect and educator, now Sage). The renames had been made in the primary identity files and in the vault routing table. But the cross-references in other personas' team-member sections, the memory frontmatter, and the shared-patterns file had been missed.
+
+A persona that routes to the wrong name never reaches the right agent.
+
+The fix was mechanical — grep all persona files, find all references, update every live instance. Historical log entries were left intact since they document what the system was, not what it is. The distinction matters: changing a log entry is editing history; changing a cross-reference is correcting an active pointer.
+
+This kind of drift is the maintenance cost of a system that spans many files. The mitigation is periodic full audits — not trusting that a rename completed cleanly just because the primary file was updated.
+
+---
+
 ## Related
 
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the foundation this extends: how 11 personas replaced isolated agents and what the coordination architecture looks like
