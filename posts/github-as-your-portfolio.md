@@ -2,6 +2,8 @@
 
 # GitHub as Your Portfolio: Why I Archived a Full Portfolio Site for a README
 
+*2026-04-08 · github, portfolio · GitHub is Your Portfolio*
+
 I had a portfolio site that was 85 percent complete — real interactive tools, real product decisions, real work in it. I had a GitHub profile that read like a resume. I was spending attention on both and neither was getting what it deserved. The uncomfortable realisation was that the site, polished as it was, signalled the wrong thing: "I designed something to look impressive." The GitHub profile, rough as it was, was where the actual credibility would need to live. I had to pick one and commit.
 
 ## Context

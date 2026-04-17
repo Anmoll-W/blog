@@ -2,6 +2,8 @@
 
 # When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses
 
+*2026-04-09 · code-review, ai-coding · Silent Failures*
+
 > The AI found real bugs. It also introduced three new ones. All three had the same root cause.
 
 ## Context

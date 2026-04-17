@@ -2,6 +2,8 @@
 
 # Research Before Building: How I Map a Problem Space from Scratch
 
+*2026-04-09 · product, ai, pm*
+
 On Day 1 of a six-day buildathon, the team had a secondary research document with a problem statement and three user archetypes. The document was well-written. The framing was credible. Everyone had read it. And the team was about to spend the next six days building against it without checking whether the archetypes were right, the paid-tier assumption was grounded, or the problem statement could survive contact with independent data.
 
 That is the moment I have seen go wrong the most in product work. A document circulates, earns a few comments, accumulates gravity by existing, and then becomes the foundation for a product nobody has actually validated. The problem framing was never challenged. The archetypes were never stress-tested. The research was inherited, not earned.

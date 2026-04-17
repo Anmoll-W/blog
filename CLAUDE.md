@@ -20,7 +20,6 @@ blog/
 
 ### 1. Filename format
 - Always: `slug-only.md` — no date prefix
-- Date lives in frontmatter `date:` field and in README table
 - Wrong: `2026-04-13-the-eval-agent.md`
 - Right: `the-eval-agent.md`
 
@@ -30,9 +29,25 @@ blog/
 - Format: `| YYYY-MM-DD | [Full Post Title](posts/slug.md) | Series or — | tag1, tag2 |`
 - Never leave a post out of the index
 
-### 3. Series file update (if post belongs to a series)
+### 3. Post metadata line (required on every post)
+- No YAML frontmatter. No `---` blocks.
+- Instead, add a single italic line directly below the `# Title`:
+  - With series: `*YYYY-MM-DD · tag1, tag2, tag3 · Series Name*`
+  - Without series: `*YYYY-MM-DD · tag1, tag2, tag3*`
+- source_session goes in an HTML comment above the title: `<!-- source_session: ... -->`
+- Example:
+  ```
+  <!-- source_session: 2026-04-16_my-session -->
+
+  # My Post Title
+
+  *2026-04-16 · vault, ai, systems · Vault as OS*
+
+  Content starts here...
+  ```
+
+### 4. Series file update (if post belongs to a series)
 - Add entry to the relevant `series/*.md` file
-- Use the series_order from frontmatter
 - Include a 1-2 sentence description of what the post covers
 
 ### 4. GitHub profile README (`Anmoll-W/Anmoll-W` repo)
@@ -52,7 +67,7 @@ When a new post is published:
 **Step B — link TO the new post from existing posts:**
 - For each related post identified in Step A, read its `## Related` section
 - If the new post is relevant to that existing post's reader, add a link back
-- Update the `## Related` section body only (no frontmatter `related:` field)
+- Update the `## Related` section body only
 - Prioritise: posts in the same series, posts covering the same system, posts that are the "before" to this post's "after"
 
 **Cross-link quality bar:**
@@ -72,7 +87,8 @@ When a new post is published:
 Run a quick check against these before every commit:
 
 - [ ] Filename is slug-only (no date)
-- [ ] Frontmatter has: date, tags, series (or "") — nothing else; source_session goes in an HTML comment below the closing `---`
+- [ ] No YAML frontmatter — metadata is the italic line below the title: `*YYYY-MM-DD · tags · Series*`
+- [ ] source_session is in an HTML comment above the title
 - [ ] Post has a `## Related` section with at least 2 links
 - [ ] Blog README updated
 - [ ] Series file updated (if applicable)
@@ -85,7 +101,7 @@ Run a quick check against these before every commit:
 ## Thought Process — Why These Rules Exist
 
 **Why slug-only filenames?**
-The GitHub file browser shows raw filenames. `the-eval-agent.md` reads like a post. `2026-04-13-the-eval-agent.md` reads like a dev log. The date prefix adds no value — it is already in the frontmatter and the README table.
+The GitHub file browser shows raw filenames. `the-eval-agent.md` reads like a post. `2026-04-13-the-eval-agent.md` reads like a dev log. The date prefix adds no value — it is already in the metadata line and the README table.
 
 **Why always update the profile README?**
 The profile README is the first thing someone sees when they click through from LinkedIn or a Google result. Stale posts signal an abandoned project. Keeping it to exactly 5 posts forces curation — not just appending.

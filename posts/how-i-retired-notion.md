@@ -2,6 +2,8 @@
 
 # How I Retired Notion in One Session
 
+*2026-04-08 · vault, systems, obsidian · Vault as OS*
+
 For two years I maintained two knowledge systems in parallel and told myself the split made sense. Notion for the structured, permanent work — project specs, roadmaps, strategy docs. Obsidian for session notes, daily captures, and the vault itself.
 
 What I did not account for was the cost that compounded quietly in the background: every time I built something that needed to know about my projects, it could only read one of the two systems. Claude Code can read Markdown files in a vault. It cannot read Notion. Every spec, every decision, every roadmap that lived in Notion was invisible to the tools I was relying on most.

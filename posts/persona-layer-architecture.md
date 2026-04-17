@@ -2,6 +2,8 @@
 
 # From Identity Files to Persona Stubs: Redesigning the Vault Agent System
 
+*2026-04-12 · vault, ai, systems · Vault as OS*
+
 Every session that boots with 12 full agent identity files is a session that started with a context window already under pressure. I ran that system for two months before I sat down to fix it.
 
 The cost was not always visible. But there were sessions where a long-running task would degrade halfway through, or where the agent would lose track of earlier instructions, and I would wonder whether the 24 KB of persona context loaded at the start had anything to do with it. I had built a system optimised for agent readiness and accepted context pressure as the price. I had not stopped to ask whether I needed all twelve agents ready for a session that only needed one.

@@ -2,6 +2,8 @@
 
 # The Eval Agent: Adding a Quality Gate to an AI Workflow
 
+*2026-04-13 · vault, ai, systems · Vault as OS*
+
 Twelve agents was not the problem. None of them were built to disagree with each other.
 
 I ran my vault with twelve personas — Maya drafts content, Priya specs product decisions, Alex architects the code, and so on. Each agent is good at producing output in their domain. What no agent was built to do was stop and ask whether the output was actually good.

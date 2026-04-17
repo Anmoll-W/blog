@@ -2,6 +2,8 @@
 
 # How to Audit a Production Codebase Against Its Own Support Data
 
+*2026-04-08 · engineering, debugging*
+
 Before this audit session, the plan was to start shipping bug fixes. The plugin had unresolved support volume and the pressure to ship something — anything — was real. The problem was that without knowing which areas of the codebase were causing the most pain, any fix would be a guess. Shipping a guess when you have 1,165 support interactions already telling you exactly where users are hurting is a product decision, not just a technical one. This audit was not optional cleanup. It was the gate before any fix could be trusted.
 
 This post walks through a method for using support ticket categories as a map into an unfamiliar codebase, what patterns make PHP bugs invisible in production, and how to tell a real bug from a false positive.

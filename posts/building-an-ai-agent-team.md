@@ -2,6 +2,8 @@
 
 # Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas
 
+*2026-04-10 · ai-agents, personas, vault · Vault as OS*
+
 > The problem was not that the agents lacked capability. The problem was that they did not know what each other had learned.
 
 ## Context

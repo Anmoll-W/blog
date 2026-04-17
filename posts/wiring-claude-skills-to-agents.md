@@ -1,11 +1,8 @@
----
-date: 2026-04-16
-tags: [vault, ai, systems, agents, skills]
-series: vault-as-os
----
 <!-- source_session: 2026-04-16_claude-skills-agent-wiring -->
 
 # My AI Agents Had Identity. They Needed Methodology.
+
+*2026-04-16 · vault, ai, systems, agents, skills · Vault as OS*
 
 I had built 13 AI personas. Each one had a name, a domain, a set of constraints, a clear "never do" list. They knew who they were. What they did not have was structured methodology for the hard parts.
 

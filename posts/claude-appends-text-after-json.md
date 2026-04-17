@@ -2,6 +2,8 @@
 
 # Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites
 
+*2026-04-04 · claude-api, json, debugging · Silent Failures*
+
 > The bug did not appear in early testing. Claude happened to return clean JSON. Under load, it did not.
 
 ## Context

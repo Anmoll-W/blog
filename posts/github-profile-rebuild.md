@@ -2,6 +2,8 @@
 
 # Building the GitHub Profile README: Design Decisions and the One Constraint That Shaped Everything
 
+*2026-04-08 · github, portfolio · GitHub is Your Portfolio*
+
 The strategic call had been made: archive the React portfolio site, make GitHub the primary presence. Now the profile README had to actually carry that weight. The risk was doing what most developers do by default — open the file, start writing, and end up with something that reads like a formatted CV. I had just archived a polished portfolio site for this. A CV-shaped README would make that tradeoff pointless.
 
 The first thing I did was not write markdown. It was run a structured design session to decide what the profile should feel like before a single line of content got written. That sequence matters. Writing before deciding on voice and structure produces something that reads like a first draft forever.

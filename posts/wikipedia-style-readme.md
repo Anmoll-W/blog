@@ -2,6 +2,8 @@
 
 # Why I Rebuilt My GitHub Profile as a Wikipedia Article
 
+*2026-04-10 · github, portfolio · GitHub is Your Portfolio*
+
 Two days after shipping the narrative portfolio README, I looked at the pinned repos and realised I had built a good article sitting in the middle of nothing. Each repo told a story. None of them connected back to the profile. None of them connected to each other. Someone who arrived at ChalotripBot from a search had no path back to me, and no path sideways to anything else I had built. I had spent time getting one node right and had not thought about the network at all.
 
 The narrative format worked as a standalone document. It did not work as the entry point to a network.

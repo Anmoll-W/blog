@@ -1,11 +1,8 @@
----
-date: 2026-04-17
-tags: [support, ops, gmail, product]
-series: ""
----
 <!-- source_session: 2026-04-17_gmail-support-system -->
 
 # We Were Paying for a Support Tool. Gmail Already Did the Job.
+
+*2026-04-17 · product, engineering, operations, saas*
 
 We were paying for a shared inbox tool to manage support for a SaaS product receiving 6 to 10 tickets a day. The tool had shared views, assignment workflows, and collision detection. It was well-designed. It was also solving a problem we did not actually have at our volume.
 

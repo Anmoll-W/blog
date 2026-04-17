@@ -2,6 +2,8 @@
 
 # Telegram Privacy Mode: The Silent Setting That Broke Natural Language
 
+*2026-03-30 · telegram, silent-bugs · Silent Failures*
+
 The entire value proposition of ChalotripBot was natural language. Type what you want in the group chat and the bot coordinates the trip. That was what I had built. That was what I had described to the people I was testing it with. During the first live test, none of it worked.
 
 Slash commands worked. Type `/cancel` and the bot cancelled the trip. Type `/help` and the bot responded. But type "plan a trip to Goa" and the bot was silent. Type "I want to go in April" and the bot was silent. I had shipped a natural language product and natural language was completely disabled, by a platform setting I had never changed from its default.

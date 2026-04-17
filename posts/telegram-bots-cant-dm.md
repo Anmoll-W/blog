@@ -2,6 +2,8 @@
 
 # Telegram Bots Cannot DM Users Who Have Not Pressed Start
 
+*2026-04-04 · telegram, silent-bugs · Silent Failures*
+
 I had designed the preference collection flow around DMs because it felt right. Private questions should get private answers. I had tested it myself and it worked. In the first real group test with seven people, one person received the DM. The other six received nothing. No error. No indication anything had gone wrong. The bot continued running as if the flow had succeeded.
 
 The design I had made — DMs per member — was based entirely on testing with my own account, which had always interacted with the bot directly. I had not tested with anyone who had not already pressed START.

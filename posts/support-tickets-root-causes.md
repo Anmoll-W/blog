@@ -2,6 +2,8 @@
 
 # From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint
 
+*2026-04-08 · engineering, debugging*
+
 The support backlog had 70 reported issues. The question on the table was what to fix first — and more specifically, whether fixing individual tickets one by one was the right strategy at all. If each report was its own independent bug, 70 fixes was the scope. If some fraction of those reports shared a root cause, the math changed significantly. Before committing to a fix strategy, the mapping had to happen. That mapping decision — do the root-cause analysis before writing any fix code — is what made this session produce nine shipping fixes in a single day instead of two or three.
 
 In this case, nine fixes addressed the root cause behind 35 to 40 of the 70 reports.

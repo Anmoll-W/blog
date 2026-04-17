@@ -1,11 +1,8 @@
----
-date: 2026-04-16
-tags: [vault, ai, systems, agents, product]
-series: vault-as-os
----
 <!-- source_session: 2026-04-16_harper-team-review-agent-self-correction -->
 
 # My AI Agents Were Running. They Just Weren't Working.
+
+*2026-04-16 · vault, ai, systems, agents, product · Vault as OS*
 
 I had told myself the agent system was operational. Thirteen personas, each with a domain, a protocol, a set of rules. Built over two weeks. Documented. Wired together. The kind of system you describe to someone and they say "that's impressive."
 

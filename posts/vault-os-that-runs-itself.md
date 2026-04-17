@@ -2,6 +2,8 @@
 
 # From Manual to Automatic: How I Built a Vault OS That Runs Itself
 
+*2026-04-05 · vault, automation · Vault as OS*
+
 I had built a system that required me to remember to use it. That is not a system. That is a checklist with extra steps.
 
 ## Context

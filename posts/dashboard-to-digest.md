@@ -2,6 +2,8 @@
 
 # Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead
 
+*2026-04-13 · engineering, product, ai, helpscout*
+
 ## What I Built (and Why It Was Wrong)
 
 Twelve days ago I built a support dashboard. I had just shipped it. I thought it was useful. When I checked the access logs to see who was using it, the answer was nobody. The dashboard had three users. Two of them were me on different machines. The third had not logged in since the day I sent the link.

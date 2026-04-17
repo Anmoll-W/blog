@@ -2,6 +2,8 @@
 
 # launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent
 
+*2026-04-14 · engineering, silent-failures, macos, launchd · Silent Failures*
+
 I had been telling people the vault runs itself. The morning brief, the inbox processor, the weekly review, a LinkedIn analyst that surfaces what the feed is missing — all scheduled, all unattended, all working. I had written about this system. I had described it out loud as running.
 
 When I went to actually check the outputs, the agent that mattered most for distribution had never produced a single artifact. Not once. The plist was loaded, the schedule was correct, and the system had been silently failing for as long as I had been describing it as working.

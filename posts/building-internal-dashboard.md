@@ -2,6 +2,8 @@
 
 # Building an Internal Support Dashboard: From Broken Scaffold to Live Data
 
+*2026-04-01 · engineering, supabase, nextjs*
+
 The goal for this session was to build a support dashboard that would surface ticket trends in realtime — a tool that could tell, at a glance, which feature areas were generating the most pain and whether a fix had actually moved the number. The business case was straightforward: stop guessing about support volume and start reading it. The risk was equally straightforward: ship a broken data layer and every insight the dashboard produces is wrong. Before writing a single feature, the foundation needed to be verified.
 
 The codebase already existed. An AI tool had scaffolded it, the folder structure looked reasonable, and the first instinct was to start building features. The second instinct, which arrived about ten minutes later, was to check what database driver the scaffold had actually used.

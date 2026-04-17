@@ -2,6 +2,8 @@
 
 # Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams
 
+*2026-03-31 · ai, engineering, product · Building ChalotripBot*
+
 I had a PRD with 6 major feature areas, an 8-day build estimate, and 4 days left before the April 4 deadline. The options were to cut scope, miss the deadline, or find a way to run work in parallel. Cutting scope meant shipping something that was not actually a group travel coordinator. Missing the deadline was not on the table. So I had to figure out what "parallel" actually meant for a single-developer AI-assisted build — and where it would break down if I got the decomposition wrong.
 
 ## Mapping the Problem

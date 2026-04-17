@@ -2,6 +2,8 @@
 
 # Missing Viewport Tag: The Silent Root of All Mobile Failures
 
+*2026-04-10 · css, mobile, silent-bugs · Silent Failures*
+
 I had built and tested a mobile-responsive UI. Multiple pages. Working breakpoints. I had checked it in devtools. When the CSS was ported into the production WordPress site, every mobile layout stopped working — on every page, on every device. The production site had never been tested on a real mobile device, and it had apparently never had a viewport tag.
 
 The breakpoints were correct. The media queries were correct. The Tailwind classes were correct. The prototype worked fine on mobile. None of that mattered, because the production site was missing one line of HTML that it had never had. I had designed and shipped a mobile experience on top of an HTML foundation I had never examined.

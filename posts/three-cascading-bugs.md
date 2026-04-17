@@ -2,6 +2,8 @@
 
 # Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font
 
+*2026-03-29 · engineering, silent-failures · Silent Failures*
+
 I had shipped the boarding pass redesign. The build succeeded. The page loaded. I had told myself it was done.
 
 It was not done. Three separate failures were waiting in production, none of them throwing an error, none of them visible in the development environment where the work had happened. The page was a full-viewport layout reimagined as a boarding pass: left 62% with editorial display headlines and flight data, right 38% stub with monospace labels and a call-to-action button. After deploying, each failure appeared in sequence. "The build succeeded" had turned out to mean very little about whether the page worked.

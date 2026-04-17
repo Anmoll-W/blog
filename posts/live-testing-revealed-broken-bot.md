@@ -2,6 +2,8 @@
 
 # Live Testing Revealed the Bot Was Fundamentally Broken
 
+*2026-03-30 · engineering, testing · Building ChalotripBot*
+
 I had shipped a group travel coordinator to real people and told them to try it. I had tested it myself, from my own account, as the organiser, and it had worked. What I had not done was test what happened when a second person tried to join. Or RSVP. Or do anything that required them to not be me.
 
 The first real test with actual users exposed that the core flows were not working at all. "Plan a trip" did nothing. Only one RSVP had ever been recorded. No one could join the trip. This is ChalotripBot, an AI-powered group travel coordinator for Telegram, and the fundamental mechanics of group coordination were broken from the start. The decision to ship before multi-user testing was the decision that made all of this visible at the worst possible moment — in front of real users instead of in a staging environment.

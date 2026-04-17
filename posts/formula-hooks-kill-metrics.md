@@ -2,6 +2,8 @@
 
 # Formula Hooks Kill the Metric They Optimize For
 
+*2026-04-10 · ai, systems, content*
+
 I had a rule in my LinkedIn content system that said: "Reframe hooks are the top repost driver." The rule was true. It was based on real data. And it was quietly killing the metric it was trying to protect.
 
 I had not looked at post-level performance in a few weeks. The aggregate engagement numbers were up. What I had not checked was whether the Reframe format was still earning those reposts, or whether something else was carrying the aggregate while the format itself was becoming invisible. When I went back and looked at the last seven posts, six of them had Myth / Reality openers. Repost rate on that format had dropped. I had been watching the aggregate and assuming the formula was still working.

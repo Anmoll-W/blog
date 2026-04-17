@@ -2,6 +2,8 @@
 
 # From Problem Space to Working Codebase in One Day
 
+*2026-04-10 · engineering, product, ai*
+
 The PM Learning Companion was a buildathon product — two days to go from nothing to something reviewable. Day 1 was research and problem framing. Day 2 had a specific definition of done: get 16 screens navigable, every user flow walkable, the product reviewable by a non-technical teammate. The risk was the same one every Day 2 carries — spending the day building backend infrastructure and ending with zero screens anyone can see, or spending it building screens against assumptions that the data layer would later contradict. The decision that made this day work was refusing to let either of those failure modes happen. That refusal has a name: mock-first. But it also has a design counterpart: persona separation. Both were product decisions before they were technical ones.
 
 By midnight, 16 routes were locally functional. No database, no real API keys, no deployment. But every screen existed, every user flow navigated, and the product felt like something you could actually use. This post is about how it worked.

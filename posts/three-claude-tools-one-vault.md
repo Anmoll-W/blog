@@ -2,6 +2,8 @@
 
 # Three Claude Tools, One Vault: The Architecture Behind the System
 
+*2026-03-25 · vault, ai, systems · Vault as OS*
+
 Every session I started with Claude felt like the first one. I would open a project, begin explaining the context, and realise I had typed nearly the same paragraph the week before. Decisions I had already made. Constraints I had already established. A project that was well underway, treated by the tool as brand new.
 
 That is not a capability problem. That is a design problem I had not solved yet.
