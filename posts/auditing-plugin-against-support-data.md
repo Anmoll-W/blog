@@ -83,6 +83,7 @@ The decision lesson: knowing a category name is not the same as understanding a 
 - [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](support-tickets-root-causes.md) — the follow-up session where these findings were extended into a full fix batch
 - [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — one of the fixes in this audit (SQL escaping) had an error that was caught in review the next day
 - [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — the audit surfaced the category taxonomy that later shaped the AI digest prompt; this post covers what the dashboard became after nobody logged in
+- [We Were Paying for a Support Tool. Gmail Already Did the Job.](gmail-support-system-without-paid-tools.md) — the audit method is the upstream of the support system: understanding ticket categories is what makes routing filters worth building
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

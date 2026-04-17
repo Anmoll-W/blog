@@ -75,6 +75,7 @@ That convergence would not have appeared if I had accepted the original framing 
 ## Related
 
 - [From Problem Space to Working Codebase in One Day](spec-to-codebase-one-day.md) — what happened on Day 2, when the research turned into a running application
+- [We Were Paying for a Support Tool. Gmail Already Did the Job.](gmail-support-system-without-paid-tools.md) — the tooling decision failure this post describes (picking tools before you have volume data) is exactly what caused the over-engineering in the support stack
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

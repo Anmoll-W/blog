@@ -75,6 +75,7 @@ The decision lesson: the choice to map first and fix second is a product priorit
 - [How to Audit a Production Codebase Against Its Own Support Data](auditing-plugin-against-support-data.md) — the preceding session that identified the first set of bugs and defined the audit method
 - [When the AI Fix Is Wrong](when-the-ai-fix-is-wrong.md) — the SQL escaping fix in this batch had an error that was caught in review the next day
 - [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — what the support data ultimately informed: the category groupings that shaped the 7 AM digest that replaced the full dashboard
+- [We Were Paying for a Support Tool. Gmail Already Did the Job.](gmail-support-system-without-paid-tools.md) — the ticket category taxonomy from this sprint directly informed the routing labels in the Gmail filter system that replaced the paid shared inbox
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
