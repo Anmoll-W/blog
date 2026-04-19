@@ -40,6 +40,9 @@ This series documents how each layer was built, what broke along the way, and wh
 9. [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](../posts/agents-that-dont-learn.md)
    The compounding layer: how verbal self-reflection (Reflexion Block), a user profile mined from 60 sessions, memory decay flags, path-scoped rules, and explicit agent frontmatter turned a system that accumulated sessions into one that accumulates intelligence.
 
+10. [The Agents Were Ready. The Coordination Was Not.](../posts/skill-chaining-agent-orchestration.md)
+    The orchestration layer: how 13 isolated agents got a coordination contract. Covers the central-vs-declarative-vs-signal architecture decision, the two-orchestrator design (live + auto), the shared skills registry, Vera's pre-mortem that caught five production failure modes before implementation, and the Handoff contract that makes agent-to-agent chaining mechanical rather than hopeful.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization
