@@ -85,3 +85,4 @@ Before calling any AI system "running," I now ask: what happens when it silently
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — how the agent system was restructured from flat files to a stub-based routing architecture
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — how Vera was built and why producing agents cannot grade their own output
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — wiring structured skills to agent identities so methodology is invoked, not recalled
+- [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](agents-that-dont-learn.md) — the follow-up: after fixing what was broken, rebuilding the architecture so agents compound intelligence across sessions instead of just storing events

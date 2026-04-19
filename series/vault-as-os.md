@@ -37,6 +37,9 @@ This series documents how each layer was built, what broke along the way, and wh
 8. [My AI Agents Were Running. They Just Weren't Working.](../posts/self-correcting-agents.md)
    The self-correction layer: what happens when you audit a 13-agent system and find five aren't doing their jobs. Covers the difference between a protocol and a reminder, how self-correcting behaviors are baked into agent identity, and why "operational" is a claim that needs evidence.
 
+9. [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](../posts/agents-that-dont-learn.md)
+   The compounding layer: how verbal self-reflection (Reflexion Block), a user profile mined from 60 sessions, memory decay flags, path-scoped rules, and explicit agent frontmatter turned a system that accumulated sessions into one that accumulates intelligence.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization
