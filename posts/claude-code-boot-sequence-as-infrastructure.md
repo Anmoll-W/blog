@@ -85,6 +85,20 @@ Vera ran a structured review of all five commands. She found six issues: a prior
 
 ---
 
+## What the Second Pass Found
+
+Vera's initial review caught six issues. After those were fixed, a second structured pass ran against the full system — not just the commands, but the hooks, the routing logic, and the verification rule itself. It found three gaps the first pass had missed.
+
+**Deprecated skill names weren't blocked.** Claude had been invoking `superpowers:brainstorm` and `ui-ux-critique` — both deprecated. In one case, this caused Claude to create a CLAUDE.md file instead of running a Vera eval. The fix was a second PreToolUse hook in `~/.claude/settings.json` that fires before any `Skill` tool call. If the invocation matches a deprecated name — `superpowers:brainstorm` (correct: `superpowers:brainstorming`), `ui-ux-critique` (correct: invoke Vera directly), `superpowers:write-plan` (correct: `superpowers:writing-plans`) — the hook outputs a hard warning with the replacement name and blocks the call until the correct name is used.
+
+**Persona routing wasn't loading early enough.** The routing map existed in vault CLAUDE.md. It was not being injected at session start. The fix: `session-loader.py` was updated to output a fifth section, `=== PERSONA ROUTING ===`, containing a compact trigger-word map for all personas, with Vera's signals listed first. Every session now starts with the routing map visible before any task runs.
+
+**Self-verification was too generic to enforce.** "Run a second audit pass" is a rule that can mean anything. It was expanded into four domain-specific checklists — vault tasks, code tasks, content tasks, and a count check. The count check addressed a specific incident: Claude had synced 19 of 24 LinkedIn posts and logged results without flagging the gap. The rule now requires: if the task involved N items, verify the count matches before reporting done.
+
+The meta-finding: the system built to improve verification needed its own verification pass — and that pass found real gaps. The self-referential nature of it is not ironic. It is the point.
+
+---
+
 ## The Relatable Part
 
 I had told myself the instructions were good. They were good. Good instructions and enforced instructions are not the same thing.
@@ -100,6 +114,8 @@ I had not noticed that the same gap existed in Claude Code itself — not in the
 **Technical lesson:** The difference between "I asked Claude to load context" and "Claude loads context every session" is the difference between a CLAUDE.md instruction and a SessionStart hook. Instructions remind. Infrastructure enforces. If a step is critical enough to document, it is critical enough to wire into the session start.
 
 **Decision lesson:** When a rule fails more than twice in the same way, the rule is not the problem. The mechanism is. Rewriting the rule will not fix a mechanism gap. The right response is to move the enforcement one layer down — from text to tooling, from suggestion to hook.
+
+**Verification lesson:** Even infrastructure-level fixes benefit from a structured eval pass. The hooks, the routing injection, and the verification rule itself each had gaps that a first review missed. Building the eval habit into the workflow is not overhead — it is what separates a system that holds from one that looks complete until it fails.
 
 ---
 
