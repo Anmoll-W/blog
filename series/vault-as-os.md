@@ -43,6 +43,9 @@ This series documents how each layer was built, what broke along the way, and wh
 10. [The Agents Were Ready. The Coordination Was Not.](../posts/skill-chaining-agent-orchestration.md)
     The orchestration layer: how 13 isolated agents got a coordination contract. Covers the central-vs-declarative-vs-signal architecture decision, the two-orchestrator design (live + auto), the shared skills registry, Vera's pre-mortem that caught five production failure modes before implementation, and the Handoff contract that makes agent-to-agent chaining mechanical rather than hopeful.
 
+11. [The Vault Was Organized. The Files Were Not.](../posts/vault-structural-drift.md)
+    The hygiene layer: a nightly automation that scans every Projects/ folder for misplaced files, moves them to their correct locations (patching wikilinks first), creates missing index.md stubs, and appends a report to a safety log. Covers the auto-move vs alert-only decision, the wikilink patching problem, and the three-layer visibility chain.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

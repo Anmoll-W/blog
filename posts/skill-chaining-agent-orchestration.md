@@ -117,3 +117,4 @@ The agents did not get smarter. The coordination layer got built.
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — how skills were wired to agents before the orchestration layer existed
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — Vera's role in the pre-mortem that shaped this design
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — the self-correction layer that runs inside the chains this orchestrator coordinates
+- [The Vault Was Organized. The Files Were Not.](vault-structural-drift.md) — the session immediately after this one: a nightly structural hygiene automation built using the same skill-file pattern the orchestrator relies on

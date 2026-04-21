@@ -111,3 +111,4 @@ The alternative — keeping protocols general and trusting agents to apply judgm
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — how skills were wired to agent identity files to make methodology consistent across sessions
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — how Vera was built as the team's quality evaluation layer, and how her protocols were similarly tightened
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the architectural decision that set up the persona structure this self-improvement layer runs on top of
+- [The Vault Was Organized. The Files Were Not.](vault-structural-drift.md) — built in the session immediately after this one: a nightly automation that enforces the vault's project anatomy the same way this post enforces agent memory hygiene

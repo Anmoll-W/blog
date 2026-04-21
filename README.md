@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-21 | [The Vault Was Organized. The Files Were Not.](posts/vault-structural-drift.md) | Vault as OS | vault, automation, ai, obsidian, systems |
 | 2026-04-19 | [The Agents Were Ready. The Coordination Was Not.](posts/skill-chaining-agent-orchestration.md) | Vault as OS | claude, obsidian, agents, orchestration, vault-os |
 | 2026-04-19 | [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](posts/agents-that-dont-learn.md) | Vault as OS | ai-agents, claude, agent-architecture, obsidian, self-improvement |
 | 2026-04-18 | [I Spent an Afternoon Making My Terminal Feel Alive](posts/ghostty-terminal-alive.md) | — | developer-tools, ghostty, claude-code, terminal, workflow |

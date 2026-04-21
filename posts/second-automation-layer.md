@@ -152,6 +152,7 @@ Two hooks in the development workflow:
 - [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — the silent failure that affected the prior generation of this system; directly informs the guard clause pattern used throughout this post
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — the same quality-gate thinking applied to the publish-session QA step; a producing agent cannot eval its own output
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the persona coordination layer that these automated routines run on top of
+- [The Vault Was Organized. The Files Were Not.](vault-structural-drift.md) — adding an eighth routine to this layer: a nightly structural hygiene scan that enforces project anatomy across all 14 projects
 
 ---
 
