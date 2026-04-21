@@ -86,3 +86,4 @@ Before calling any AI system "running," I now ask: what happens when it silently
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — how Vera was built and why producing agents cannot grade their own output
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — wiring structured skills to agent identities so methodology is invoked, not recalled
 - [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](agents-that-dont-learn.md) — the follow-up: after fixing what was broken, rebuilding the architecture so agents compound intelligence across sessions instead of just storing events
+- [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](claude-code-boot-sequence-as-infrastructure.md) — the same gap applied to Claude Code itself: boot instructions that lived in CLAUDE.md but ran only when remembered, fixed by a SessionStart hook that fires every session

@@ -22,7 +22,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
-| [Vault as OS](series/vault-as-os.md) | 5 | Building an Obsidian vault into an automated knowledge system with 11 AI personas running on schedule |
+| [Vault as OS](series/vault-as-os.md) | 13 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
 | [Silent Failures](series/silent-failures.md) | 7 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-21 | [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](posts/claude-code-boot-sequence-as-infrastructure.md) | Vault as OS | claude-code, automation, vault, ai-tools |
 | 2026-04-21 | [The Vault Was Organized. The Files Were Not.](posts/vault-structural-drift.md) | Vault as OS | vault, automation, ai, obsidian, systems |
 | 2026-04-19 | [The Agents Were Ready. The Coordination Was Not.](posts/skill-chaining-agent-orchestration.md) | Vault as OS | claude, obsidian, agents, orchestration, vault-os |
 | 2026-04-19 | [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](posts/agents-that-dont-learn.md) | Vault as OS | ai-agents, claude, agent-architecture, obsidian, self-improvement |

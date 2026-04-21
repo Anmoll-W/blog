@@ -46,6 +46,9 @@ This series documents how each layer was built, what broke along the way, and wh
 11. [The Vault Was Organized. The Files Were Not.](../posts/vault-structural-drift.md)
     The hygiene layer: a nightly automation that scans every Projects/ folder for misplaced files, moves them to their correct locations (patching wikilinks first), creates missing index.md stubs, and appends a report to a safety log. Covers the auto-move vs alert-only decision, the wikilink patching problem, and the three-layer visibility chain.
 
+12. [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](../posts/claude-code-boot-sequence-as-infrastructure.md)
+    The enforcement layer: analyzing 104 Claude Code sessions to find three recurring failure patterns (skipped boot, shallow audits, wrong format), then moving the session boot sequence from CLAUDE.md documentation into a SessionStart hook that fires on every session. Covers the five new workflow rules, five slash commands, and the difference between instructions that remind and infrastructure that enforces.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

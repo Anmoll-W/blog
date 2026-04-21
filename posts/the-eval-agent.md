@@ -83,6 +83,7 @@ On decisions: a quality problem in a system with no quality role is not a conten
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the broader automated system this fits inside
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — Vera gains `the-fool` skill in this session: a structured 5-mode critical reasoning framework wired as her primary stress-test tool
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — Vera was one of the amber agents in this review: she had never run a ship-readiness eval despite a feature shipping the day before
+- [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](claude-code-boot-sequence-as-infrastructure.md) — Vera ran a structured review of five new slash commands and found six issues before anything shipped; the same eval posture applied to Claude Code session infrastructure
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
