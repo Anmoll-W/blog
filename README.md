@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-22 | [Google Analytics Was Fine. Opening It Was Not.](posts/google-analytics-daily-digest.md) | — | engineering, product, ai, analytics |
 | 2026-04-22 | [The Dashboard Was Lists. The Hub Is a Board.](posts/kanban-board-as-project-hub.md) | Vault as OS | vault, obsidian, kanban, systems, productivity |
 | 2026-04-21 | [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](posts/claude-code-boot-sequence-as-infrastructure.md) | Vault as OS | claude-code, automation, vault, ai-tools |
 | 2026-04-21 | [The Vault Was Organized. The Files Were Not.](posts/vault-structural-drift.md) | Vault as OS | vault, automation, ai, obsidian, systems |

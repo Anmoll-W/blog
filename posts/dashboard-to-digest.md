@@ -73,6 +73,7 @@ The system is fully autonomous. No manual token management, no expiry monitoring
 - [How to Audit a Production Codebase Against Its Own Support Data](auditing-plugin-against-support-data.md) — using support ticket analysis to prioritise engineering work
 - [When the AI Fix Is Wrong: What Senior Review Catches](when-the-ai-fix-is-wrong.md) — on verifying that a fix is addressing the real cause, not just the visible symptom
 - [We Were Paying for a Support Tool. Gmail Already Did the Job.](gmail-support-system-without-paid-tools.md) — the next step after the digest: replacing the paid shared inbox entirely with a Gmail-native triage system built from filters, delegation, and templates
+- [Google Analytics Was Fine. Opening It Was Not.](google-analytics-daily-digest.md) — the same dashboard-to-digest pattern applied to a second data source: GA4 pulled via a cron, narrated by a PM-voiced Claude Haiku, emailed at 08:00 IST
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
