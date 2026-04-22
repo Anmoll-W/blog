@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-04-22 | [The Dashboard Was Lists. The Hub Is a Board.](posts/kanban-board-as-project-hub.md) | Vault as OS | vault, obsidian, kanban, systems, productivity |
 | 2026-04-21 | [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](posts/claude-code-boot-sequence-as-infrastructure.md) | Vault as OS | claude-code, automation, vault, ai-tools |
 | 2026-04-21 | [The Vault Was Organized. The Files Were Not.](posts/vault-structural-drift.md) | Vault as OS | vault, automation, ai, obsidian, systems |
 | 2026-04-19 | [The Agents Were Ready. The Coordination Was Not.](posts/skill-chaining-agent-orchestration.md) | Vault as OS | claude, obsidian, agents, orchestration, vault-os |

@@ -49,6 +49,9 @@ This series documents how each layer was built, what broke along the way, and wh
 12. [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](../posts/claude-code-boot-sequence-as-infrastructure.md)
     The enforcement layer: analyzing 104 Claude Code sessions to find three recurring failure patterns (skipped boot, shallow audits, wrong format), then moving the session boot sequence from CLAUDE.md documentation into a SessionStart hook that fires on every session. Covers the five new workflow rules, five slash commands, and the difference between instructions that remind and infrastructure that enforces.
 
+13. [The Dashboard Was Lists. The Hub Is a Board.](../posts/kanban-board-as-project-hub.md)
+    The navigation layer: replacing a vertical Dataview dashboard with a Kanban board as the vault's central hub. Covers the status-vs-project columns decision, colored project tags, wikilinked cards as navigation pointers, the dual-layer task system (board for strategic, daily notes for operational), and how the weekly-review runner prunes the board automatically every Sunday.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

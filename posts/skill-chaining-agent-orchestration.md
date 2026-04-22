@@ -118,3 +118,4 @@ The agents did not get smarter. The coordination layer got built.
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — Vera's role in the pre-mortem that shaped this design
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — the self-correction layer that runs inside the chains this orchestrator coordinates
 - [The Vault Was Organized. The Files Were Not.](vault-structural-drift.md) — the session immediately after this one: a nightly structural hygiene automation built using the same skill-file pattern the orchestrator relies on
+- [The Dashboard Was Lists. The Hub Is a Board.](kanban-board-as-project-hub.md) — the same "visibility without duplication" principle applied to task management: a Kanban hub that surfaces project state without adding a third layer of task tracking

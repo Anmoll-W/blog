@@ -112,6 +112,7 @@ This is what a knowledge system should feel like: ambient, not demanding.
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 agent architecture that runs inside this system
 - [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — what broke in the scheduling layer of this exact system, how it was diagnosed, and why "registered" is not "running"
 - [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](second-automation-layer.md) — what this system grew into: four more agents, daily task migration, Chrome-gated analytics, and quality gates on code and publishing
+- [The Dashboard Was Lists. The Hub Is a Board.](kanban-board-as-project-hub.md) — the navigation layer built on top of this automation system: the weekly-review runner that powers the board's Sunday cleanup was built here first
 
 ---
 
