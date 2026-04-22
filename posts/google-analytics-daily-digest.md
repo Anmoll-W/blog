@@ -19,7 +19,7 @@ That is not a dashboard. That is a daily email.
 One cron endpoint, one email, one piece of AI in the middle. The architecture maps exactly to the support digest that shipped last week, with different data:
 
 ```
-Vercel Cron (02:30 UTC daily)
+Vercel Cron (09:00 UTC daily, chosen so the GA4 property's LA-timezone "yesterday" is fully closed before we query it)
   → GA4 Data API (service-account auth, Analytics Viewer on the property)
   → Aggregator: yesterday snapshot, funnel vs baseline, channels, devices, top 10 landing pages
   → Claude Haiku: five-field insight block, written as the product manager
