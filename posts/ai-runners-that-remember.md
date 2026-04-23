@@ -237,6 +237,64 @@ The research claims hold: structured note-taking produces coherence across sessi
 
 ---
 
+## Does it work? The eval results
+
+Before shipping, I ran a structured evaluation against the system. Here are the real numbers.
+
+**Token measurement (actual file sizes):**
+
+| Context | Words | ~Tokens | Role |
+|---|---|---|---|
+| past-mistakes.md Active | 2,968 | ~3,948 | Pattern-extractor scans this in full |
+| patterns.md Active | 780 | ~1,037 | All runners read this |
+| 7 days of session files | ~7,000+ | ~9,300+ | Pattern-extractor counted refs manually — before |
+| Memory file (per runner) | 76–300 | ~100–400 | Replaces from-scratch analysis |
+| SRS queue | 290 | ~386 | Surfaces 3 items, skips 2,968 words |
+
+**Where token savings actually land:**
+Morning-briefing adds ~366 words of input (memory file + SRS queue) and gains strategic guidance. This is a quality trade, not a token trade.
+
+Pattern-extractor is where the numbers matter: the sleeptime consolidator pre-computes reference counts overnight. The Sunday runner no longer scans 7 days of session files to count how often each pattern appeared. That ~7,000-word scan is replaced by ~20 words of pre-computed velocity data in the memory file.
+
+**First real run — evidence:**
+
+The morning-briefing ran its first automated run with live memory on 2026-04-23 at 12:56 IST. The memory file it wrote back:
+
+```
+## Strategy for next run
+Vault IQ Tier 1 is DONE (completed Apr 23) — Board still shows it in Active.
+Override the board and pull from Up Next.
+Beehiiv email capture has been in Top 3 for 6 consecutive mornings — add urgency:
+"6 mornings, still not started — commit or kill."
+
+## Self-assessment
+Quality: HIGH
+Confidence: 82%
+Issues: Board lagged behind daily note — had to cross-reference work log to get
+accurate Top 3. Future runs: if daily note has [x] completed for a Board Active
+card, treat it as done.
+```
+
+That is a behavioral instruction, not an observation. The next run reads "override the board" and acts on it — without being told by a human. The self-assessment surfaces a real issue the runner found in its own execution. That is what the system was designed to produce.
+
+**Specificity gate in practice:**
+
+Before the gate, the Strategy section could contain "Continue monitoring projects" — which satisfies the format but provides no guidance. The gate added to every MEMORY WRITE prompt: *"If you cannot name a specific project, file, pattern, or date in this instruction, it is too generic to include."*
+
+The first real run produced named instructions: "Vault IQ Tier 1," "Board," "Beehiiv email capture," "6 consecutive mornings," "Apr 28 Mon slot." Zero generic lines.
+
+**Catch-up system (edge case coverage):**
+
+The three-layer catch-up handles the most common failure mode — scheduled runner fires when laptop is asleep:
+
+1. Done-file + lock in every runner: idempotent, safe to run from multiple triggers
+2. Catch-up LaunchAgent (`StartInterval: 1800`): checks every 30 min, fires within 30 min of laptop wake
+3. Session-loader hook: fires instantly when any Claude session opens, surfaces notice and background-triggers the runner
+
+The catch-up plist uses `RunAtLoad: true` — it fires the moment it is loaded. On first load today it detected the morning briefing as missed (run was from before done-files existed), triggered it, and received exit 0 in under 5 minutes. The automation-health log shows the catch-up entry.
+
+---
+
 ## Related
 
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the foundational automation layer this memory system runs on top of; if your runners are not yet scheduled, start here
