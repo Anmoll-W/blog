@@ -231,6 +231,8 @@ After Tier 1:
 - Patterns.md has live strength signals — stale patterns are visible before they cause drift
 - The system gets smarter by running
 
+**On token savings:** these are runner-specific, not universal. The daily briefing runner adds a small amount of input context (memory file + SRS queue) but gains strategic guidance. The pattern-extractor runner saves meaningfully — the sleeptime consolidator pre-computes reference counts overnight, so the Sunday run no longer needs to scan seven days of session files to derive pattern strength. That scan is ~7,000 words replaced by ~20 words of pre-computed velocity data. Quality improvement is consistent across all runners. Token reduction is significant for the pattern-extractor and sleeptime consolidator specifically.
+
 The research claims hold: structured note-taking produces coherence across sessions. Sleep-time compute produces cleaner memory for active sessions. Both are achievable with file I/O and existing tools — no new API, no SDK rewrite.
 
 ---
