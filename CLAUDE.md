@@ -111,3 +111,15 @@ A blog where no posts know about each other is a dump. Cross-linking builds a re
 
 **Why bidirectional links?**
 Unidirectional links mean old posts never benefit from new posts. Every time a new post is published, it is usually the "next chapter" of an older post's story. That older post's reader deserves to know the story continued.
+
+---
+
+## Editing Discipline
+
+Global coding/content discipline lives in `~/.claude/CLAUDE.md`. Project-specific:
+
+- Don't reformat existing posts when publishing a new one — match their voice, leave them alone
+- Don't restructure README — append to the table, don't reorder columns or change format
+- Don't "improve" old posts' cross-links beyond the additions Step B requires
+- Don't anonymize names retroactively in old posts — only enforce on new ones
+- Verify before declaring publish done: `ls posts/*.md | wc -l` matches the row count in README's `## All Posts` table; profile README still shows exactly 5 entries

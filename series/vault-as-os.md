@@ -55,6 +55,9 @@ This series documents how each layer was built, what broke along the way, and wh
 14. [AI Runners That Remember](../posts/ai-runners-that-remember.md)
     The memory layer: six scheduled runners with persistent cross-run memory. Covers the three-piece system — a per-runner memory store with a `## Strategy for next run` behavioral handoff, a spaced repetition queue that surfaces past mistakes at decision time, and a 2am sleeptime consolidator that adds strength signals to patterns.md. All three are implementable with file I/O and the Claude Code CLI, no SDK required.
 
+15. [The Eval Layer Caught Me Violating My Own Rules](../posts/the-eval-layer-caught-me.md)
+    The discipline layer: installing Karpathy's four AI coding principles across thirty CLAUDE.md files at three levels (global, workspace, project) — and watching the eval agent catch a naming inconsistency, a duplicate file, and Tier B bloat that violated Simplicity First. Covers the cascade-vs-gradient decision, why discipline scales differently than rules, and why every system that makes decisions needs an eval layer that catches its own drift.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization
