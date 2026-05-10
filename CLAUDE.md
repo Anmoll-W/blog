@@ -50,12 +50,17 @@ blog/
 - Add entry to the relevant `series/*.md` file
 - Include a 1-2 sentence description of what the post covers
 
-### 4. GitHub profile README (`Anmoll-W/Anmoll-W` repo)
+### 4. GitHub profile README (`Anmoll-W/Anmoll-W` repo) — auto-push on every blog publish
 - Always shows exactly 5 posts — the most recent by date
 - Update on every publish: remove oldest post from the table, add new post at top
 - Link format: full GitHub URL with slug-only path
   - `https://github.com/Anmoll-W/blog/blob/main/posts/slug.md`
 - Profile README lives at: `/Users/aw/Projects/Anmoll07/README.md`
+- **Auto-push rule (no manual nudge):** the moment the blog `git push` succeeds, run the same commit-and-push sequence in `/Users/aw/Projects/Anmoll07/`:
+  1. `cd /Users/aw/Projects/Anmoll07 && git diff --stat README.md` — confirm the only diff is the top-5 row swap
+  2. `git add README.md && git commit -m "Profile: surface <slug>" && git push`
+  3. Report both commit SHAs (blog + profile) in the publish summary
+- Treat blog publish and profile publish as one atomic action — never push the blog and stop. Stopping leaves the profile stale (the page that gets the most LinkedIn / Google traffic). If the profile diff is dirty beyond the expected row swap, stop and ask before committing — do not skip the push.
 
 ### 5. Cross-linking — mandatory on every publish
 When a new post is published:
