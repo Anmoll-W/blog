@@ -95,6 +95,7 @@ Run a quick check against these before every commit:
 - [ ] Profile README updated (latest 5 posts)
 - [ ] Existing posts updated with backlinks where relevant
 - [ ] All facts are exact — no fabricated durations, scale claims, or outcomes (polish writing, never facts)
+- [ ] **Gemini-review content mode run** — `~/.claude/vault-runners/gemini-review.sh content posts/<slug>.md` returned PASS or SKIPPED. Output saved to `Knowledge/team-brain/gemini-review-<slug>-<date>.md`. FAILED → fix and re-run before push.
 
 ---
 

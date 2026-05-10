@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-05-10 | [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](posts/multi-llm-peer-review-gate.md) | — | ai-agents, claude-code, gemini, multi-llm, eval |
 | 2026-04-27 | [I Cherry-Picked a Viral Cost-Cut Post](posts/cherry-picking-the-cost-post.md) | — | claude-code, token-efficiency, decision-frameworks, ai-tools |
 | 2026-04-27 | [The Eval Layer Caught Me Violating My Own Rules](posts/the-eval-layer-caught-me.md) | Vault as OS | ai, vault, claude-code, discipline, eval |
 | 2026-04-23 | [AI Runners That Remember](posts/ai-runners-that-remember.md) | Vault as OS | automation, ai-agents, claude-code, memory, vault-os |
