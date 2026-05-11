@@ -58,6 +58,9 @@ This series documents how each layer was built, what broke along the way, and wh
 15. [The Eval Layer Caught Me Violating My Own Rules](../posts/the-eval-layer-caught-me.md)
     The discipline layer: installing Karpathy's four AI coding principles across thirty CLAUDE.md files at three levels (global, workspace, project) — and watching the eval agent catch a naming inconsistency, a duplicate file, and Tier B bloat that violated Simplicity First. Covers the cascade-vs-gradient decision, why discipline scales differently than rules, and why every system that makes decisions needs an eval layer that catches its own drift.
 
+16. [We Designed a Multi-Model Router. Then We Asked One Question.](../posts/right-model-wrong-problem.md)
+    The routing layer (that didn't get built): a full session of multi-model architecture research, a Vera decision eval, a Gemini adversarial BLOCK overturned by a 15-minute CLI test — and the one question that reduced the whole system to two runner modifications and one new file.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

@@ -80,6 +80,7 @@ That agent caught me violating the principles I was installing. That is the whol
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — discipline rules without an eval layer drift the same way agents do without one
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the architecture Vera sits on top of
 - [I Cherry-Picked a Viral Cost-Cut Post](cherry-picking-the-cost-post.md) — the next time the same eval persona caught a different drift: a Plan-to-Opus rule imported from a different billing tier that would have backfired without a structured pass
+- [We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md) — Vera's eval rubric-plus-adversarial-pass in action: a BLOCK from the second model, overturned by evidence, with the right decision made because the eval ran first
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
