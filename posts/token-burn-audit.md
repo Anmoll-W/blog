@@ -116,6 +116,32 @@ Exit code 0 does not mean the work happened. Exit code 1 does not mean nothing h
 
 ---
 
+## Then Vera ran an eval
+
+After applying the fixes I ran a structured adversarial eval on the session. Two issues came back.
+
+**The `timeout` fix would have broken the runner entirely.** macOS does not ship with the `timeout` command. `brew install coreutils` provides `gtimeout`, but that was never installed. The fix I applied — `timeout 1800 claude -p ...` — would have hit `bash: timeout: command not found` at 2:00 AM and exited 127. Claude would not have run at all. The fix was correct in intent and wrong in environment. I replaced it with a bash background watchdog that has no external dependencies:
+
+```bash
+claude -p "..." >> "$LOG" 2>&1 &
+CLAUDE_PID=$!
+( sleep 1800; kill -TERM "$CLAUDE_PID" 2>/dev/null; sleep 10; kill -KILL "$CLAUDE_PID" 2>/dev/null ) &
+WATCHDOG_PID=$!
+wait "$CLAUDE_PID"
+EXIT=$?
+kill "$WATCHDOG_PID" 2>/dev/null
+```
+
+The watchdog runs in a subshell. It does not depend on anything outside the bash standard library.
+
+**The BOOT fix was applied to the wrong CLAUDE.md.** The vault system has two CLAUDE.md files: a global one at `~/.claude/CLAUDE.md` and a workspace-level one inside the vault directory. Per Claude Code's precedence rules, workspace overrides global. I had updated the global file to say "do not re-read vault knowledge files." The workspace file still had the full 180,000-character read instructions. On every vault session, the workspace file won and the context load was unchanged. I updated the workspace file to match.
+
+Both of these are the same class of bug as the five above: no error, no warning, appearing to work while the actual behavior was wrong. The `timeout` call succeeds syntactically. The BOOT loads context successfully from the file that takes precedence. Silent.
+
+The eval step caught them before the next 2:00 AM run.
+
+---
+
 ## Related
 
 - [I Cherry-Picked a Viral Cost-Cut Post](cherry-picking-the-cost-post.md) — the optimization work that preceded this audit; four levers adopted, three rejected; the savings from those levers were being partially erased by the bugs in this post
