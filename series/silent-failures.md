@@ -29,6 +29,9 @@ This series documents specific cases from real projects. Each post covers one bu
 7. [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](../posts/launchd-icloud-silent-block.md)
    Scheduled vault automations that were registered with `launchctl list` but never actually running. launchd exec returned EPERM because the runner scripts lived inside an iCloud-synced folder. A second finding in the same audit: a plist that had been loaded pointing at a shell script that never existed. Fix required moving every runner out of iCloud and adding artifact checks, not just error checks.
 
+8. [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](../posts/token-burn-audit.md)
+   Five silent automation bugs in a LaunchAgent-based vault OS, each invisible because it was the absence of a signal rather than the presence of an error. A done-file contract that only accepted exit 0 turned one weekly job into 18 daily sessions. A Perl alarm timer that does not survive exec gave a 2am consolidator a seven-hour runtime. Two zombie agents whose self-disable logic ran after exec or against a path that had moved. And a BOOT context load that had grown to 180,000 characters with no compaction enabled.
+
 ## What Is Coming
 
 - PHP magic quotes: when the data you are about to sanitize is already sanitized

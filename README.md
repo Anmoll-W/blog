@@ -23,7 +23,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
 | [Vault as OS](series/vault-as-os.md) | 14 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
-| [Silent Failures](series/silent-failures.md) | 7 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
+| [Silent Failures](series/silent-failures.md) | 8 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
 
@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-05-18 | [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](posts/token-burn-audit.md) | Silent Failures | claude-code, automation, token-efficiency, silent-failures, launchagent |
 | 2026-05-11 | [We Designed a Multi-Model Router. Then We Asked One Question.](posts/right-model-wrong-problem.md) | Vault as OS | ai-agents, multi-model, decision-frameworks, claude-code, gemini |
 | 2026-05-10 | [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](posts/multi-llm-peer-review-gate.md) | — | ai-agents, claude-code, gemini, multi-llm, eval |
 | 2026-04-27 | [I Cherry-Picked a Viral Cost-Cut Post](posts/cherry-picking-the-cost-post.md) | — | claude-code, token-efficiency, decision-frameworks, ai-tools |
