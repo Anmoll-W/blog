@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-05-20 | [The Claims Were There. The Sources Were Not.](posts/claims-without-sources.md) | Vault as OS | vault, knowledge-management, ai-agents, pm, obsidian |
 | 2026-05-18 | [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](posts/token-burn-audit.md) | Silent Failures | claude-code, automation, token-efficiency, silent-failures, launchagent |
 | 2026-05-11 | [We Designed a Multi-Model Router. Then We Asked One Question.](posts/right-model-wrong-problem.md) | Vault as OS | ai-agents, multi-model, decision-frameworks, claude-code, gemini |
 | 2026-05-10 | [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](posts/multi-llm-peer-review-gate.md) | — | ai-agents, claude-code, gemini, multi-llm, eval |

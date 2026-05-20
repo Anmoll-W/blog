@@ -61,6 +61,9 @@ This series documents how each layer was built, what broke along the way, and wh
 16. [We Designed a Multi-Model Router. Then We Asked One Question.](../posts/right-model-wrong-problem.md)
     The routing layer (that didn't get built): a full session of multi-model architecture research, a Vera decision eval, a Gemini adversarial BLOCK overturned by a 15-minute CLI test — and the one question that reduced the whole system to two runner modifications and one new file.
 
+17. [The Claims Were There. The Sources Were Not.](../posts/claims-without-sources.md)
+    The provenance layer: reading PM Brain OS, identifying the 20% the vault was missing, and what a Vera decision eval caught before it shipped. Covers conservative-floor provenance tagging, hypothesis lifecycle tracking vault-wide (four projects), the 7d/30d staleness system, and the /prep ritual that surfaces hypothesis-decision conflicts before stakeholder meetings.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

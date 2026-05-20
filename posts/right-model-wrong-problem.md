@@ -93,4 +93,5 @@ That's the right amount of system for the problem that actually exists.
 - [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](multi-llm-peer-review-gate.md) — the Gemini review gate that this session used to evaluate the routing decision; the infrastructure that ran the adversarial pass
 - [I Cherry-Picked a Viral Cost-Cut Post](cherry-picking-the-cost-post.md) — the same cherry-pick discipline applied here: evaluate each claim independently, adopt what has evidence, reject what is marketing
 - [AI Runners That Remember](ai-runners-that-remember.md) — the runner architecture that the Gemini Flash research leg plugs into; how morning-briefing and weekly-review carry memory across runs
+- [The Claims Were There. The Sources Were Not.](claims-without-sources.md) — the Vera-catches-a-wrong-default pattern again: here it caught a provenance tagging rule that would have drifted toward false authority
 - [The Eval Layer Caught Me Violating My Own Rules](the-eval-layer-caught-me.md) — Vera's eval pattern in action: the same rubric-plus-adversarial-pass process used to stress-test this routing decision
