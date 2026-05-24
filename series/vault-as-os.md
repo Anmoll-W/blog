@@ -64,6 +64,9 @@ This series documents how each layer was built, what broke along the way, and wh
 17. [The Claims Were There. The Sources Were Not.](../posts/claims-without-sources.md)
     The provenance layer: reading PM Brain OS, identifying the 20% the vault was missing, and what a Vera decision eval caught before it shipped. Covers conservative-floor provenance tagging, hypothesis lifecycle tracking vault-wide (four projects), the 7d/30d staleness system, and the /prep ritual that surfaces hypothesis-decision conflicts before stakeholder meetings.
 
+18. [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](../posts/four-agents-went-red.md)
+    The consolidation: thirteen personas down to six after three consecutive RED weekly evals exposed memory-based rules as non-load-bearing. Covers the Brain Protocol (token-bounded retrieval, ReAct loop, mandatory gate blocks, validated memory writes), the skills routing matrix that replaced sole-ownership, and the audit pattern that catches stale references the original sweep missed.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

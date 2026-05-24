@@ -22,7 +22,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
-| [Vault as OS](series/vault-as-os.md) | 14 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
+| [Vault as OS](series/vault-as-os.md) | 15 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
 | [Silent Failures](series/silent-failures.md) | 8 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-05-24 | [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](posts/four-agents-went-red.md) | Vault as OS | vault, ai-agents, personas, systems |
 | 2026-05-20 | [The Claims Were There. The Sources Were Not.](posts/claims-without-sources.md) | Vault as OS | vault, knowledge-management, ai-agents, pm, obsidian |
 | 2026-05-18 | [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](posts/token-burn-audit.md) | Silent Failures | claude-code, automation, token-efficiency, silent-failures, launchagent |
 | 2026-05-11 | [We Designed a Multi-Model Router. Then We Asked One Question.](posts/right-model-wrong-problem.md) | Vault as OS | ai-agents, multi-model, decision-frameworks, claude-code, gemini |
