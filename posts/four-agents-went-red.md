@@ -12,7 +12,7 @@ When a rule lives in memory and the rule still does not get followed, you do not
 
 My vault runs on personas — named agents like Maya (content), Alex (engineering), Vera (eval), and so on — each with an identity file, a memory file, and a small routing layer that picks the right one based on what I am about to do. I wrote about the bones of that system in an earlier post on [building an 11-agent AI team](building-an-ai-agent-team.md) and the move from full identity files to lean stubs in [persona-layer-architecture.md](persona-layer-architecture.md).
 
-The system grew. Thirteen personas by May. Five of them owned zero shareable skills. Four were dormant or near-dormant. Routing load on me grew with agent count, because every new task involved a quiet "which agent should this go to" lookup.
+The system grew. Thirteen personas by May. Four were dormant or near-dormant — the prior week's eval scored Nova, Zara, Sam, and Marco as dormant or dormant-exempt. Routing load on me grew with agent count, because every new task involved a quiet "which agent should this go to" lookup.
 
 That was the cosmetic problem. The real problem was the three RED weeks.
 
@@ -22,7 +22,7 @@ Vera, the eval agent, runs every Sunday. She scores every other agent on three s
 
 Four agents were below the threshold for three consecutive weeks. The gate definitions were in their persona files. The gate rules were in their memory. The check was not happening.
 
-The shared-mistakes log captured the diagnosis in one line: *"memory-based template enforcement fails — even for the rule's author."* Vera had shipped three of her own evals missing a status block that Vera herself had defined. The rule was in her memory. The rule was not load-bearing on her behavior.
+The shared-mistakes log captured the diagnosis in one line: *"memory-based template enforcement fails — even for the rule's author."* Five of Vera's own per-agent deep evals from a single week were missing a status block that Vera herself had defined. The rule was in her memory. The rule was not load-bearing on her behavior.
 
 This is the failure mode the Reflexion paper calls *degeneration of thought*. An LLM that reinforces its own pattern across attempts, without external feedback, will keep reinforcing it — even when the pattern is wrong. Memory does not save you. Memory is only as good as the moment at which it is retrieved and the structure that forces it into the output.
 
@@ -36,9 +36,9 @@ Two of those absorptions were tricky. Quinn was a separate QA agent. Merging her
 
 The other one was Lux, the design persona. Lux owned both UI/UX design (component hierarchy, design tokens, dashboard layout) and creative direction (image prompts, quote cards, marketing visuals). Splitting Lux across two hosts only works if the routing matrix knows where to send what. So that became Track 2.
 
-**Track 2: convert skills from sole-owned to shareable.** Every skill in the system had a single `agent: <name>` field in its frontmatter. Sage owned sixteen of them. Maya owned eight. Five personas owned zero. Sole-ownership is a bottleneck and a single point of failure.
+**Track 2: convert skills from sole-owned to shareable.** Of thirty-six skills in the system, only four had any ownership field in their frontmatter — a sole-owner field that locked them to one persona. The other thirty-two had no ownership field at all, which meant routing was implicit and undocumented. Both states are a problem: hard-coded sole-ownership is a bottleneck and a single point of failure; no field at all is worse because there is nothing to read and no signal about which persona should be picking it up.
 
-The new model has three fields per skill: `primary` (the default invoker), `also_invocable_by` (qualified secondary personas), `invocation_rules` (the conditions that route between them). A routing matrix file lists every skill and every persona, with primary, secondary, and forbidden cells.
+The new model has three fields per skill: `primary` (the default invoker), `also_invocable_by` (qualified secondary personas), `invocation_rules` (the conditions that route between them). The four legacy-owned skills got their fields rewritten. Everything else got its routing defined in a single matrix file, `skills-routing-matrix.md`, which is now the source of truth for all thirty-six skills × six personas, with primary, secondary, and forbidden cells.
 
 The Lux split lives in the matrix. UI/UX skills route Alex-primary. Creative/visual skills route Maya-primary. Neither host "owns design" as a domain. The matrix routes by skill type. Lux's identity is archived. Lux's rules port into both hosts under labeled sections.
 
@@ -64,13 +64,11 @@ A lightweight three-step variant of this protocol runs in sessions where no pers
 
 ## The Audit That Almost Was
 
-After the consolidation ran, I dispatched six audit agents in parallel — one per surviving persona — to find every stale reference in the live vault. The plan's verification phase had specified a routing dry-test with eight signal phrases, all of which resolved correctly. But the parallel audit found four stale references the original sweep had missed.
+After the consolidation ran, I dispatched six audit agents in parallel — one per surviving persona — to find every stale reference in the live vault. The plan's verification phase had specified a routing dry-test with eight signal phrases, all of which resolved correctly. The parallel audit, run in addition, surfaced seven stale references the original sweep had missed.
 
-Three of them were in places the sweep was not designed to look. The CLAUDE.md sweep targeted exactly that filename. It did not touch `index.md` files inside projects, or `master-intelligence.md` (a project-level synthesis doc), or the prose body of the eval rubric file. Each of those still named an absorbed persona — Sam in Ask-the-Cohort's project index, Lux and Quinn in the LinkedIn project's agent table, Quinn in the rubric's Criterion 2 prose.
+Most of them were in places the sweep was not designed to look. The CLAUDE.md sweep targeted exactly that filename. It did not touch `index.md` files inside projects, or `master-intelligence.md` (a project-level synthesis doc), or the prose body of the eval rubric file, or the `active-context.md` summary line that gets loaded into every session boot. Across the six audits the findings were: Sage flagged four (an active-context summary line, a thirteen-bullet roster in solopreneur-ai-os, an out-of-date "How to avoid" line in past-mistakes, and one historical append-only log entry that was deliberately left alone because it captured what was true on its date); Maya flagged one (a Lux/Quinn row in the LinkedIn project's master-intelligence table); Priya flagged one (Sam in Ask-the-Cohort's project index, both in the frontmatter summary and the body); Vera flagged one (Quinn in the project rubric's Criterion 2 prose).
 
-The fourth was a "How to avoid" line in past-mistakes that said the propagation checklist for image-prompt rules should include Lux alongside Maya and Vera. Lux no longer exists. The line had to point to the new hosts — Maya for creative, Alex for UI/UX. The historical body of the entry stayed intact, because the event itself happened. Only the actionable line, the one a future agent would read and follow, needed to update.
-
-This is a small pattern worth naming. Append-only historical logs do not get rewritten. They captured what was true on the date they were written. Only the lines that future agents will *act on* need to update when the roster changes.
+Six of those got fixed in the same session. The seventh — an append-only May 12 log entry — stayed intact because it captured what was true on its date. That is the small pattern worth naming: historical logs do not get rewritten, only the lines a future agent will *act on* need to update when the roster changes.
 
 The post-consolidation eval came back six-of-six GREEN.
 
