@@ -91,6 +91,7 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — the skills layer added on top of this team: installing six external Claude skills and wiring them so agents auto-invoke structured methodology at the right steps
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — what a performance review of this team found: five agents not doing their jobs, and how self-correcting protocols fixed it without a single new hire
 - [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](four-agents-went-red.md) — what happened when this 11-agent roster grew to 13 and four agents went RED for three consecutive weeks: a consolidation down to six, with a structured gate block replacing memory as the enforcement layer
+- [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](personas-180-of-180-and-no-baseline.md) — the depth upgrade on the consolidated roster: refusal catalogs, failure-mode lists, dissent protocol, banned-phrase scans, and the missing-baseline lesson about evals without a pre-state to compare against
 
 ---
 

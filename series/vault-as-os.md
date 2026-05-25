@@ -67,6 +67,9 @@ This series documents how each layer was built, what broke along the way, and wh
 18. [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](../posts/four-agents-went-red.md)
     The consolidation: thirteen personas down to six after three consecutive RED weekly evals exposed memory-based rules as non-load-bearing. Covers the Brain Protocol (token-bounded retrieval, ReAct loop, mandatory gate blocks, validated memory writes), the skills routing matrix that replaced sole-ownership, and the audit pattern that catches stale references the original sweep missed.
 
+19. [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](../posts/personas-180-of-180-and-no-baseline.md)
+    The depth upgrade on top of the six-persona roster: dissent protocol, Anmoll-watchlist, banned-phrase list, per-persona refusal catalogs and failure-mode lists, and a 6-axis structural eval. Score: 180/180. Catch: no pre-upgrade snapshot existed, so the behavioral delta is unmeasurable. Ships a 47-line `persona-snapshot.sh` so the next upgrade can be A/B tested.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

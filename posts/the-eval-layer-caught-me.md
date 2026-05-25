@@ -82,6 +82,7 @@ That agent caught me violating the principles I was installing. That is the whol
 - [I Cherry-Picked a Viral Cost-Cut Post](cherry-picking-the-cost-post.md) — the next time the same eval persona caught a different drift: a Plan-to-Opus rule imported from a different billing tier that would have backfired without a structured pass
 - [We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md) — Vera's eval rubric-plus-adversarial-pass in action: a BLOCK from the second model, overturned by evidence, with the right decision made because the eval ran first
 - [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](four-agents-went-red.md) — three consecutive RED weekly evals from this same eval layer; the consolidation that followed, and why memory-based rules had to be replaced with a structured gate block to actually enforce themselves
+- [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](personas-180-of-180-and-no-baseline.md) — the opposite story: an eval that scored 180/180 but could not measure behavioral change because the pre-upgrade baseline was never snapshotted — a structural eval is only as load-bearing as the corpus it can compare against
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
