@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-05-27 | [AI Credits Are Infrastructure. Start Treating Them That Way.](posts/ai-credits-are-infrastructure.md) | — | ai-tools, product-management, cost-thinking |
 | 2026-05-25 | [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](posts/personas-180-of-180-and-no-baseline.md) | Vault as OS | vault, ai, systems, evals |
 | 2026-05-24 | [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](posts/four-agents-went-red.md) | Vault as OS | vault, ai-agents, personas, systems |
 | 2026-05-20 | [The Claims Were There. The Sources Were Not.](posts/claims-without-sources.md) | Vault as OS | vault, knowledge-management, ai-agents, pm, obsidian |

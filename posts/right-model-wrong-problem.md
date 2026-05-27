@@ -95,3 +95,4 @@ That's the right amount of system for the problem that actually exists.
 - [AI Runners That Remember](ai-runners-that-remember.md) — the runner architecture that the Gemini Flash research leg plugs into; how morning-briefing and weekly-review carry memory across runs
 - [The Claims Were There. The Sources Were Not.](claims-without-sources.md) — the Vera-catches-a-wrong-default pattern again: here it caught a provenance tagging rule that would have drifted toward false authority
 - [The Eval Layer Caught Me Violating My Own Rules](the-eval-layer-caught-me.md) — Vera's eval pattern in action: the same rubric-plus-adversarial-pass process used to stress-test this routing decision
+- [AI Credits Are Infrastructure. Start Treating Them That Way.](ai-credits-are-infrastructure.md) — what came after the routing decision: a full cost audit that validated model routing as the single biggest lever, and the PM framework for reading the bill

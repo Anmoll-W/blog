@@ -148,6 +148,7 @@ The eval step caught them before the next 2:00 AM run.
 - [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — an earlier audit of the same LaunchAgent system that found a different class of silent failure: agents registered with launchctl that were never actually running because their scripts lived inside iCloud Drive
 - [AI Runners That Remember](ai-runners-that-remember.md) — the memory architecture running on top of these same LaunchAgents; the done-file and timeout contracts in this post are what keep those runners from compounding silently when something goes wrong
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — where the LaunchAgent system started: three agents, clean contracts, no zombie problem; the complexity that created the bugs in this post was added in the second and third automation layers
+- [AI Credits Are Infrastructure. Start Treating Them That Way.](ai-credits-are-infrastructure.md) — the next chapter: once the automation bugs were fixed, the question became where the remaining spend was actually going and how to think about it as a PM
 
 ---
 
