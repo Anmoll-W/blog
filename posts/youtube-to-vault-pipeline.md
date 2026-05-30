@@ -47,7 +47,7 @@ Before I declared this done, I ran Vera — the QA persona in my vault — acros
 
 **VTT metadata leaking into transcripts.** YouTube's VTT caption format includes lines like `Kind: captions` and `Language: en` that survive basic header stripping. My original filter removed `WEBVTT` at the top but left these behind. Every caption-sourced transcript would have started with `Kind: captions Language: en` before the actual content.
 
-**Stale output file poisoning.** The script writes to a fixed path, `/tmp/yt_output.md`. If a run fails mid-way, the file from the previous successful run still exists at that path. The skill told agents to read that file with no exit-code check. A failed run on video B would cause the agent to summarise video A into today's note. The fix: delete the output file at the very start of the script, before any other work begins.
+**Stale output file poisoning.** The script writes to a temporary path keyed to the video ID (`/tmp/yt_output_{video-id}.md`). The original used a fixed path, `/tmp/yt_output.md`. If a run failed mid-way, the file from the previous successful run remained at that path — a failed run on video B would cause the agent to summarise video A into today's note. Two fixes applied: the output file is deleted at script start, and the video ID is used in the filename to prevent concurrent agent runs from clobbering each other.
 
 **`en` matching only `en`, not `en-US`.** The original script used `"en"` as the language selector — which did not match `en-US` or `en-GB` tagged captions. The result: the script would silently find no captions, fall through to Whisper, and spend several minutes transcribing audio that had perfectly good captions available. The fix is `"en.*"` — one character change that catches all English variants.
 
@@ -90,3 +90,13 @@ The script is the bridge. The skill is the instruction manual the agents use to 
 ---
 
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
+
+<!-- FACT SOURCES
+- "three P0 bugs" — verified: ~/.claude/scripts/youtube-to-vault.sh lines 17 (rm -f), 40 (en.*), 51-52 (Kind:/Language: filters)
+- "six vault personas" — verified: Aw Vault/CLAUDE.md Persona Routing table: Sage, Alex, Maya, Priya, Vera, Rex
+- Script path — verified: /Users/aw/.claude/scripts/youtube-to-vault.sh (exists, chmod +x)
+- Skill path — verified: /Users/aw/.claude/skills/youtube-to-vault/SKILL.md (exists)
+- Auto-invoke rule — verified: Aw Vault/CLAUDE.md line 99 verbatim
+- skills-registry entry — verified: Aw Vault/Knowledge/skills-registry.md id: youtube-to-vault block
+-->
+
