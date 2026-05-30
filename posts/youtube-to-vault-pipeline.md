@@ -92,11 +92,11 @@ The script is the bridge. The skill is the instruction manual the agents use to 
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
 
 <!-- FACT SOURCES
-- "three P0 bugs" — verified: ~/.claude/scripts/youtube-to-vault.sh lines 17 (rm -f), 40 (en.*), 51-52 (Kind:/Language: filters)
-- "six vault personas" — verified: Aw Vault/CLAUDE.md Persona Routing table: Sage, Alex, Maya, Priya, Vera, Rex
-- Script path — verified: /Users/aw/.claude/scripts/youtube-to-vault.sh (exists, chmod +x)
-- Skill path — verified: /Users/aw/.claude/skills/youtube-to-vault/SKILL.md (exists)
-- Auto-invoke rule — verified: Aw Vault/CLAUDE.md line 99 verbatim
-- skills-registry entry — verified: Aw Vault/Knowledge/skills-registry.md id: youtube-to-vault block
+- "three P0 bugs" — verified: script lines 17 (rm -f), 40 (en.*), 51-52 (Kind:/Language: filters); ~/.claude/scripts/youtube-to-vault.sh
+- "six vault personas" — verified: vault CLAUDE.md Persona Routing table (Sage, Alex, Maya, Priya, Vera, Rex)
+- Script path — verified: ls ~/.claude/scripts/youtube-to-vault.sh → exists, chmod +x
+- Skill path — verified: ls ~/.claude/skills/youtube-to-vault/SKILL.md → exists
+- Auto-invoke rule — verbatim from vault CLAUDE.md auto-invoke section
+- skills-registry entry — verified: id: youtube-to-vault block in Knowledge/skills-registry.md
 -->
 
