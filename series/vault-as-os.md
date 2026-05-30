@@ -74,7 +74,7 @@ This series documents how each layer was built, what broke along the way, and wh
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization
 
-15. [How I Taught My Vault to Read YouTube](../posts/youtube-to-vault-pipeline.md)
+20. [How I Taught My Vault to Read YouTube](../posts/youtube-to-vault-pipeline.md)
     A yt-dlp + Whisper pipeline that turns any YouTube URL into a vault note. Captions-first (under five seconds for most videos), Whisper fallback for audio-only transcription, Claude summarises the transcript. Auto-invoke wired to all six vault personas via the skills registry — any agent can trigger it without manual instruction. Three P0 bugs caught by Vera before ship: VTT metadata leaking into transcripts, stale output file poisoning the next run, and a one-character language selector mismatch that silently bypassed captions on English videos.
 
 ---
