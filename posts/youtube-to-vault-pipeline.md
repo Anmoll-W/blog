@@ -33,7 +33,7 @@ The pipeline is two files.
 3. Try to pull auto-generated captions (`en.*` to catch `en-US`, `en-GB`, and other English variants)
 4. If captions exist, clean the VTT format: strip timestamps, metadata lines, and duplicate phrases from the sliding caption window
 5. If no captions, download the audio and run Whisper with the base model
-6. Write the result to `/tmp/yt_output.md` with a frontmatter block containing the title, URL, tag, and transcription method
+6. Write the result to `/tmp/yt_output_{video-id}.md` with a frontmatter block containing the title, URL, tag, and transcription method — using the video ID in the filename prevents concurrent agent runs from clobbering each other
 
 **The skill file** lives at `~/.claude/skills/youtube-to-vault/SKILL.md`. It teaches every vault agent when to invoke this pipeline, how to read the output, and how to format the vault entry. The agent — not the script — generates the summary. The script handles the mechanical work; the agent handles the interpretation.
 
