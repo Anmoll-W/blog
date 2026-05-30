@@ -106,6 +106,7 @@ This is what a knowledge system should feel like: ambient, not demanding.
 
 ## Related
 
+- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — the next capability added to this system: a yt-dlp + Whisper pipeline that transcribes any YouTube video into today's daily note, with auto-invoke wired to all six vault personas
 - [Three Claude Tools, One Vault](three-claude-tools-one-vault.md) — the shared context architecture this automation runs on top of
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating the knowledge base that feeds these automated agents
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the next step after automating individual workflows was building a coordinated team of AI personas that share knowledge

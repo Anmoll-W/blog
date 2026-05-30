@@ -22,7 +22,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
-| [Vault as OS](series/vault-as-os.md) | 15 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
+| [Vault as OS](series/vault-as-os.md) | 16 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
 | [Silent Failures](series/silent-failures.md) | 8 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
@@ -35,6 +35,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-05-30 | [How I Taught My Vault to Read YouTube](posts/youtube-to-vault-pipeline.md) | Vault as OS | vault, ai, automation, tools |
 | 2026-05-27 | [AI Credits Are Infrastructure. Start Treating Them That Way.](posts/ai-credits-are-infrastructure.md) | — | ai-tools, product-management, cost-thinking |
 | 2026-05-25 | [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](posts/personas-180-of-180-and-no-baseline.md) | Vault as OS | vault, ai, systems, evals |
 | 2026-05-24 | [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](posts/four-agents-went-red.md) | Vault as OS | vault, ai-agents, personas, systems |

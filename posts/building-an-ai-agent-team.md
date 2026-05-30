@@ -80,6 +80,7 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 
 ## Related
 
+- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — a new capability the six-persona team now shares: any persona can transcribe a YouTube video into the vault without manual steps
 - [Three Claude Tools, One Vault](three-claude-tools-one-vault.md) — the shared context architecture this team runs on
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer that runs the agents on schedule
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — the vault consolidation that gave the team brain a clean foundation

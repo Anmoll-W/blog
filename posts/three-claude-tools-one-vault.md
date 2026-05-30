@@ -60,6 +60,7 @@ On the decision side: when a workflow feels effortful, the first question is not
 
 ## Related
 
+- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — a new skill added to the vault: drop a YouTube URL and any agent transcribes it into today's daily note using the same context cascade described here
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer built on top of this architecture
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating all knowledge into one vault
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the coordination layer
