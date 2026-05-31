@@ -111,6 +111,7 @@ The disagreement between two models is what makes a multi-LLM pipeline worth the
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md) — another model-pipeline silent failure where the call succeeds and the parsed result is wrong
 - [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](claude-code-boot-sequence-as-infrastructure.md) — the same posture applied one layer higher: shape-check the boot, not the launch
 - [We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md) — how this peer review gate's adversarial Gemini pass was used to evaluate a full routing architecture, then overturned by a 15-minute CLI test
+- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the same adversarial-review posture across fourteen micro-waves, including a validate-before-fix catch on a crashing date parser
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

@@ -65,6 +65,7 @@ On the decision side: when a workflow feels effortful, the first question is not
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating all knowledge into one vault
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the coordination layer
 - [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 redesign of the agent architecture
+- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the always-on body added to this brain-and-hands architecture: a Telegram assistant and scheduled jobs running on a server
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

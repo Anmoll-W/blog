@@ -86,6 +86,7 @@ The script is the bridge. The skill is the instruction manual the agents use to 
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the LaunchAgent automation layer this pipeline plugs into
 - [Three Claude Tools, One Vault: The Architecture Behind the System](three-claude-tools-one-vault.md) — the vault architecture that makes skills and agents work together
 - [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — how the six vault personas that now use this skill were designed
+- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the ambient server layer (Hermes + OpenRouter) this post mentions, built out one hardened problem at a time
 
 ---
 
