@@ -104,6 +104,7 @@ The disagreement between two models is what makes a multi-LLM pipeline worth the
 
 ## Related
 
+- [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — the same two-reviewer gate caught five defects a green test suite missed, including two tests that passed against deliberately-broken code
 - [The Eval Layer Caught Me Violating My Own Rules](the-eval-layer-caught-me.md) — the eval persona that ran this audit and the posture that catches its own drift
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — the original install of the eval persona this verify pass came from
 - [AI Runners That Remember](ai-runners-that-remember.md) — the runner architecture this multi-LLM gate plugs into

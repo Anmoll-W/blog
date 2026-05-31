@@ -130,6 +130,7 @@ The vision was never a clever assistant. It was a brain I already trusted, final
 
 ## Related
 
+- [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — the next wave, where the same two-reviewer discipline caught five defects that green tests completely missed; the "after" to this post's foundation
 - [Three Claude Tools, One Vault: The Architecture Behind the System](three-claude-tools-one-vault.md) — the brain-and-hands architecture this post finally gives a body to
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the scheduled-automation layer that Wave 2 will migrate onto this hardened foundation; the "before" to this post's "after"
 - [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](multi-llm-peer-review-gate.md) — the same adversarial-review posture (hostile personas, validate before you fix) that hardened every micro-wave here

@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-06-01 | [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](posts/hermes-wave-2-tests-that-lie.md) | Hermes as a PA | ai, systems, automation, vault |
 | 2026-05-31 | [Hermes, Wave 1: Giving My Vault an Always-On Body](posts/hermes-the-foundation.md) | Hermes as a PA | ai, systems, automation, vault |
 | 2026-05-30 | [How I Taught My Vault to Read YouTube](posts/youtube-to-vault-pipeline.md) | Vault as OS | vault, ai, automation, tools |
 | 2026-05-27 | [AI Credits Are Infrastructure. Start Treating Them That Way.](posts/ai-credits-are-infrastructure.md) | — | ai-tools, product-management, cost-thinking |

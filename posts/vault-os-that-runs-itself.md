@@ -116,6 +116,7 @@ This is what a knowledge system should feel like: ambient, not demanding.
 - [The Dashboard Was Lists. The Hub Is a Board.](kanban-board-as-project-hub.md) — the navigation layer built on top of this automation system: the weekly-review runner that powers the board's Sunday cleanup was built here first
 - [AI Runners That Remember](ai-runners-that-remember.md) — the memory layer added on top of these runners: a per-runner Strategy file, an SRS queue, and a 2am consolidator that gives each scheduled agent persistent cross-run intelligence
 - [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — where these scheduled routines head next: a hardened always-on server layer Wave 2 will migrate them onto
+- [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — where this scattered Mac automation layer actually gets consolidated onto the hardened server, and the verification discipline that made the migration trustworthy
 
 ---
 

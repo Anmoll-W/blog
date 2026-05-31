@@ -139,6 +139,7 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 
 ## Related
 
+- [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — the validate-before-you-fix loop from this post, applied across a whole wave: five defects caught only by reproducing each reviewer finding against the real artifact
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md) — another case where the bug was invisible until full context was examined
 - [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](three-cascading-bugs.md) — three more failures that passed the build but broke in production
 - [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure
