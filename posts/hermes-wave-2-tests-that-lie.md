@@ -110,6 +110,20 @@ Next wave: the cutover, the soak, and whatever the real running system teaches m
 
 ---
 
+## Update (2026-06-01): a sixth catch, and the most on-the-nose one yet
+
+I published this, and then — the same day, working through the cutover checklist with the two reviewers — the discipline caught a sixth. I am adding it here rather than holding it, because it is the purest version of the whole point.
+
+My wider system has a safety gate that checks every AI persona's output before it ships: banned phrases, a required status block, refusal triggers. One of its checks was quietly broken. For two of the six personas, a small pattern-matching mistake meant the "required status block" check could never match — so it always failed those two. The harmless direction of broken, as it happens: it false-*failed* rather than waving bad output through. Broken all the same.
+
+Here is the part that belongs in this post. The bug had a passing test. And it passed because the test had been *deliberately written to match the broken behaviour* — the fixtures carried the exact malformed pattern the broken check was looking for, sitting under a comment block that explained they were shaped that way on purpose to make the broken gate pass, and instructed whoever eventually fixed the gate to update the fixtures in the same change. The test did not merely fail to catch the bug. It was built around the bug, and said so in writing.
+
+That is the thesis of this entire post in its most literal form: a green test that was, by design, testing the wrong thing. The fix was small — correct the pattern, then de-mask the fixtures to use a real heading so they check the real behaviour, both in one change. The full suite stayed green afterward, and a direct probe confirmed the gate now passes a correct output, fails a missing one, and matches every persona's heading the way it always should have.
+
+Still not live. The cutover and the soak are still ahead. But the green was the start of the investigation, not the end of it — once more, and in the most literal way yet.
+
+---
+
 ## Related
 
 - [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the foundation this wave consolidates onto; the "before" to this post's "after," and where the two-reviewer discipline was introduced
@@ -128,4 +142,5 @@ Next wave: the cutover, the soak, and whatever the real running system teaches m
 - "roughly eighteen Mac scripts → a handful of jobs" — the Wave-2 consolidation inventory (~18 Mac runners → the new server jobs).
 - The five catches (deploy-can't-deploy-its-own-repo; fail-open backup → target wipe on rollback; synced idempotency ledger → re-fire; consolidated-job double-send on retry; two false-green tests caught by mutation-testing the tests) — each reproduced, fixed, and mutation-verified this session; recorded in the Hermes decisions log as outcomes, not plan intent.
 - "built and verified, not yet live; cutover + soak this week" — nothing deployed to the server (dry-run only, verified); the live cutover waits for the current foundation soak to finish.
+- UPDATE (2026-06-01) "a sixth catch — a persona safety gate whose required-block check used an escaped-pipe (`\|`) that the regex engine read as a literal, so two of the six personas (sage, rex) false-failed; its test fixtures were deliberately written to match the broken behaviour, under a comment block instructing not to fix the gate without updating them" — fixed this session: `\|`→`|` in `~/.claude/vault-runners/persona-gate.sh`; fixtures de-masked in `~/hermes-ops/jobs/test_job3_weekly_review.sh` + `step-refusal-regression.sh` (commit `bb64ce0`). Full suite re-run = 19/19 suites green; functional probe = single-heading PASS, no-heading FAIL, non-first-alternative (INVESTMENT STATUS) PASS. "two of the six personas" = roster of 6, sage + rex are the two with multi-heading required blocks. Still not live (cutover ahead).
 -->
