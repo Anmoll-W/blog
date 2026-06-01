@@ -126,6 +126,7 @@ Still not live. The cutover and the soak are still ahead. But the green was the 
 
 ## Related
 
+- [Hermes, Wave 3: A Machine That Drafts From My Notes But Cannot Post](hermes-wave-3-the-machine-that-drafts.md) — the next wave, where the same green-tests-lie lesson sharpens: the adversarial review caught prompt-injection holes (a note breaking out of its wrapper, a string forging an approved status) that the passing tests missed entirely
 - [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the foundation this wave consolidates onto; the "before" to this post's "after," and where the two-reviewer discipline was introduced
 - [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](multi-llm-peer-review-gate.md) — the same adversarial-review posture applied to a different layer, where the gate caught a bug its own green tests missed
 - [When the AI Fix Is Wrong: Validating Every Finding Before You Act on It](when-the-ai-fix-is-wrong.md) — the validate-before-you-fix loop that governs every catch in this post
