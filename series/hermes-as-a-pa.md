@@ -16,3 +16,8 @@ The vault is the brain and Claude Code is the hands, but both only work when I a
 
 3. [Hermes, Wave 3: A Machine That Drafts From My Notes But Cannot Post](../posts/hermes-wave-3-the-machine-that-drafts.md)
    The always-on server starts to write: it drafts LinkedIn posts from existing vault signals onto a review bench, for two surfaces, and — by construction — cannot post a single one. A machine that ingests your own notes is a prompt-injection surface, and the adversarial review caught it: a note that could break out of its content wrapper into instruction space, a crafted identifier that could forge an "approved" status past the human gate, and collisions that could silently drop content — all with green tests. Safety comes from a human-approve gate the code cannot bypass, privacy-pinned no-log routing, and someone actively trying to break both.
+
+4. [Hermes, Wave 4: Finance Intel From a Server That Cannot See My Finances](../posts/hermes-wave-4-finance-intel-off-server.md)
+   Finance intel from a server deliberately blindfolded to all finance data. The math runs on the Mac that can see the accounts; only a sanitized verdict plus one headline number crosses to the always-on server, which delivers it and — enforced in code — can never trade or move money. Reviewed through three lenses (build, adversarial-security, finance-domain); the finance reviewer caught two numbers that lied comfortingly. Deployed; no soak yet.
+
+**Companion — [How My Hermes Agent Works, From a PM's Point of View](../posts/building-a-personal-ai-ops-layer.md):** the map above the wave posts — the always-on-body problem, the three-layer architecture, guardrails as product constraints, and the value-first roadmap, with the PM takeaways behind the build.

@@ -88,6 +88,7 @@ That was always the point. Not a clever ghostwriter. A body for a brain I alread
 
 - [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — the wave that established this post's lesson; Wave 3 is the sharper version, where green tests missed prompt-injection holes the adversarial review caught
 - [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the foundation and the privacy boundary this wave both builds on and nearly cracked open while adding sources
+- [Hermes, Wave 4: Finance Intel From a Server That Cannot See My Finances](hermes-wave-4-finance-intel-off-server.md) — the next wave, where the same "enforced in code, not good intentions" gate that kept this drafter from posting is applied to money: the server can never trade or move a rupee
 
 ---
 
