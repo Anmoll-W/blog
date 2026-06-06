@@ -131,6 +131,7 @@ Still not live. The cutover and the soak are still ahead. But the green was the 
 - [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](multi-llm-peer-review-gate.md) — the same adversarial-review posture applied to a different layer, where the gate caught a bug its own green tests missed
 - [When the AI Fix Is Wrong: Validating Every Finding Before You Act on It](when-the-ai-fix-is-wrong.md) — the validate-before-you-fix loop that governs every catch in this post
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the scattered Mac automation layer that Wave 2 consolidates onto the hardened server
+- [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the same vault, a later degradation: the green test suite said the cleanup was complete, but an adversarial agent found the invariants had never been encoded anywhere the system could actually enforce them
 
 ---
 

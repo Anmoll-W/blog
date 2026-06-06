@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-06-06 | [Your Agents Are Only as Good as the Context You Program Them With](posts/context-is-the-program.md) | Vault as OS | vault, ai-agents, systems, debugging |
 | 2026-06-02 | [How My Hermes Agent Works — and What It Does for Me, From a PM's Point of View](posts/building-a-personal-ai-ops-layer.md) | Hermes as a PA | ai, systems, automation, vault |
 | 2026-06-02 | [Hermes, Wave 4: Finance Intel From a Server That Cannot See My Finances](posts/hermes-wave-4-finance-intel-off-server.md) | Hermes as a PA | ai, systems, automation, finance |
 | 2026-06-01 | [Hermes, Wave 3: A Machine That Drafts From My Notes But Cannot Post](posts/hermes-wave-3-the-machine-that-drafts.md) | Hermes as a PA | ai, systems, automation, vault |

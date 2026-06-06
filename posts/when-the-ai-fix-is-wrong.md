@@ -147,6 +147,7 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 - [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure with no error output
 - [From 70 Reported Issues to 9 Root Causes: A Production Bug Sprint](support-tickets-root-causes.md) — the full bug sprint this review was part of
 - [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — what happened to the support infrastructure after the bug sprint: nobody was logging into the dashboard, so it was deleted and replaced with a cron digest
+- [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the same pattern one abstraction higher: a fix that passes surface review because the quality gate lives in prose no one checks, caught only when an adversarial agent tried to break what the green tests said was done
 
 ---
 

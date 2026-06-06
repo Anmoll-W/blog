@@ -2,7 +2,7 @@
 
 How I turned an Obsidian vault into an automated knowledge system powered by AI agents.
 
-The system today runs seven automated agents on schedule, routes every daily note capture to its destination without manual sorting, coordinates an 11-persona AI team across 14 projects, and compresses its own knowledge base weekly to stay lean as it grows.
+The system today runs automated agents on schedule, routes every daily note capture to its destination without manual sorting, coordinates a six-persona AI team, and compresses its own knowledge base weekly to stay lean as it grows.
 
 This series documents how each layer was built, what broke along the way, and what the architecture looks like now.
 
@@ -69,6 +69,9 @@ This series documents how each layer was built, what broke along the way, and wh
 
 19. [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](../posts/personas-180-of-180-and-no-baseline.md)
     The depth upgrade on top of the six-persona roster: dissent protocol, Anmoll-watchlist, banned-phrase list, per-persona refusal catalogs and failure-mode lists, and a 6-axis structural eval. Score: 180/180. Catch: no pre-upgrade snapshot existed, so the behavioral delta is unmeasurable. Ships a 47-line `persona-snapshot.sh` so the next upgrade can be A/B tested.
+
+20. [Your Agents Are Only as Good as the Context You Program Them With](../posts/context-is-the-program.md)
+    The maintenance layer: the six-persona vault was degrading — repeating documented mistakes, routing to deleted personas, skipping gates that lived only in prose. Six research agents diagnosed it as a context-engineering failure (only 2 of ~10 gates enforced by code; ~540 learnings, a quarter stale; 115 references to deleted personas still live). The fix moved invariants into hooks and cut the boot context roughly 24% while making it fresher. The twist: a deterministic suite passed 28/28 and live simulations ran clean, but adversarial agents — told to break the claims, not confirm them — found the cleanup incomplete and a fresh dead-path bug the green tests never saw.
 
 ## What Is Coming
 

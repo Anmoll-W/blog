@@ -89,7 +89,7 @@ When a new post is published:
 
 ## Documentation Standard
 
-All docs in this project follow `~/.claude/rules/doc-standard.md`.
+All docs in this project follow `~/.claude/rules-available/doc-standard.md`.
 
 Every spec, plan, PRD, and architecture doc must include:
 - Doc type label at top (`**Doc type:** Architecture / Process / Spec / Reference / Explanation / Plan`)
