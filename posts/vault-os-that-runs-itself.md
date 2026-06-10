@@ -106,6 +106,8 @@ This is what a knowledge system should feel like: ambient, not demanding.
 
 ## Related
 
+- [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — the learning loop these agents eventually got: scored lessons, nightly curation, and the eviction policy that append-only memory never had
+
 - [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — the next capability added to this system: a yt-dlp + Whisper pipeline that transcribes any YouTube video into today's daily note, with auto-invoke wired to all six vault personas
 - [Three Claude Tools, One Vault](three-claude-tools-one-vault.md) — the shared context architecture this automation runs on top of
 - [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating the knowledge base that feeds these automated agents

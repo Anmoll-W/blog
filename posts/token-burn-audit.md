@@ -144,6 +144,8 @@ The eval step caught them before the next 2:00 AM run.
 
 ## Related
 
+- [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — the learning loop these agents eventually got: scored lessons, nightly curation, and the eviction policy that append-only memory never had
+
 - [I Cherry-Picked a Viral Cost-Cut Post](cherry-picking-the-cost-post.md) — the optimization work that preceded this audit; four levers adopted, three rejected; the savings from those levers were being partially erased by the bugs in this post
 - [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — an earlier audit of the same LaunchAgent system that found a different class of silent failure: agents registered with launchctl that were never actually running because their scripts lived inside iCloud Drive
 - [AI Runners That Remember](ai-runners-that-remember.md) — the memory architecture running on top of these same LaunchAgents; the done-file and timeout contracts in this post are what keep those runners from compounding silently when something goes wrong
