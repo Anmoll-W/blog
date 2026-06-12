@@ -72,6 +72,7 @@ The agents are better now. The context is leaner and higher-signal. The gates ar
 - [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — a parallel lesson from infrastructure migration: green tests, broken artifact, caught only by reproducing each reviewer finding against the real system
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the foundation this system runs on and how scheduled automation was first wired into the vault
 - [The Multi-LLM Peer Review Gate](multi-llm-peer-review-gate.md) — the adversarial review layer that caught the incomplete cleanup described in this post: why a second model with a different objective is structurally different from a second pass of the same model
+- [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md) — the monitoring layer this overhaul grew into: a boot status line that caught three silent failures the green checks missed
 
 ---
 

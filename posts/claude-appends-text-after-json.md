@@ -101,6 +101,7 @@ This matters: your test pass or fail logic must account for what the framework a
 - [Telegram Privacy Mode: The Silent Setting That Broke Natural Language](telegram-privacy-mode.md) — a platform-level silent failure in the same project
 - [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — another class of silent failure from the same session
 - [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a different rendering-layer silent failure
+- [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md) — the same parse-the-JSON-out-of-prose lesson resurfacing in a nightly learning service two months later
 
 ---
 

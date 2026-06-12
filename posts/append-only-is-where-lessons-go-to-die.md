@@ -44,6 +44,7 @@ The next morning, every session boots with its agent's current lessons loaded �
 
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — where these scheduled agents were first built; this post is what happened once they could write but never learn
 - [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](token-burn-audit.md) — the cost-discipline side of the same system: what preloading everything at boot was costing, and why retrieval had to become just-in-time
+- [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md) — a night inside this learning loop where the model's response failed to parse, the run deleted its own input, and the health log still said ok
 
 ---
 

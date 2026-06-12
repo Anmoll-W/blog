@@ -73,6 +73,9 @@ This series documents how each layer was built, what broke along the way, and wh
 20. [Your Agents Are Only as Good as the Context You Program Them With](../posts/context-is-the-program.md)
     The maintenance layer: the six-persona vault was degrading — repeating documented mistakes, routing to deleted personas, skipping gates that lived only in prose. Six research agents diagnosed it as a context-engineering failure (only 2 of ~10 gates enforced by code; ~540 learnings, a quarter stale; 115 references to deleted personas still live). The fix moved invariants into hooks and cut the boot context roughly 24% while making it fresher. The twist: a deterministic suite passed 28/28 and live simulations ran clean, but adversarial agents — told to break the claims, not confirm them — found the cleanup incomplete and a fresh dead-path bug the green tests never saw.
 
+21. [Every Status Was Green. Three of Them Were Lying.](../posts/every-status-was-green.md)
+    The observability layer: a live status line at session boot (sync age, nightly run, capture, heartbeat) that exposed three silent failures on its first day — a timezone false alarm, a parse failure logged as ok that deleted its own input, and a sync job with sixty-six clean exits and zero commits ever pushed. Ends with the proof-carrying-signal pattern: monitoring that cannot be faked.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization
