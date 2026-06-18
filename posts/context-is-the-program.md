@@ -73,6 +73,7 @@ The agents are better now. The context is leaner and higher-signal. The gates ar
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the foundation this system runs on and how scheduled automation was first wired into the vault
 - [The Multi-LLM Peer Review Gate](multi-llm-peer-review-gate.md) — the adversarial review layer that caught the incomplete cleanup described in this post: why a second model with a different objective is structurally different from a second pass of the same model
 - [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md) — the monitoring layer this overhaul grew into: a boot status line that caught three silent failures the green checks missed
+- [My AI Agents Got Dumber. It Was Not a Model Downgrade.](why-my-agents-got-dumber.md) — context-as-program applied to cost: re-reading the same persona file every turn was crowding the window, fixed with load-once plus a compaction-safe reload so nothing operates on evicted context
 
 ---
 

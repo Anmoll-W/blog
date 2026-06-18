@@ -76,6 +76,9 @@ This series documents how each layer was built, what broke along the way, and wh
 21. [Every Status Was Green. Three of Them Were Lying.](../posts/every-status-was-green.md)
     The observability layer: a live status line at session boot (sync age, nightly run, capture, heartbeat) that exposed three silent failures on its first day — a timezone false alarm, a parse failure logged as ok that deleted its own input, and a sync job with sixty-six clean exits and zero commits ever pushed. Ends with the proof-carrying-signal pattern: monitoring that cannot be faked.
 
+22. [My AI Agents Got Dumber. It Was Not a Model Downgrade.](../posts/why-my-agents-got-dumber.md)
+    The cost layer: agents that felt duller were not a model downgrade — they were three of my own token optimizations turned against me. Blanket-cheap model routing, a default effort tier that thinks less, and a persona file re-read every single turn. The fix is right-sizing, not blanket-up: smallest model for mechanical work, top model where being wrong is expensive. Plus a load-once persona cache with a compaction-safe reload, so nothing ever operates on context that was silently evicted.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

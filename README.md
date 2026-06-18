@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-06-18 | [My AI Agents Got Dumber. It Was Not a Model Downgrade.](posts/why-my-agents-got-dumber.md) | Vault as OS | claude-code, ai-agents, token-efficiency, systems |
 | 2026-06-12 | [Every Status Was Green. Three of Them Were Lying.](posts/every-status-was-green.md) | Vault as OS | vault, ai, systems, debugging |
 | 2026-06-10 | [Append-Only Is Where Lessons Go to Die](posts/append-only-is-where-lessons-go-to-die.md) | Vault as OS | vault, ai, systems |
 | 2026-06-06 | [Your Agents Are Only as Good as the Context You Program Them With](posts/context-is-the-program.md) | Vault as OS | vault, ai-agents, systems, debugging |
