@@ -4,84 +4,87 @@
 
 *2026-04-16 · vault, ai, systems, agents, product · Vault as OS*
 
-I had built a team of agents — distinct personas, each with an identity file, a memory file, and a protocol describing what it was supposed to do. The team had been running for six days. On paper everyone had a job and a rule that said to do it.
+I had told myself the agent system was operational. Thirteen personas, each with a domain, a protocol, a set of rules. Built over two weeks. Documented. Wired together. The kind of system you describe to someone and they say "that's impressive."
 
-Then I ran the first real performance review. Five of them were not doing their jobs. Not because the rules were wrong — because a rule in a file is not the same thing as a behavior that runs.
+I had not actually checked whether any of them were doing their jobs.
 
-This is the gap nobody warns you about when you wire up an agent team: *added to the protocol* and *actually executing* are two completely different states, and only one of them shows up in a file you can read.
-
----
-
-## The review
-
-I had a review agent whose job was exactly this — read every persona file and every memory file, and grade the team's health. It was the first full review since the team formed six days earlier. Thirteen agents.
-
-It came back AMBER. Five agents flagged. The most damning finding was about the QA agent, Quinn.
-
-Quinn had been added on day one with a clear rule baked into another agent's identity: *no work ships without a QA sign-off from Quinn.* That rule had existed for six days. In those six days, Quinn had run **once.**
-
-The rule was real. The enforcement was not. Quinn's sign-off was written as a bullet in a paragraph inside another agent's protocol — the kind of instruction that is trivially skipped under any time pressure, because nothing structural depends on it. The agent that was supposed to call Quinn just… usually didn't, and nothing noticed.
-
-## "I added it to the protocol" is not "it runs"
-
-This was the load-bearing lesson, and it generalized to every one of the five amber agents.
-
-Adding an agent to a team is an act of writing. Getting that agent to fire is an act of enforcement. I had done a lot of the first and almost none of the second. The protocols read beautifully. The behaviors had quietly never started.
-
-The fix was not to write better prose. It was to change *where* the requirement lived. A critical step cannot be a sentence in a paragraph — it has to be a **numbered, ordered checklist item that blocks completion.** So:
-
-- The agent that owned session-end got a numbered Session End Protocol. Step 1: dispatch Quinn. Step 3: dispatch the eval agent. The session cannot be marked done without both sign-offs. Not "should" — *cannot.*
-- The ship-readiness eval got a hard ordering: it cannot start without Quinn's sign-off first. The pair that used to be described as a "pair" — where neither actually required the other — became a sequence where one gates the other.
-
-A bullet became a gate. That is the whole fix.
-
-## Self-correcting, not supervised
-
-The deeper problem with the review was that it depended on *me* running it. A team whose health is only checked when the founder remembers to check is not healthy — it is lucky. So each of the five amber agents got a **self-correcting protocol**: a check it runs on itself, every session, without waiting to be reviewed.
-
-- **Quinn** — checklist file existence is a hard blocker at session start. No checklist file, no testing. It cannot proceed into a broken state.
-- **The eval agent** — a three-point self-check at every session start that catches a missed eval immediately, instead of waiting for the next review to surface it.
-- **The product agent** — prd and decisions updates are mandatory before session close, plus a staleness check that surfaces anything older than seven days.
-- **The finance agent** — seven-day staleness detection that forces a go/no-go to be surfaced, instead of drifting silently.
-- **The content agent** — a required image brief shipping with every draft, plus a three-post self-check that trips if the pattern breaks.
-
-The unifying idea: move the check from *something I do to the agent* to *something the agent does to itself.* Supervision does not scale with team size. Self-correction does.
-
-Five agents were fixed in the same session that found them. AMBER to GREEN. No new agents hired to fix the old ones — that would have just added more rules with no enforcement. The fix was making the existing agents enforce themselves.
-
-## The silent failure underneath
-
-The review surfaced one more class of bug that had nothing to do with behavior and everything to do with names.
-
-I had renamed two agents days earlier. The rename had updated *some* of the places each name appeared, but not all. One agent's identity file still carried the old name. Another agent still called the old name. The roster still listed it. Any routing to the new name could have failed silently — no error, just an agent that never answered.
-
-The fix was a rule: a rename has to update **all four surfaces at once** — the persona file, the memory file, every agent that references it, and the roster. A name is a contract, and a half-applied rename is a broken contract that throws no exception.
-
-Same pattern as Quinn, in a different costume: the change looked done because the part you naturally look at was done. The part that actually carried the behavior was still pointing at the old world.
+When Harper — the HR agent I built to review team health — ran its first full audit, five of the thirteen came back amber. Not broken. Not errored. Just quietly not doing what they were supposed to do.
 
 ---
 
-## What it changed in how I build agents
+## What "Running" Looks Like When It Isn't
 
-Three things stuck, and I have applied all three to every agent system I have built since:
+The clearest example: Quinn, the QA engineer.
 
-1. **A protocol step that matters must be a numbered, blocking checklist item — never a bullet in a paragraph.** If completion can be reached without it, it will be.
-2. **Every agent needs a self-check it runs on itself.** Health that depends on an external reviewer remembering to look is not health.
-3. **A rename is a four-surface operation.** Identity, memory, references, roster — all at once, or the routing breaks where you are not looking.
+Quinn's job is to review every feature before it ships. I had added a rule to Alex's (the platform engineer's) identity: "flag Quinn for QA before marking done." I had written acceptance criteria templates. I had wired the personas together in the documentation.
 
-The thing I keep coming back to: nothing here was *broken* in a way that throws an error. Quinn ran successfully the one time it ran. The renamed agents resolved fine under their old name. Every file parsed. The system was running. It just was not doing the work — and "running" had been quietly standing in for "working" for six days before anyone checked.
+Quinn had run exactly once in six days.
 
-That is the failure mode of an agent team. Not crashes. Silence that looks like success.
+The rule existed. The intent existed. The execution didn't. Because "flag Quinn" is not a mechanism — it's a reminder. And reminders get skipped when sessions are moving fast.
+
+Four more agents had the same pattern in different forms:
+
+- **Nova** (product manager for build projects) had been updated on April 10 with notes about P1 issues on a bot project. By April 16, those items were still sitting in memory, unresolved, with no triage decision. The agent had the information. It had no protocol to do anything about it.
+- **Vera** (the eval agent) had been invoked for LinkedIn content exactly once. A full product feature had shipped the day before — avatar system, new database writes, auth boundaries — with no Vera ship-readiness eval. Vera's own rule said "loop both before any feature ships." Nobody looped Vera.
+- **Rex** (solo business architect) had been sitting at "pre-validation" for five days on a project where validation was supposed to happen "this weekend." No memory update. No outcome logged. The project had not moved.
+- **Maya** had the most visible symptom: zero reposts since March 2. The Repost Formula calls for a quote image brief on every post. The brief had been missing from every post since March 2. The rule was in the identity file. The behavior wasn't there.
+
+In each case, the agent's identity described what it should do. What it lacked was the ability to notice when it wasn't doing it.
+
+---
+
+## The Decision Underneath
+
+There are two ways to build an agent protocol.
+
+The first: describe the behavior, put it in the identity file, and trust that it runs. This works when sessions are deliberate and unhurried. It fails the moment you're moving fast, mid-session, focused on something else.
+
+The second: make the protocol self-enforcing. The agent checks its own health at session start, detects gaps without being told, and blocks progress until the gap is addressed.
+
+The difference is not how thorough the identity file is. It's whether the agent can answer "am I doing my job?" without asking anyone.
+
+I had built the first kind of system and assumed it would behave like the second. The gap between those two assumptions is where all five amber agents lived.
+
+The fix for each one was the same pattern applied differently:
+
+- Quinn's session start now checks for a checklist file before doing anything. No file = no testing. The codebase gets read, the checklist gets generated, and only then does the session continue. This cannot be skipped.
+- Nova's session end now requires prd.md and decisions.md updates before the session is considered closed. Not encouraged. Required. And session start includes a P1 staleness check: any item older than seven days without resolution gets surfaced to me with a direct question.
+- Vera runs a three-point self-check at every session start: any features shipped without an eval? Any posts published without a content review? Any decisions made without stress-testing? She catches her own missed evals.
+- Rex detects stall. If a project stage hasn't changed in seven days, Rex surfaces a go/no-go before doing anything else. Drift becomes a decision.
+- Maya's quote image is now an output requirement, not a reminder. No draft gets presented without the brief attached. If three consecutive posts go out without one, she flags it herself.
+
+The agent team also changed structurally. Alex now dispatches Quinn automatically after every build, then dispatches Vera after Quinn returns green. The chain is: build → Quinn → Vera → done. Not: build → done, maybe loop Quinn.
+
+---
+
+## The Relatable Part
+
+I had assumed that because I had written the rules, the rules were being followed. The same assumption that breaks team processes in actual organizations — where someone documents a policy, puts it in the handbook, and is surprised six months later that nobody runs the process.
+
+The handbook existing is not the same as the process running. This is true for human teams. It turns out it is also true for AI agent teams.
+
+The signal I missed: none of my agents had a mechanism to report on their own health. I would only know something was wrong if I asked Harper to look — or if something failed visibly enough that I noticed. Vera had never run a ship-readiness eval, but nothing had broken yet, so the gap was invisible.
+
+The thing worth building is not better documentation. It is agents that know when they are not doing their jobs and say so.
+
+---
+
+## What I Learned
+
+**Technical lesson:** The enforcement mechanism is part of the protocol. A protocol step that depends on a human remembering to invoke it is not a protocol — it is a suggestion. Every critical step in an agent workflow should be either self-triggering or a hard blocker on the next step. "Flag Quinn" is a suggestion. "Session end requires Quinn sign-off before done" is a protocol.
+
+**Decision lesson:** When you build a system and describe it as operational, you have made a claim. That claim needs evidence — not documentation. The evidence is: does the system detect and correct its own failures without you? If the answer is "only when I check," the system is not operational. It is standby.
+
+Before calling any AI system "running," I now ask: what happens when it silently drifts? If the answer is "nothing, until I notice" — that is the gap to close.
 
 ---
 
 ## Related
 
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the team this review audited: how the personas were formed and wired before anyone checked whether they were executing
-- [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — the eval agent was one of the amber five here; this is the role it grew into once its self-check was enforced
-- [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — the same "rule existed, behavior didn't" gap at the memory layer, and the learning loop that finally closed it
-- [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — the skills layer these self-correcting protocols hook into; how a borrowable QA checklist became a team-wide capability
-
----
-
-*Building in public from an Obsidian vault. I am Anmoll, a product manager who ships products using AI tools. [All posts](../README.md)*
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the session where the agent team was first assembled and the team brain was established
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — how the agent system was restructured from flat files to a stub-based routing architecture
+- [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — how Vera was built and why producing agents cannot grade their own output
+- [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — wiring structured skills to agent identities so methodology is invoked, not recalled
+- [Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](agents-that-dont-learn.md) — the follow-up: after fixing what was broken, rebuilding the architecture so agents compound intelligence across sessions instead of just storing events
+- [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](claude-code-boot-sequence-as-infrastructure.md) — the same gap applied to Claude Code itself: boot instructions that lived in CLAUDE.md but ran only when remembered, fixed by a SessionStart hook that fires every session
+- [AI Runners That Remember](ai-runners-that-remember.md) — the next step after fixing agent identity: giving scheduled runners persistent memory across runs so each run benefits from every prior run's strategy
