@@ -86,6 +86,7 @@ The fix was a three-line loop — stage each path individually and let missing o
 
 ## Related
 
+- [The Write-Only Trap](the-write-only-trap.md) — the next layer after observability: once the system can monitor itself, it can also synthesize behavioral patterns from its own tool-use logs; the proof-carrying-signal principle here applies directly to the observation synthesis watermark and health log
 - [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the earlier overhaul that moved this system's rules from prose into enforced hooks; this post is what its monitoring layer grew into
 - [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — how the nightly learning loop curates lessons instead of accumulating them; failure two in this post happened inside that loop
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md) — the same model-output parsing failure in a different system, and the same lesson: extract the JSON, never assume the whole string is valid

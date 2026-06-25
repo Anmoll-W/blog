@@ -23,7 +23,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
 | [Hermes as a PA](series/hermes-as-a-pa.md) | 1 | Giving the vault an always-on body — a Telegram assistant and scheduled jobs on a rented server, built one hardened problem at a time |
-| [Vault as OS](series/vault-as-os.md) | 16 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
+| [Vault as OS](series/vault-as-os.md) | 17 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
 | [Silent Failures](series/silent-failures.md) | 8 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-06-25 | [The Write-Only Trap](posts/the-write-only-trap.md) | Vault as OS | automation, ai-agents, claude-code, memory, vault-os |
 | 2026-06-25 | [What I Learned Auditing an AI Agent Repository Built by Another Product Manager](posts/auditing-another-pms-agent-repo.md) | — | ai-coding, code-review, product-management, ai-agents |
 | 2026-06-18 | [My AI Agents Got Dumber. It Was Not a Model Downgrade.](posts/why-my-agents-got-dumber.md) | Vault as OS | claude-code, ai-agents, token-efficiency, systems |
 | 2026-06-12 | [Every Status Was Green. Three of Them Were Lying.](posts/every-status-was-green.md) | Vault as OS | vault, ai, systems, debugging |
