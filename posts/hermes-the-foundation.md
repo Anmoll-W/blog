@@ -135,6 +135,7 @@ The vision was never a clever assistant. It was a brain I already trusted, final
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the scheduled-automation layer that Wave 2 will migrate onto this hardened foundation; the "before" to this post's "after"
 - [Two Models, One Pipeline: Building a Multi-LLM Peer Review Gate That Caught Its Own Silent Bug](multi-llm-peer-review-gate.md) — the same adversarial-review posture (hostile personas, validate before you fix) that hardened every micro-wave here
 - [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — a sibling build in the same voice, and the post where Hermes and OpenRouter first show up as the ambient layer
+- [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](why-i-shut-down-hermes.md) — the shutdown post; the data boundary and single-writer rule from this post held up, but they were not enough to offset the total maintenance overhead of the distributed layer built on top of them
 
 ---
 

@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-06-29 | [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](posts/why-i-shut-down-hermes.md) | — | ai, systems, automation, vault, engineering |
 | 2026-06-25 | [The Write-Only Trap](posts/the-write-only-trap.md) | Vault as OS | automation, ai-agents, claude-code, memory, vault-os |
 | 2026-06-25 | [What I Learned Auditing an AI Agent Repository Built by Another Product Manager](posts/auditing-another-pms-agent-repo.md) | — | ai-coding, code-review, product-management, ai-agents |
 | 2026-06-18 | [My AI Agents Got Dumber. It Was Not a Model Downgrade.](posts/why-my-agents-got-dumber.md) | Vault as OS | claude-code, ai-agents, token-efficiency, systems |

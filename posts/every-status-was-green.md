@@ -91,6 +91,7 @@ The fix was a three-line loop — stage each path individually and let missing o
 - [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — how the nightly learning loop curates lessons instead of accumulating them; failure two in this post happened inside that loop
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md) — the same model-output parsing failure in a different system, and the same lesson: extract the JSON, never assume the whole string is valid
 - [How My Hermes Agent Works — and What It Does for Me, From a PM's Point of View](building-a-personal-ai-ops-layer.md) — the Telegram assistant whose sync job stars in failure three
+- [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](why-i-shut-down-hermes.md) — the shutdown post that names the split-brain failure described here as one of five reasons the system was decommissioned; this post is the concrete incident behind that section
 
 ---
 

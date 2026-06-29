@@ -112,6 +112,7 @@ The vision was never a clever assistant. It was a brain I already trusted, final
 - [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — the reliability-and-consolidation wave, and where the validate-before-you-fix discipline earned its keep
 - [Three Claude Tools, One Vault: The Architecture Behind the System](three-claude-tools-one-vault.md) — the brain-and-hands architecture that the three-layer model in this post extends with an always-on body
 - [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md) — the assistant's vault sync turned out to have sixty-six successful runs and zero commits; how a heartbeat exposed it
+- [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](why-i-shut-down-hermes.md) — the honest accounting of what the system this post maps eventually cost to maintain, and why a simpler replacement delivers the same core value without the distributed overhead
 
 ---
 
