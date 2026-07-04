@@ -152,6 +152,7 @@ The eval step caught them before the next 2:00 AM run.
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — where the LaunchAgent system started: three agents, clean contracts, no zombie problem; the complexity that created the bugs in this post was added in the second and third automation layers
 - [AI Credits Are Infrastructure. Start Treating Them That Way.](ai-credits-are-infrastructure.md) — the next chapter: once the automation bugs were fixed, the question became where the remaining spend was actually going and how to think about it as a PM
 - [My AI Agents Got Dumber. It Was Not a Model Downgrade.](why-my-agents-got-dumber.md) — the same token-burn discipline turned on the context layer: blanket-cheap model routing and a persona file re-read every turn, found by auditing config instead of blaming the model
+- [The Boot Hook That Refired on Every Compaction](the-boot-hook-that-refired-on-compaction.md) — the follow-up audit: the 243 compaction events counted here turned out to be re-triggering the full boot injection every single time
 
 ---
 

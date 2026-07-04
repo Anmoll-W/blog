@@ -79,6 +79,9 @@ This series documents how each layer was built, what broke along the way, and wh
 22. [My AI Agents Got Dumber. It Was Not a Model Downgrade.](../posts/why-my-agents-got-dumber.md)
     The cost layer: agents that felt duller were not a model downgrade — they were three of my own token optimizations turned against me. Blanket-cheap model routing, a default effort tier that thinks less, and a persona file re-read every single turn. The fix is right-sizing, not blanket-up: smallest model for mechanical work, top model where being wrong is expensive. Plus a load-once persona cache with a compaction-safe reload, so nothing ever operates on context that was silently evicted.
 
+23. [The Boot Hook That Refired on Every Compaction](../posts/the-boot-hook-that-refired-on-compaction.md)
+    The recurrence layer: a 30-day scan of 814 session transcripts found the SessionStart hook re-injecting the full boot payload on every compaction because it ignored the hook's `source` field, plus a boot payload padded with full-section duplicates of its own one-line summaries. Covers the recurrence-over-size classification framework (per-compaction, per-prompt, per-session, on-demand), the source-aware hook fix, and why the popular "make responses shorter" advice only ever had about 1.7 percent of the cost-weighted upside.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

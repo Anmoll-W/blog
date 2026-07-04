@@ -83,6 +83,7 @@ The fix was never "spend more." It was **spend where being wrong is expensive, s
 - [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](token-burn-audit.md) — the earlier audit that found token burn in the automation layer; this one finds it in the context layer — same discipline, different surface
 - [We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md) — the model-routing decision this post course-corrects: the right model is a per-task judgment, and both blanket-cheap and blanket-expensive are the mistake
 - [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the principle underneath the re-read fix: context is the program, and re-reading the same 3,700 tokens every turn was crowding out the work
+- [The Boot Hook That Refired on Every Compaction](the-boot-hook-that-refired-on-compaction.md) — the same right-sizing principle applied to the context layer, plus the stale subagent model pins this post's routing fix eventually caught
 
 ---
 
