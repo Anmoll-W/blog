@@ -114,8 +114,7 @@ Run a quick check against these before every commit:
 - [ ] Existing posts updated with backlinks where relevant
 - [ ] All facts are exact — no fabricated durations, scale claims, or outcomes (polish writing, never facts)
 - [ ] **FACT SOURCES verified** — every number, count, and named entity in the draft traces to a file:line or live grep checked in this session. Plan files are forbidden as the source — they describe pre-execution intent, not what actually happened. Source-of-truth hierarchy: live grep > session logs > eval reports > decisions.md. Spec lives in `Knowledge/personas/_brain-protocol.md` § FACT SOURCES.
-- [ ] **Pre-push numeric scan run** — `grep -nE '\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|[0-9]+)\b' posts/<slug>.md` — every match traces to a FACT SOURCES row, a date, or a colloquial usage. Unmatched numbers block the push.
-- [ ] **Gemini-review content mode run** — `~/.claude/vault-runners/gemini-review.sh content posts/<slug>.md` returned PASS or SKIPPED. Output saved to `Knowledge/team-brain/gemini-review-<slug>-<date>.md`. FAILED → fix and re-run before push. **SKIPPED-on-quota does not cover numeric claims** — if SKIPPED and the post contains numbers, run the FACT SOURCES + numeric scan as the backstop.
+- [ ] **Pre-push numeric scan run** — `grep -nE '\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|eighteen|nineteen|twenty|thirty|forty|fifty|sixty|seventy|eighty|ninety|hundred|thousand|[0-9]+)\b' posts/<slug>.md` — every match traces to a FACT SOURCES row, a date, or a colloquial usage. Unmatched numbers block the push. (This + FACT SOURCES is the full numeric gate — the external gemini-review step was retired 2026-06-29, removed from this checklist 2026-07-04.)
 
 ---
 
