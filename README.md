@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-07-13 | [One Sheet I Can Trust](posts/one-sheet-i-can-trust.md) | - | ai, systems, agents, security |
 | 2026-07-04 | [The Boot Hook That Refired on Every Compaction](posts/the-boot-hook-that-refired-on-compaction.md) | Vault as OS | claude-code, token-efficiency, ai-agents, systems |
 | 2026-06-29 | [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](posts/why-i-shut-down-hermes.md) | — | ai, systems, automation, vault, engineering |
 | 2026-06-25 | [The Write-Only Trap](posts/the-write-only-trap.md) | Vault as OS | automation, ai-agents, claude-code, memory, vault-os |

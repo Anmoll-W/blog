@@ -92,6 +92,7 @@ The fix was a three-line loop — stage each path individually and let missing o
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md) — the same model-output parsing failure in a different system, and the same lesson: extract the JSON, never assume the whole string is valid
 - [How My Hermes Agent Works — and What It Does for Me, From a PM's Point of View](building-a-personal-ai-ops-layer.md) — the Telegram assistant whose sync job stars in failure three
 - [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](why-i-shut-down-hermes.md) — the shutdown post that names the split-brain failure described here as one of five reasons the system was decommissioned; this post is the concrete incident behind that section
+- [One Sheet I Can Trust](one-sheet-i-can-trust.md): the same green-is-not-proof lesson applied to a new system, where a contract eval's first act was catching a silent data coercion
 
 ---
 

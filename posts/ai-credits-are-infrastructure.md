@@ -32,3 +32,4 @@ The invisible is about to become visible for a lot of people on June 15. The ski
 
 - [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](token-burn-audit.md) — the audit that surfaced the automation bugs quietly compounding cost in the background; where the invisible spend first became visible
 - [We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md) — the model routing decision that came before the cost breakdown; why the cheapest sufficient model is a design choice, not a compromise
+- [One Sheet I Can Trust](one-sheet-i-can-trust.md): a pipeline where every paid surface has a hard cap by design, and the free-credit math decided the architecture
