@@ -62,6 +62,7 @@ The decision lesson is harder to swallow: for any product where the core value r
 - [Telegram Privacy Mode](telegram-privacy-mode.md) — another class of silent failure from the same live testing session, this time at the Telegram delivery layer
 - [Collapsing an 8-Day Build Into 4 Days With Parallel Agent Workstreams](parallel-agents-ai-stack.md) — the sprint strategy this session made necessary
 - [Telegram Bots Cannot DM Users Who Have Not Pressed Start](telegram-bots-cant-dm.md) — the follow-on Telegram platform constraint that reshaped the preference collection flow
+- [Layover: Guess Where You Woke Up](layover-guess-where-you-woke-up.md): the next chapter under the same Certified Lost brand, a solo-shipped daily game and the launch-day fix that closed its own version of a live-testing surprise
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

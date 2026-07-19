@@ -57,3 +57,4 @@ The system now guarantees clean input: fresh, unique, injection-resistant, formu
 - [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md): the earlier chapter of the same lesson, a process that exits cleanly and a process that worked are different things, and only outcome checks tell them apart.
 - [Building a Personal AI Ops Layer](building-a-personal-ai-ops-layer.md): the broader system this pipeline plugs into, with scheduled agents, boot context, and checks that run without me.
 - [AI Credits Are Infrastructure](ai-credits-are-infrastructure.md): why every paid surface in this pipeline has a hard ceiling, and what happens to systems whose budgets are vibes.
+- [Layover: Guess Where You Woke Up](layover-guess-where-you-woke-up.md): a shipped game with the same shape of lesson, a leak that no functional test would have caught, found and closed on the day it went live.
