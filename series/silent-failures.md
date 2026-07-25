@@ -32,6 +32,9 @@ This series documents specific cases from real projects. Each post covers one bu
 8. [I Was Burning 18 Claude Sessions a Day. Here Is What Found Them.](../posts/token-burn-audit.md)
    Five silent automation bugs in a LaunchAgent-based vault OS, each invisible because it was the absence of a signal rather than the presence of an error. A done-file contract that only accepted exit 0 turned one weekly job into 18 daily sessions. A Perl alarm timer that does not survive exec gave a 2am consolidator a seven-hour runtime. Two zombie agents whose self-disable logic ran after exec or against a path that had moved. And a BOOT context load that had grown to 180,000 characters with no compaction enabled.
 
+9. [The Health Check Was Reporting to a File Nobody Read](../posts/a-stub-a-dead-model-and-a-health-log.md)
+   A fleet of nightly learning jobs that silently produced nothing. One job was stubbed to a no-op left over from a migration, all of them called a model name that had been retired, and the health log meant to catch both was being written to a file the morning brief never reads. The monitor built to catch silent failures was itself a silent failure.
+
 ## What Is Coming
 
 - PHP magic quotes: when the data you are about to sanitize is already sanitized

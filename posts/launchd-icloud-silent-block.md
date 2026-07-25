@@ -60,6 +60,7 @@ The absence of a file is not a signal unless you are looking for it. I am adding
 
 ## Related
 
+- [The Health Check Was Reporting to a File Nobody Read](a-stub-a-dead-model-and-a-health-log.md): what rotted in the seams after these jobs were relocated. A placeholder left as a no-op, a stale model pin, and a health log disconnected from its reader.
 - [Three Cascading Bugs: Module-Level SDK, Scroll Overflow, Invisible Font](three-cascading-bugs.md) — another silent failure class where a clean build was not evidence the page worked
 - [Missing Viewport Tag: The Silent Root of All Mobile Failures](missing-viewport-tag.md) — a rendering-layer failure that produced zero error output, same "nothing to react to" category
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer whose runners this audit was fixing

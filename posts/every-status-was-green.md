@@ -86,6 +86,7 @@ The fix was a three-line loop — stage each path individually and let missing o
 
 ## Related
 
+- [The Health Check Was Reporting to a File Nobody Read](a-stub-a-dead-model-and-a-health-log.md): the health-signal-is-lying lesson again, this time because the monitor was faithfully writing to a file the morning brief never reads.
 - [The Write-Only Trap](the-write-only-trap.md) — the next layer after observability: once the system can monitor itself, it can also synthesize behavioral patterns from its own tool-use logs; the proof-carrying-signal principle here applies directly to the observation synthesis watermark and health log
 - [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the earlier overhaul that moved this system's rules from prose into enforced hooks; this post is what its monitoring layer grew into
 - [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — how the nightly learning loop curates lessons instead of accumulating them; failure two in this post happened inside that loop

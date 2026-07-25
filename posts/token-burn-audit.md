@@ -144,6 +144,7 @@ The eval step caught them before the next 2:00 AM run.
 
 ## Related
 
+- [The Health Check Was Reporting to a File Nobody Read](a-stub-a-dead-model-and-a-health-log.md): three more silent bugs in this same automation layer, found the same way, by reading what the jobs actually run instead of trusting their exit codes.
 - [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — the learning loop these agents eventually got: scored lessons, nightly curation, and the eviction policy that append-only memory never had
 
 - [I Cherry-Picked a Viral Cost-Cut Post](cherry-picking-the-cost-post.md) — the optimization work that preceded this audit; four levers adopted, three rejected; the savings from those levers were being partially erased by the bugs in this post
