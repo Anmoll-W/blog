@@ -35,6 +35,9 @@ This series documents specific cases from real projects. Each post covers one bu
 9. [The Health Check Was Reporting to a File Nobody Read](../posts/a-stub-a-dead-model-and-a-health-log.md)
    A fleet of nightly learning jobs that silently produced nothing. One job was stubbed to a no-op left over from a migration, all of them called a model name that had been retired, and the health log meant to catch both was being written to a file the morning brief never reads. The monitor built to catch silent failures was itself a silent failure.
 
+10. [Analytics Said Zero. The Order System Said Otherwise.](../posts/analytics-said-zero.md)
+   A regional pricing page reported zero conversions in Google Analytics for four straight months, read as a market-exit signal. The order system's admin panel showed real completed orders inside that exact window. The likely mechanism: a checkout redirect through the payment gateway probably dropped the analytics client identifier, so a real sale left no matching event. The fix: no zero-conversion claim ships without a cross-check against the order system first.
+
 ## What Is Coming
 
 - PHP magic quotes: when the data you are about to sanitize is already sanitized

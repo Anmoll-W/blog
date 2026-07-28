@@ -24,7 +24,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 |--------|-------|----------------|
 | [Hermes as a PA](series/hermes-as-a-pa.md) | 1 | Giving the vault an always-on body — a Telegram assistant and scheduled jobs on a rented server, built one hardened problem at a time |
 | [Vault as OS](series/vault-as-os.md) | 18 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
-| [Silent Failures](series/silent-failures.md) | 9 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
+| [Silent Failures](series/silent-failures.md) | 10 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
 
@@ -36,6 +36,11 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-07-28 | [The Metric Did Not Improve. The Denominator Changed.](posts/the-denominator-changed.md) | - | analytics, product, data-integrity, metrics |
+| 2026-07-28 | [I Ran the Stats Hoping to Prove It Worked. It Did Not, and That Was the Deliverable.](posts/null-result-was-the-deliverable.md) | - | ai, statistics, experimentation, product-management |
+| 2026-07-28 | [Analytics Said Zero. The Order System Said Otherwise.](posts/analytics-said-zero.md) | [Silent Failures](series/silent-failures.md) | analytics, silent-failures, saas, debugging |
+| 2026-07-28 | [Six Parallel Agents, Roughly 140 Search Queries, and a Ceiling That Was Not About Effort](posts/six-agents-effort-ceiling.md) | - | ai-agents, growth, product-management, orchestration |
+| 2026-07-28 | [A Knowledge Base an LLM Can Query, With No Vector Database](posts/knowledge-base-no-vector-database.md) | - | ai, knowledge-management, engineering, cost-thinking |
 | 2026-07-25 | [The Health Check Was Reporting to a File Nobody Read](posts/a-stub-a-dead-model-and-a-health-log.md) | [Silent Failures](series/silent-failures.md) | product, ai-agents, observability, systems |
 | 2026-07-19 | [Layover: Guess Where You Woke Up](posts/layover-guess-where-you-woke-up.md) | - | product, travel, security, shipping |
 | 2026-07-13 | [One Sheet I Can Trust](posts/one-sheet-i-can-trust.md) | - | ai, systems, agents, security |
