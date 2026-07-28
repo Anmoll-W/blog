@@ -6,11 +6,11 @@
 
 A Substack post about PM Brain OS landed in my reading queue last week.
 
-The system is a folder of markdown files plus a CLAUDE.md that tells Claude how to use them. Five knowledge areas. Three lifecycle layers. Six commands. The author had built a provenance system — every claim tagged with its source weight. `doc-decision`. `doc-research`. `verbal`. `intuition`.
+The system is a folder of markdown files plus a CLAUDE.md that tells Claude how to use them. Five knowledge areas. Three lifecycle layers. Six commands. The author had built a provenance system: every claim tagged with its source weight. `doc-decision`. `doc-research`. `verbal`. `intuition`.
 
 I read through it and felt something I did not expect: most of this already existed in my vault.
 
-The three-layer architecture (raw ingestion → working synthesis → durable knowledge) was already there. The weekly maintenance sweep was already automated, running every Sunday. Session logs, decisions files, pattern tracking — all present.
+The three-layer architecture (raw ingestion → working synthesis → durable knowledge) was already there. The weekly maintenance sweep was already automated, running every Sunday. Session logs, decisions files, pattern tracking: all present.
 
 But the provenance layer was not there. And once I saw the gap, I could not unsee it.
 
@@ -34,15 +34,15 @@ But there was a flaw in how I initially planned to implement it.
 
 ## The Vera intervention
 
-Before building anything, I ran the plan through Vera — the eval persona in my agent system whose job is to stress-test decisions before they land permanently.
+Before building anything, I ran the plan through Vera, the eval persona in my agent system whose job is to stress-test decisions before they land permanently.
 
 Vera flagged one issue: the rule I had written said "Claude assigns best-fit provenance if not specified." That sounds reasonable. It is not.
 
-In practice, when Claude infers provenance, it drifts toward `doc-decision` — the tag that sounds most authoritative, the one that matches the act of logging a decision. The result is a decisions file where most entries look like documented choices when many of them were actually verbal statements or PM intuition with no written record behind them.
+In practice, when Claude infers provenance, it drifts toward `doc-decision`, the tag that sounds most authoritative, the one that matches the act of logging a decision. The result is a decisions file where most entries look like documented choices when many of them were actually verbal statements or PM intuition with no written record behind them.
 
 The fix was to invert the default direction entirely. Instead of "pick the best fit," the rule became: **default to `intuition` unless there is positive evidence in the same session to climb.** A named document gets `doc-decision`. Named data or interviews get `doc-research`. A named meeting gets `verbal`. Without that positive evidence, the tag stays at the floor.
 
-False negatives — where documented decisions look like intuition — are recoverable. You correct them when you notice. False positives — where verbal claims look like documented research — are not recoverable. You act on them.
+False negatives, where documented decisions look like intuition, are recoverable. You correct them when you notice. False positives, where verbal claims look like documented research, are not recoverable. You act on them.
 
 One rule change. The entire tagging system became conservative by default.
 
@@ -58,7 +58,7 @@ The pattern: a hypothesis gets formed in a session. It gets noted somewhere. Nob
 
 PM Brain's lifecycle structure is clean: `candidate → proposed → validated → killed`. Each hypothesis carries a `last-evidence` date (what the weekly staleness sweep keys off), a `kill-condition` (the specific thing that would make it false), and a `confidence` level.
 
-The implementation I built adds three fields the base spec lacked: `blocks` (which roadmap decision this hypothesis is gating), `pm-note` (one-line intuition not captured in the evidence), and a two-tier staleness sweep — seven days without new evidence flags the hypothesis as at risk, thirty days auto-archives it to Killed with a reason.
+The implementation I built adds three fields the base spec lacked: `blocks` (which roadmap decision this hypothesis is gating), `pm-note` (one-line intuition not captured in the evidence), and a two-tier staleness sweep: seven days without new evidence flags the hypothesis as at risk, thirty days auto-archives it to Killed with a reason.
 
 That last design decision matters. A system that only warns you is a system you eventually stop reading warnings from. The auto-kill forces the question: if a hypothesis has gone thirty days without a single piece of evidence, was it ever really a hypothesis or just a wish written down?
 
@@ -70,7 +70,7 @@ The original plan scoped this to one product. Vera and I agreed: hypothesis trac
 
 The system now covers four projects: a SaaS product, a Telegram travel bot, a PM learning platform, and a LinkedIn content engine. Each has its own hypotheses.md with seeded bets relevant to that domain. The weekly-review runs a dynamic sweep across all four.
 
-The `/prep` skill — a two-minute ritual before any stakeholder meeting — loads the relevant decisions, active hypotheses, and strategy tensions for the project in question. The most useful step is the conflict-surface check: if an open hypothesis says "X is the bottleneck" but a recent decision reduced investment in X, the prep brief flags it explicitly. You walk into the meeting already knowing where the tension lives.
+The `/prep` skill, a two-minute ritual before any stakeholder meeting, loads the relevant decisions, active hypotheses, and strategy tensions for the project in question. The most useful step is the conflict-surface check: if an open hypothesis says "X is the bottleneck" but a recent decision reduced investment in X, the prep brief flags it explicitly. You walk into the meeting already knowing where the tension lives.
 
 ---
 
@@ -86,8 +86,10 @@ The provenance layer is not overhead. It is the mechanism that makes the notes u
 
 ## Related
 
-[Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](agents-that-dont-learn.md) — the memory compound problem this builds on: why systems that accumulate sessions without accumulating intelligence eventually plateau
+[Agents That Do Not Learn: Rebuilding the Self-Improvement Layer from First Principles](agents-that-dont-learn.md): the memory compound problem this builds on: why systems that accumulate sessions without accumulating intelligence eventually plateau
 
-[AI Runners That Remember](ai-runners-that-remember.md) — the scheduled automation layer this integrates with: how the weekly-review runner that now sweeps hypotheses was built
+[AI Runners That Remember](ai-runners-that-remember.md): the scheduled automation layer this integrates with: how the weekly-review runner that now sweeps hypotheses was built
 
-[We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md) — the Vera intervention pattern: how a decision eval caught a wrong default before it shipped, same mechanism that fixed the provenance tagging rule here
+[We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md): the Vera intervention pattern: how a decision eval caught a wrong default before it shipped, same mechanism that fixed the provenance tagging rule here
+
+[The Metric Did Not Improve. The Denominator Changed.](the-denominator-changed.md): the same problem in an analytics report instead of a vault. A number gets repeated with confidence because it carries a familiar label, not because anyone checked what it was actually measuring

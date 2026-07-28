@@ -22,7 +22,7 @@ My first attempt at scheduling used Claude Code's built-in `CronCreate` tool wit
 
 After a session restart, every scheduled job was gone. The `durable` flag was silently unreliable.
 
-The decision at this point was: keep trying to make the in-session tool work, or move to the right primitive. I chose the latter. Automation infrastructure that depends on an AI session staying open is not automation — it is just a delayed manual trigger. The right tool for persistent scheduled jobs is the operating system's own scheduler. macOS LaunchAgents persist across reboots, have proper logging, and are what system services use. Moving to LaunchAgents was not a technical fix. It was a decision to put automation infrastructure where it belongs: outside the session lifecycle entirely.
+The decision at this point was: keep trying to make the in-session tool work, or move to the right primitive. I chose the latter. Automation infrastructure that depends on an AI session staying open is not automation. It is just a delayed manual trigger. The right tool for persistent scheduled jobs is the operating system's own scheduler. macOS LaunchAgents persist across reboots, have proper logging, and are what system services use. Moving to LaunchAgents was not a technical fix. It was a decision to put automation infrastructure where it belongs: outside the session lifecycle entirely.
 
 ## The Three Agents
 
@@ -96,7 +96,7 @@ This is what a knowledge system should feel like: ambient, not demanding.
 
 **Verify actual state after an agent runs.** The completion notification tells you the job finished. It does not tell you the job succeeded. Always read the output.
 
-**On decisions:** a workflow that requires you to remember to run it is not a system — it is a habit. Before building more features into an existing workflow, ask whether the workflow itself is in the wrong place. I had been treating the scheduling problem as a tooling limitation. It was an architectural choice I had not made yet. Putting automation infrastructure on the operating system's scheduler, not inside the AI session, is the decision that made everything else reliable.
+**On decisions:** a workflow that requires you to remember to run it is not a system. It is a habit. Before building more features into an existing workflow, ask whether the workflow itself is in the wrong place. I had been treating the scheduling problem as a tooling limitation. It was an architectural choice I had not made yet. Putting automation infrastructure on the operating system's scheduler, not inside the AI session, is the decision that made everything else reliable.
 
 ---
 
@@ -106,20 +106,21 @@ This is what a knowledge system should feel like: ambient, not demanding.
 
 ## Related
 
-- [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md) — the learning loop these agents eventually got: scored lessons, nightly curation, and the eviction policy that append-only memory never had
+- [Append-Only Is Where Lessons Go to Die](append-only-is-where-lessons-go-to-die.md): the learning loop these agents eventually got: scored lessons, nightly curation, and the eviction policy that append-only memory never had
 
-- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — the next capability added to this system: a yt-dlp + Whisper pipeline that transcribes any YouTube video into today's daily note, with auto-invoke wired to all six vault personas
-- [Three Claude Tools, One Vault](three-claude-tools-one-vault.md) — the shared context architecture this automation runs on top of
-- [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating the knowledge base that feeds these automated agents
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the next step after automating individual workflows was building a coordinated team of AI personas that share knowledge
-- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 agent architecture that runs inside this system
-- [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md) — what broke in the scheduling layer of this exact system, how it was diagnosed, and why "registered" is not "running"
-- [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](second-automation-layer.md) — what this system grew into: four more agents, daily task migration, Chrome-gated analytics, and quality gates on code and publishing
-- [The Dashboard Was Lists. The Hub Is a Board.](kanban-board-as-project-hub.md) — the navigation layer built on top of this automation system: the weekly-review runner that powers the board's Sunday cleanup was built here first
-- [AI Runners That Remember](ai-runners-that-remember.md) — the memory layer added on top of these runners: a per-runner Strategy file, an SRS queue, and a 2am consolidator that gives each scheduled agent persistent cross-run intelligence
-- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — where these scheduled routines head next: a hardened always-on server layer Wave 2 will migrate them onto
-- [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md) — where this scattered Mac automation layer actually gets consolidated onto the hardened server, and the verification discipline that made the migration trustworthy
-- [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the "keeping it sharp" chapter for this same system: how quality gates that lived only in prose let the vault degrade, and what it took to move those invariants into code the system could enforce
+- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md): the next capability added to this system: a yt-dlp + Whisper pipeline that transcribes any YouTube video into today's daily note, with auto-invoke wired to all six vault personas
+- [Three Claude Tools, One Vault](three-claude-tools-one-vault.md): the shared context architecture this automation runs on top of
+- [How I Retired Notion in One Session](how-i-retired-notion.md): consolidating the knowledge base that feeds these automated agents
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md): the next step after automating individual workflows was building a coordinated team of AI personas that share knowledge
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md): the v3 agent architecture that runs inside this system
+- [launchd and iCloud: The Silent Block That Stopped Every Scheduled Agent](launchd-icloud-silent-block.md): what broke in the scheduling layer of this exact system, how it was diagnosed, and why "registered" is not "running"
+- [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](second-automation-layer.md): what this system grew into: four more agents, daily task migration, Chrome-gated analytics, and quality gates on code and publishing
+- [The Dashboard Was Lists. The Hub Is a Board.](kanban-board-as-project-hub.md): the navigation layer built on top of this automation system: the weekly-review runner that powers the board's Sunday cleanup was built here first
+- [AI Runners That Remember](ai-runners-that-remember.md): the memory layer added on top of these runners: a per-runner Strategy file, an SRS queue, and a 2am consolidator that gives each scheduled agent persistent cross-run intelligence
+- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md): where these scheduled routines head next: a hardened always-on server layer Wave 2 will migrate them onto
+- [Hermes, Wave 2: The Tests Passed. The Code Was Broken Anyway.](hermes-wave-2-tests-that-lie.md): where this scattered Mac automation layer actually gets consolidated onto the hardened server, and the verification discipline that made the migration trustworthy
+- [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md): the "keeping it sharp" chapter for this same system: how quality gates that lived only in prose let the vault degrade, and what it took to move those invariants into code the system could enforce
+- [A Knowledge Base an LLM Can Query, With No Vector Database](knowledge-base-no-vector-database.md): the same automation-earns-trust principle in a different repository. A script only replaces a manual step once it has been watched catching a real failure
 
 ---
 

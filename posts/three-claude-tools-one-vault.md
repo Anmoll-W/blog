@@ -12,7 +12,7 @@ The answer was one Obsidian vault and a context cascade.
 
 ## Context
 
-I use Claude in three modes depending on where I am and what I am doing. Claude Dispatch on my phone handles quick captures and lookups away from the desk. Claude Desktop handles research, writing, and knowledge work. Claude Code handles everything in development — reading files, writing code, running scripts, managing the vault itself.
+I use Claude in three modes depending on where I am and what I am doing. Claude Dispatch on my phone handles quick captures and lookups away from the desk. Claude Desktop handles research, writing, and knowledge work. Claude Code handles everything in development: reading files, writing code, running scripts, managing the vault itself.
 
 Each tool is powerful on its own. The problem is they start from zero each session. No memory of what was decided last week. No knowledge of what projects are in flight. Each conversation feels like the first.
 
@@ -28,15 +28,15 @@ Every `.md` file I write makes all three tools smarter. Here is how.
 
 **Inbox processing pattern.** Daily notes use tags: `#process`, `#task`, `#idea`. When I tag something in a daily note, Claude sorts it to the right destination via a skill that runs on the vault. The tags are the routing layer. The skill is the executor.
 
-**Nick Milo dossier prompt.** One reusable prompt generates an "about me" context block — my role, active projects, goals, constraints. Every new conversation reads this first. Claude knows who I am before I say anything.
+**Nick Milo dossier prompt.** One reusable prompt generates an "about me" context block: my role, active projects, goals, constraints. Every new conversation reads this first. Claude knows who I am before I say anything.
 
 ## The Decision This Required
 
-The key product decision here was to stop trying to improve each tool individually and instead build one shared layer that all three tools read from. The alternative — improving memory within each tool separately — would have meant managing three distinct context systems and keeping them in sync manually. That would have been more work, not less.
+The key product decision here was to stop trying to improve each tool individually and instead build one shared layer that all three tools read from. The alternative, improving memory within each tool separately, would have meant managing three distinct context systems and keeping them in sync manually. That would have been more work, not less.
 
 I had been treating the tools as the product. The decision was to treat the vault as the product. The tools became readers of a shared state rather than isolated systems I had to configure separately.
 
-I had been rebuilding context from scratch at the start of every session for months without registering it as a cost. That is the kind of friction that does not feel like a problem until you name it — and once you name it, it is obvious that it was the problem all along.
+I had been rebuilding context from scratch at the start of every session for months without registering it as a cost. That is the kind of friction that does not feel like a problem until you name it. And once you name it, it is obvious that it was the problem all along.
 
 ## What This Enabled
 
@@ -60,12 +60,13 @@ On the decision side: when a workflow feels effortful, the first question is not
 
 ## Related
 
-- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md) — a new skill added to the vault: drop a YouTube URL and any agent transcribes it into today's daily note using the same context cascade described here
-- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer built on top of this architecture
-- [How I Retired Notion in One Session](how-i-retired-notion.md) — consolidating all knowledge into one vault
-- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md) — the coordination layer
-- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md) — the v3 redesign of the agent architecture
-- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md) — the always-on body added to this brain-and-hands architecture: a Telegram assistant and scheduled jobs running on a server
+- [How I Taught My Vault to Read YouTube](youtube-to-vault-pipeline.md), a new skill added to the vault: drop a YouTube URL and any agent transcribes it into today's daily note using the same context cascade described here
+- [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md): the automation layer built on top of this architecture
+- [How I Retired Notion in One Session](how-i-retired-notion.md): consolidating all knowledge into one vault
+- [Building an 11-Agent AI Team: From Isolated Agents to Coordinated Personas](building-an-ai-agent-team.md): the coordination layer
+- [From Identity Files to Persona Stubs: Redesigning the Vault Agent System](persona-layer-architecture.md): the v3 redesign of the agent architecture
+- [Hermes, Wave 1: Giving My Vault an Always-On Body](hermes-the-foundation.md), the always-on body added to this brain-and-hands architecture: a Telegram assistant and scheduled jobs running on a server
+- [A Knowledge Base an LLM Can Query, With No Vector Database](knowledge-base-no-vector-database.md): the same read-the-index-before-you-search pattern, applied to a shared documentation repository instead of a personal vault
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
