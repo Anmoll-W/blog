@@ -25,6 +25,8 @@ The lesson generalizes past this one repository: do not fund the infrastructure-
 - [Three Claude Tools, One Vault](three-claude-tools-one-vault.md): the same read-the-index-before-you-search pattern, applied to a personal knowledge vault instead of a shared documentation repository
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md): the automation-earns-trust principle in a different system. A script only replaces a manual step once it has been watched catching a real failure
 - [AI Credits Are Infrastructure. Start Treating Them That Way.](ai-credits-are-infrastructure.md): the same build-vs-buy framing applied to model routing. Infrastructure is a cost decision before it is an engineering one
+- [What the Model Should Not Decide](what-the-model-should-not-decide.md): the general form of the choice made here, using a model for interpretation and deterministic code for anything that must return the same answer twice
+- [Most AI Builds Start at Step Four. Here Is the Order I Default To.](the-order-you-build-ai-in.md): the design order that makes this call systematic rather than lucky. The stage that asks whether the cases can be enumerated, before any model or index gets chosen
 
 ---
 

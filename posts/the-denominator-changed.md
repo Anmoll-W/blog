@@ -27,6 +27,7 @@ The lesson I keep coming back to is that a metric name is a promise about what w
 - [The Claims Were There. The Sources Were Not.](claims-without-sources.md): the same failure mode one layer up. A number gets trusted and repeated because it carries a familiar label, not because anyone checked what it was actually measuring
 - [Google Analytics Was Fine. Opening It Was Not.](google-analytics-daily-digest.md): another case where the GA4 data itself was not the problem. The process around reading and reporting it was
 - [Analytics Said Zero. The Order System Said Otherwise.](analytics-said-zero.md): the same channel-trust problem from the other direction. A metric read as gospel until a second system was asked the same question
+- [Most AI Builds Start at Step Four. Here Is the Order I Default To.](the-order-you-build-ai-in.md): why the metric is the last thing to decide, not the first. A rate named before you know which step you changed will move for reasons that are not yours
 
 ---
 

@@ -36,6 +36,8 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-08-05 | [What the Model Should Not Decide](posts/what-the-model-should-not-decide.md) | - | ai, product-management, systems, ai-agents |
+| 2026-08-05 | [Most AI Builds Start at Step Four. Here Is the Order I Default To.](posts/the-order-you-build-ai-in.md) | - | ai, product-management, decision-frameworks, systems |
 | 2026-07-28 | [The Metric Did Not Improve. The Denominator Changed.](posts/the-denominator-changed.md) | - | analytics, product, data-integrity, metrics |
 | 2026-07-28 | [I Ran the Stats Hoping to Prove It Worked. It Did Not, and That Was the Deliverable.](posts/null-result-was-the-deliverable.md) | - | ai, statistics, experimentation, product-management |
 | 2026-07-28 | [Analytics Said Zero. The Order System Said Otherwise.](posts/analytics-said-zero.md) | [Silent Failures](series/silent-failures.md) | analytics, silent-failures, saas, debugging |

@@ -149,6 +149,7 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 - [What I Learned Auditing an AI Agent Repository Built by Another Product Manager](auditing-another-pms-agent-repo.md) — the same surface-versus-substance pattern seen from the outside, reading someone else's agent code
 - [Nobody Was Logging In: How I Deleted a Support Dashboard and Built a Cron Job Instead](dashboard-to-digest.md) — what happened to the support infrastructure after the bug sprint: nobody was logging into the dashboard, so it was deleted and replaced with a cron digest
 - [Your Agents Are Only as Good as the Context You Program Them With](context-is-the-program.md) — the same pattern one abstraction higher: a fix that passes surface review because the quality gate lives in prose no one checks, caught only when an adversarial agent tried to break what the green tests said was done
+- [What the Model Should Not Decide](what-the-model-should-not-decide.md): the scoping rule these four wrong fixes argue for, keep the model on interpretation and keep consequences behind deterministic code and human review
 
 ---
 
