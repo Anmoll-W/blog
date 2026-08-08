@@ -124,7 +124,7 @@ Shut it down. Build the simpler thing. Measure whether the simpler thing deliver
 - Oracle Cloud Infrastructure VPS — session brief
 - Healthchecks.io dead-man's-switch monitoring — session brief
 - Multi-model routing: Claude, OpenRouter, Gemini — session brief
-- Closed feedback loop description (sessions → observation logs → pattern extraction → lesson files → scoring → evict/promote) — session brief
+- Closed feedback loop description (sessions, then observation logs, then pattern extraction, then lesson files, then scoring, then evict/promote) — session brief
 - Split-brain corruption happened "at least once" and "was expensive to debug" — session brief exact language
 - Reflector loop "never fully operational" / "planned but never shipped" — session brief exact language
 - Current architecture: Mac LaunchAgents calling Claude Code directly via claude -p; GitHub Actions pending — session brief

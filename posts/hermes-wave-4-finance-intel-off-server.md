@@ -101,7 +101,7 @@ That was always the point. Not an automated money manager. A body for a brain I 
 *This post was distilled from a working session building and reviewing the Hermes Wave 4 finance and work-intel layer. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*
 
 <!-- FACT SOURCES
-- "Wave 4 = daily corpus figure in morning briefing, crypto market alerts, Telegram investment-capture→vault log, weekly FIRE deep-dive; all alert/format-only, never trades/moves money/changes SIP" — wave4-finance-intel-design.md §Conclusion, §1, §9; index.md §1 "What Hermes will NEVER do", §2
+- "Wave 4 = daily corpus figure in morning briefing, crypto market alerts, Telegram investment-capture to vault log, weekly FIRE deep-dive; all alert/format-only, never trades/moves money/changes SIP" — wave4-finance-intel-design.md §Conclusion, §1, §9; index.md §1 "What Hermes will NEVER do", §2
 - "finance paths fail-closed out of the slice; server has never held finance data" — index.md §3.1 (.stignore deny-by-default), wave4 design §2 "finance-data paradox"
 - "resolution: Mac computes, sanitized freshness-stamped pulse crosses to VPS via already-allowed path, VPS reads+delivers only" — wave4 design §2, §3 (mermaid bridge), Appendix A
 - "sanitization rule — NEVER sync: absolute corpus, per-asset, account/platform names, holdings, position counts, P&L; MAY sync: glide status, progress %, SIP status, months-to-FIRE est, milestone label, computed/as-of stamps" — wave4 design Appendix A "Sanitization rule"
@@ -111,7 +111,7 @@ That was always the point. Not an automated money manager. A body for a brain I 
 - "market-timing grace: 8:30 AM IST Indian market pre-open + US closed so last-evening+live-crypto is near real-time" — wave4 design Appendix B
 - "no-financial-action enforced by executable guard test (test_no_financial_action.sh, 12/12)" — wave4 design §5 file map (jobs/test_no_financial_action.sh), Status table MW4-4 "guard 12/12"
 - "math in plain Python, LLM only phrases" — wave4 design §2, §Conclusion "Python does the math, the LLM only phrases"
-- "three review lenses: build correctness (Alex), adversarial (Vera), finance-domain (Rex); Rex corrected glide-baseline + 3.5% floor; Vera 30 probes → 1 HIGH + MEDs all fixed" — wave4 design Status "BUILT + gate-reviewed", §6 MW4-4b
+- "three review lenses: build correctness (Alex), adversarial (Vera), finance-domain (Rex); Rex corrected glide-baseline + 3.5% floor; Vera 30 probes found 1 HIGH + MEDs all fixed" — wave4 design Status "BUILT + gate-reviewed", §6 MW4-4b
 - "validate before fix — reproduce each finding against real artifact" — Wave 1 + Wave 3 posts (established discipline); wave4 design §7 launch checklist step 5
 - "Wave 3 slice-widen-too-broad would have leaked private session notes, caught in review" — hermes-wave-3 post + wave3 design; reused here as precedent
 - STATUS: built + gate-reviewed + tested + DEPLOYED 2026-06-02 (PR #2 merged to main, merge 041817c; crypto-watch fd73a59; jobs on /opt/hermes; Mac LaunchAgent com.anmoll.hermes-finance-pulse loaded + pulse file live; corpus line in morning briefing). NO soak yet, NO outcome/time-saved/engagement claimed.

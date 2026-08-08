@@ -79,7 +79,7 @@ The portfolio site repository will stay public with an archived notice. The code
 
 **[2026-04-08](../README.md#all-posts)** · [![github](https://img.shields.io/badge/github-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![portfolio](https://img.shields.io/badge/portfolio-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![personal-branding](https://img.shields.io/badge/personal--branding-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product-management](https://img.shields.io/badge/product--management-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![building-in-public](https://img.shields.io/badge/building--in--public-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [GitHub is Your Portfolio →](../series/github-is-your-portfolio.md)
+**Series:** [GitHub is Your Portfolio](../series/github-is-your-portfolio.md)
 
 ## Related
 
@@ -93,4 +93,4 @@ The portfolio site repository will stay public with an archived notice. The code
 
 ---
 
-**→ Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile this post argues for
+**Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile this post argues for

@@ -135,7 +135,7 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 
 **[2026-04-09](../README.md#all-posts)** · [![code-review](https://img.shields.io/badge/code--review-e65c00?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai-coding](https://img.shields.io/badge/ai--coding-e65c00?style=flat-square&logoColor=white)](../README.md#all-posts) [![wordpress](https://img.shields.io/badge/wordpress-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-bugs](https://img.shields.io/badge/silent--bugs-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![php](https://img.shields.io/badge/php-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 
@@ -157,4 +157,4 @@ AI tools currently do not do this naturally unless you ask them to. The fix is t
 
 ---
 
-**→ Project:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — the codebase where these AI-generated wrong fixes were caught 🔒
+**Project:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — the codebase where these AI-generated wrong fixes were caught 🔒

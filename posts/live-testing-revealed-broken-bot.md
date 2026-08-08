@@ -54,7 +54,7 @@ The decision lesson is harder to swallow: for any product where the core value r
 
 **[2026-03-30](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![testing](https://img.shields.io/badge/testing-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![telegram](https://img.shields.io/badge/telegram-0088cc?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Building ChalotripBot →](../series/building-chalotripbot.md)
+**Series:** [Building ChalotripBot](../series/building-chalotripbot.md)
 
 ## Related
 
@@ -69,4 +69,4 @@ The decision lesson is harder to swallow: for any product where the core value r
 
 ---
 
-**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot whose first live test is documented in this post 🔒
+**Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot whose first live test is documented in this post 🔒

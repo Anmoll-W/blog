@@ -74,7 +74,7 @@ On decisions: a quality problem in a system with no quality role is not a conten
 
 **[2026-04-13](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![prompt-engineering](https://img.shields.io/badge/prompt--engineering-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Vault as OS →](../series/vault-as-os.md)
+**Series:** [Vault as OS](../series/vault-as-os.md)
 
 ## Related
 

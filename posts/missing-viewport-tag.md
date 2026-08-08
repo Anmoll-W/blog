@@ -74,7 +74,7 @@ Silent rendering failures are the hardest to locate not because they are subtle 
 
 **[2026-04-10](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![css](https://img.shields.io/badge/css-264de4?style=flat-square&logoColor=white)](../README.md#all-posts) [![mobile](https://img.shields.io/badge/mobile-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 
@@ -90,4 +90,4 @@ Silent rendering failures are the hardest to locate not because they are subtle 
 
 ---
 
-**→ Project:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — the WordPress plugin prototype where this mobile rendering bug was found 🔒
+**Project:** [linkwhisper-plugin-ui](https://github.com/Anmoll-W/linkwhisper-plugin-ui) — the WordPress plugin prototype where this mobile rendering bug was found 🔒

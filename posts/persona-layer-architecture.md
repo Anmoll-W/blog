@@ -74,7 +74,7 @@ On decisions: the right question when a system feels slow or expensive is not "h
 
 **[2026-04-12](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![prompt-engineering](https://img.shields.io/badge/prompt--engineering-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Vault as OS →](../series/vault-as-os.md)
+**Series:** [Vault as OS](../series/vault-as-os.md)
 
 ## Related
 
@@ -85,7 +85,7 @@ On decisions: the right question when a system feels slow or expensive is not "h
 - [The Eval Agent: Adding a Quality Gate to an AI Workflow](the-eval-agent.md) — Vera, persona #13, added as the evaluation layer on top of this stub architecture
 - [My AI Agents Had Identity. They Needed Methodology.](wiring-claude-skills-to-agents.md) — the next layer added on top of this architecture: external skills wired to each persona so agents auto-invoke structured methodology without being asked
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — the audit layer: what a performance review of the personas built here found, and the self-correcting protocols added to fix it
-- [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](four-agents-went-red.md) — the next layer down: when memory-based rules stopped enforcing themselves, the stub system was consolidated 13 → 6 and a structured gate block replaced memory as the load-bearing enforcement
+- [Four Agents Went RED for Three Weeks. I Cut the Team in Half.](four-agents-went-red.md) — the next layer down: when memory-based rules stopped enforcing themselves, the stub system was consolidated 13 to 6 and a structured gate block replaced memory as the load-bearing enforcement
 - [Upgrading My AI Agent Roster, and the Baseline I Forgot to Save](personas-180-of-180-and-no-baseline.md) — the depth upgrade on top of the six-persona roster: dissent protocol, refusal catalogs, failure-mode lists, and a structural eval that scored 180/180 but exposed the missing-baseline problem
 
 ---

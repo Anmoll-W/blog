@@ -42,11 +42,11 @@ Three levers. Each one a marketing claim or a structural bet, not a mechanism. T
 
 After installing the four rules, I asked Vera, the vault's eval persona, to run a structured pass.
 
-Vera flagged one rule that nearly broke the rollout: Plan agent → Opus.
+Vera flagged one rule that nearly broke the rollout: routing the Plan agent to Opus.
 
 The original post was written by someone on Max 20×. On Max 20×, Opus quota is large enough that routing every Plan call through it is fine. On Max $100, Opus has the tightest weekly quota of any tier. If the Plan agent invokes more than three to five times per week, the rule shifts quota toward the most-constrained model. The savings from cache discipline and `/effort` get partially eaten by accelerated Opus burn.
 
-Quota tier is not the same as price tier. Rules calibrated for paying API users can backfire on flat-quota plans. The fix is to narrow Plan → Opus to architectural plans only and default to Sonnet for everything else.
+Quota tier is not the same as price tier. Rules calibrated for paying API users can backfire on flat-quota plans. The fix is to narrow Plan-to-Opus routing to architectural plans only and default to Sonnet for everything else.
 
 I would not have caught this without an eval pass. The post does not warn about it because the author was not on this tier.
 

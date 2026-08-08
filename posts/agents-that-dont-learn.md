@@ -75,7 +75,7 @@ The old rule: platform-level mistakes get batched into `shared-mistakes.md` on S
 
 `.claude/rules/` is a Claude Code directory that supports glob-pattern frontmatter. Files here auto-load only when Claude is working on matching files. Supabase rules — check migration state, parseFloat on numeric columns, RLS on new tables — now live in `.claude/rules/supabase.md` and load only when working on SQL or migration files. They do not consume context in a LinkedIn content session.
 
-**Global CLAUDE.md: 397 → 141 lines**
+**Global CLAUDE.md: 397 to 141 lines**
 
 The session journaling ritual (60 lines) was duplicated between the global file and the vault file. The vault structure description (another 30 lines) appeared in both. Removing duplicates and moving verbose sections to the vault-level file brought the global file to 141 lines — well under the limit.
 

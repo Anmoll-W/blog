@@ -82,4 +82,4 @@ The decision lesson: a plan built before a session starts does not know what the
 
 ---
 
-**→ Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the dashboard built in this post, now live 🔒
+**Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the dashboard built in this post, now live 🔒

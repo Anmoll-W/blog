@@ -97,7 +97,7 @@ This is the coordination contract. Not elegant prose in a system prompt. A struc
 
 Before: 13 agents, manual coordination, no visibility into overnight automation.
 
-After: say "write a post and QA the draft" in a session and the live orchestrator builds the chain: draft-post → qa-check, states it in two lines, and executes. Say nothing, and the automation runs overnight, chains its own skills, and surfaces any failures in the next morning brief.
+After: say "write a post and QA the draft" in a session and the live orchestrator builds the chain: draft-post, then qa-check, states it in two lines, and executes. Say nothing, and the automation runs overnight, chains its own skills, and surfaces any failures in the next morning brief.
 
 The agents did not get smarter. The coordination layer got built.
 

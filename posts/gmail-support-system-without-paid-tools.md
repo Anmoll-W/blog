@@ -46,7 +46,7 @@ The other tradeoff: reporting. The paid tool had built-in volume charts and resp
 
 The system we have now is not a workaround. It is the right tool for the problem we actually have. Gmail is more configurable than most people give it credit for. At 6 to 10 tickets a day, it is the right answer.
 
-If you want to replicate this: Gmail delegation is under Settings → See all settings → Accounts → Grant access to your account. The filters are under Settings → Filters and Blocked Addresses. Neither requires any plugin or third-party tool.
+If you want to replicate this: Gmail delegation is under Settings, then See all settings, then Accounts, then Grant access to your account. The filters are under Settings, then Filters and Blocked Addresses. Neither requires any plugin or third-party tool.
 
 ---
 

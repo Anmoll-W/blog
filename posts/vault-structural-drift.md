@@ -60,7 +60,7 @@ For each result, identify the parent project, construct the target path, check f
 
 **Step 2: Find loose files at project and sub-project roots.**
 
-Files that are not CLAUDE.md, index.md, prd.md, MOC.md, README.md, or a small set of recognized root-level files → check if they are already inside a knowledge/ folder → if not, move to `<same-parent>/knowledge/<filename>`.
+Files that are not CLAUDE.md, index.md, prd.md, MOC.md, README.md, or a small set of recognized root-level files: check if they are already inside a knowledge/ folder, and if not, move to `<same-parent>/knowledge/<filename>`.
 
 **Step 3: Create missing index.md stubs.**
 

@@ -56,7 +56,7 @@ On the decision side: a two-system architecture is worth maintaining only if bot
 
 **[2026-04-08](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![obsidian](https://img.shields.io/badge/obsidian-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Vault as OS →](../series/vault-as-os.md)
+**Series:** [Vault as OS](../series/vault-as-os.md)
 
 ## Related
 

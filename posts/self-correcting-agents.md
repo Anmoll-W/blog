@@ -53,7 +53,7 @@ The fix for each one was the same pattern applied differently:
 - Rex detects stall. If a project stage hasn't changed in seven days, Rex surfaces a go/no-go before doing anything else. Drift becomes a decision.
 - Maya's quote image is now an output requirement, not a reminder. No draft gets presented without the brief attached. If three consecutive posts go out without one, she flags it herself.
 
-The agent team also changed structurally. Alex now dispatches Quinn automatically after every build, then dispatches Vera after Quinn returns green. The chain is: build → Quinn → Vera → done. Not: build → done, maybe loop Quinn.
+The agent team also changed structurally. Alex now dispatches Quinn automatically after every build, then dispatches Vera after Quinn returns green. The chain is: build, then Quinn, then Vera, then done. Not: build, then done, maybe loop Quinn.
 
 ---
 

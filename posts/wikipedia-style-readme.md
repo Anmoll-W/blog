@@ -62,7 +62,7 @@ The decision lesson: optimising one node is not the same as building a system. I
 
 **[2026-04-10](../README.md#all-posts)** · [![github](https://img.shields.io/badge/github-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![portfolio](https://img.shields.io/badge/portfolio-24292f?style=flat-square&logoColor=white)](../README.md#all-posts) [![personal-branding](https://img.shields.io/badge/personal--branding-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [GitHub is Your Portfolio →](../series/github-is-your-portfolio.md)
+**Series:** [GitHub is Your Portfolio](../series/github-is-your-portfolio.md)
 
 ## Related
 
@@ -74,4 +74,4 @@ The decision lesson: optimising one node is not the same as building a system. I
 
 ---
 
-**→ Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile rebuilt as a Wikipedia article in this post
+**Project:** [Anmoll Wadhwa](https://github.com/Anmoll-W) — the GitHub profile rebuilt as a Wikipedia article in this post

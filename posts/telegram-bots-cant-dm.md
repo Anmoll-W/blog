@@ -64,7 +64,7 @@ Document platform constraints in a testable form, not just a note form. "Bots ca
 
 **[2026-04-04](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![telegram](https://img.shields.io/badge/telegram-0088cc?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 
@@ -79,4 +79,4 @@ Document platform constraints in a testable form, not just a note form. "Bots ca
 
 ---
 
-**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Telegram constraint broke the preference collection flow 🔒
+**Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Telegram constraint broke the preference collection flow 🔒

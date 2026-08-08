@@ -68,7 +68,7 @@ A parser validated against one format is validated against nothing. Format norma
 
 **[2026-03-30](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![telegram](https://img.shields.io/badge/telegram-0088cc?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 
@@ -84,4 +84,4 @@ A parser validated against one format is validated against nothing. Format norma
 
 ---
 
-**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Telegram setting silently broke all natural language input 🔒
+**Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Telegram setting silently broke all natural language input 🔒

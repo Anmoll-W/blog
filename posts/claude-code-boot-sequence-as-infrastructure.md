@@ -75,10 +75,10 @@ Each rule is written so the check is a binary — either it ran or it did not. N
 
 The multi-step workflows that were most likely to miss a step got converted into slash commands:
 
-- `/log-session` — summarize → daily note → decisions → session file → push
-- `/linkedin-publish` — drafts check → Vera score → publish → move file → log
+- `/log-session` — summarize, then daily note, then decisions, then session file, then push
+- `/linkedin-publish` — drafts check, then Vera score, then publish, then move file, then log
 - `/check-automations` — silent if green, detailed on failures
-- `/cro-pull` — GA4 funnel pull → baseline compare → flag drops
+- `/cro-pull` — GA4 funnel pull, then baseline compare, then flag drops
 - `/vault-audit` — orphaned files, stale refs, missing indexes
 
 Vera ran a structured review of all five commands. She found six issues: a priority-aware truncation bug in the Python script, orphan-check scope in vault-audit, a grep exclusion pattern, git path quoting, slug derivation, and self-verification specificity. All six were fixed before anything shipped.

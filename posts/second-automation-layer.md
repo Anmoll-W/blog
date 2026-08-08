@@ -144,7 +144,7 @@ Two hooks in the development workflow:
 
 **[2026-04-15](../README.md#all-posts)** · [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![automation](https://img.shields.io/badge/automation-2ea44f?style=flat-square&logoColor=white)](../README.md#all-posts) [![macos](https://img.shields.io/badge/macos-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-2ea44f?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Vault as OS →](../series/vault-as-os.md)
+**Series:** [Vault as OS](../series/vault-as-os.md)
 
 ## Related
 

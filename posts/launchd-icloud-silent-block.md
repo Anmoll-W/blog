@@ -56,7 +56,7 @@ The absence of a file is not a signal unless you are looking for it. I am adding
 
 **[2026-04-14](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![macos](https://img.shields.io/badge/macos-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![launchd](https://img.shields.io/badge/launchd-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![automation](https://img.shields.io/badge/automation-2ea44f?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 

@@ -10,7 +10,7 @@ The system is a folder of markdown files plus a CLAUDE.md that tells Claude how 
 
 I read through it and felt something I did not expect: most of this already existed in my vault.
 
-The three-layer architecture (raw ingestion → working synthesis → durable knowledge) was already there. The weekly maintenance sweep was already automated, running every Sunday. Session logs, decisions files, pattern tracking: all present.
+The three-layer architecture (raw ingestion, then working synthesis, then durable knowledge) was already there. The weekly maintenance sweep was already automated, running every Sunday. Session logs, decisions files, pattern tracking: all present.
 
 But the provenance layer was not there. And once I saw the gap, I could not unsee it.
 

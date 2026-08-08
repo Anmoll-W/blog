@@ -76,7 +76,7 @@ This sounds like a small quality-of-life improvement. In practice it changes the
 
 **[2026-04-10](../README.md#all-posts)** · [![ai-agents](https://img.shields.io/badge/ai--agents-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![personas](https://img.shields.io/badge/personas-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![prompt-engineering](https://img.shields.io/badge/prompt--engineering-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![obsidian](https://img.shields.io/badge/obsidian-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![knowledge-management](https://img.shields.io/badge/knowledge--management-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Vault as OS →](../series/vault-as-os.md)
+**Series:** [Vault as OS](../series/vault-as-os.md)
 
 ## Related
 

@@ -150,7 +150,7 @@ The vision was never a clever assistant. It was a brain I already trusted, final
 - indexer skips server-owned paths — MW-8; run_vault_indexer should_skip + tests (65 pass)
 - hermes-wrap fail-loud + spend guard + log scrub — MW-3/4/5
 - two watchdogs, Healthchecks free tier 3 checks email, dead-man, gateway 2min / VPS 5min — MW-9 live verify this session
-- morning digest + reminder loop (ACK-after-save) + impossible-date crash→graceful — MW-10/11/12; reminder_store tests; live end-to-end verified this session
+- morning digest + reminder loop (ACK-after-save) + impossible-date crash made graceful — MW-10/11/12; reminder_store tests; live end-to-end verified this session
 - capture via Hermes hook (observer) not package edit; Wave-2 single-reply deferral — MW-11 log
 -->
 

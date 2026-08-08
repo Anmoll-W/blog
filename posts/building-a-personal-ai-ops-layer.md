@@ -134,12 +134,12 @@ The vision was never a clever assistant. It was a brain I already trusted, final
 - Wave 1 LIVE (MVP: boundary, single-writer, fail-loud harness, watchdogs, morning digest + reminder loop) — index.md §12, §2; capabilities doc
 - Wave 2 LIVE (consolidation/reliability) — index.md §12
 - Wave 3 LIVE (content drafter, two surfaces, raw bench) — index.md §12
-- Wave 4 BUILT + reviewed (Alex+Vera+Rex) + DEPLOYED 2026-06-02 (PR #2 → main 041817c; Mac LaunchAgent + pulse live; corpus line in briefing). No soak yet — no outcomes claimed.
+- Wave 4 BUILT + reviewed (Alex+Vera+Rex) + DEPLOYED 2026-06-02 (PR #2 into main 041817c; Mac LaunchAgent + pulse live; corpus line in briefing). No soak yet — no outcomes claimed.
 - morning briefing = top doable tasks + stale delegations; Wave 4 adds one corpus/progress line, no account detail crosses — capabilities doc §1, §2; index.md §8
 - reminder loop: text it, parses time, ACK only after durably saved — index.md §9; capabilities doc
 - investment capture: "invested ₹50k" logged not invested; rejects secret/OTP texts — capabilities doc §1 (Wave 4 BUILT)
 - nightly vault maintenance (inbox, consolidation, index) — capabilities doc §1; index.md §11 Job 2
-- LinkedIn drafting ~2x/week, raw bench, cannot post, human edits raw→ready — capabilities doc §1; wave-3 blog; index.md §12 Wave 3
+- LinkedIn drafting ~2x/week, raw bench, cannot post, human edits raw to ready — capabilities doc §1; wave-3 blog; index.md §12 Wave 3
 - weekly review + alert-only crypto/work signals — capabilities doc §1; index.md §10, §11
 - finance math runs Mac-side, only sanitized pulse crosses, no LLM sees finance text — index.md §3.5, §5.1; capabilities doc §2 (Wave 4 BUILT)
 - packaged agent (NousResearch Hermes) run not rewritten — wave-1 blog; Hermes CLAUDE.md

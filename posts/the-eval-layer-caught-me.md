@@ -70,7 +70,7 @@ That agent caught me violating the principles I was installing. That is the whol
 
 **[2026-04-27](../README.md#all-posts)** · [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![vault](https://img.shields.io/badge/vault-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![claude-code](https://img.shields.io/badge/claude--code-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![discipline](https://img.shields.io/badge/discipline-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![eval](https://img.shields.io/badge/eval-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Vault as OS →](../series/vault-as-os.md)
+**Series:** [Vault as OS](../series/vault-as-os.md)
 
 ## Related
 

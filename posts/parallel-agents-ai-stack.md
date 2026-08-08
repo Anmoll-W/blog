@@ -81,7 +81,7 @@ The decision lesson: when a deadline is fixed and scope cannot move, the PM's jo
 
 **[2026-03-31](../README.md#all-posts)** · [![ai](https://img.shields.io/badge/ai-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![product](https://img.shields.io/badge/product-0366d6?style=flat-square&logoColor=white)](../README.md#all-posts) [![systems](https://img.shields.io/badge/systems-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Building ChalotripBot →](../series/building-chalotripbot.md)
+**Series:** [Building ChalotripBot](../series/building-chalotripbot.md)
 
 ## Related
 
@@ -94,4 +94,4 @@ The decision lesson: when a deadline is fixed and scope cannot move, the PM's jo
 
 ---
 
-**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot): the bot rebuilt in 4 days using the parallel agent sprint described here 🔒
+**Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot): the bot rebuilt in 4 days using the parallel agent sprint described here 🔒

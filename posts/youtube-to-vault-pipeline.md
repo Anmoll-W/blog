@@ -59,7 +59,7 @@ All three were in the script. None required a redesign. But all three would have
 
 Once the script and skill existed, I wired them to the vault's agent system. I added an auto-invoke rule to the vault's root `CLAUDE.md`:
 
-> Any YouTube URL shared with intent to capture ("transcribe this", "save this", "take notes on this", "watch this") → invoke `youtube-to-vault` skill. All personas must route here — never transcribe manually.
+> Any YouTube URL shared with intent to capture ("transcribe this", "save this", "take notes on this", "watch this") invokes the `youtube-to-vault` skill. All personas must route here — never transcribe manually.
 
 I also added an entry to `Knowledge/skills-registry.md`, which is the file both orchestrators in the vault read to dispatch tasks. The skill is now a first-class capability any of the six vault personas can invoke without me explaining the pipeline each time.
 
@@ -95,8 +95,8 @@ The script is the bridge. The skill is the instruction manual the agents use to 
 <!-- FACT SOURCES
 - "three P0 bugs" — verified: script lines 17 (rm -f), 40 (en.*), 51-52 (Kind:/Language: filters); ~/.claude/scripts/youtube-to-vault.sh
 - "six vault personas" — verified: vault CLAUDE.md Persona Routing table (Sage, Alex, Maya, Priya, Vera, Rex)
-- Script path — verified: ls ~/.claude/scripts/youtube-to-vault.sh → exists, chmod +x
-- Skill path — verified: ls ~/.claude/skills/youtube-to-vault/SKILL.md → exists
+- Script path — verified: ls ~/.claude/scripts/youtube-to-vault.sh returns exists, chmod +x
+- Skill path — verified: ls ~/.claude/skills/youtube-to-vault/SKILL.md returns exists
 - Auto-invoke rule — verbatim from vault CLAUDE.md auto-invoke section
 - skills-registry entry — verified: id: youtube-to-vault block in Knowledge/skills-registry.md
 -->

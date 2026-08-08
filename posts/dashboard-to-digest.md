@@ -80,4 +80,4 @@ The system is fully autonomous. No manual token management, no expiry monitoring
 
 ---
 
-**→ Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the repository where this digest pipeline lives 🔒
+**Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the repository where this digest pipeline lives 🔒

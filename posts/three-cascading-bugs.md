@@ -62,7 +62,7 @@ Font rendering failures in the Turbopack pipeline are silent. If a section of a 
 
 **[2026-03-29](../README.md#all-posts)** · [![engineering](https://img.shields.io/badge/engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-failures](https://img.shields.io/badge/silent--failures-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![nextjs](https://img.shields.io/badge/nextjs-000000?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 
@@ -78,4 +78,4 @@ Font rendering failures in the Turbopack pipeline are silent. If a section of a 
 
 ---
 
-**→ Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the dashboard where these three cascading bugs appeared 🔒
+**Project:** [linkwhisper-support-dash](https://github.com/Anmoll-W/linkwhisper-support-dash) — the dashboard where these three cascading bugs appeared 🔒

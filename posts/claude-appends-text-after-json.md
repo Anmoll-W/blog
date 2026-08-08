@@ -92,7 +92,7 @@ This matters: your test pass or fail logic must account for what the framework a
 
 **[2026-04-04](../README.md#all-posts)** · [![claude-api](https://img.shields.io/badge/claude--api-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![debugging](https://img.shields.io/badge/debugging-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![json](https://img.shields.io/badge/json-6f42c1?style=flat-square&logoColor=white)](../README.md#all-posts) [![silent-bugs](https://img.shields.io/badge/silent--bugs-d73a4a?style=flat-square&logoColor=white)](../README.md#all-posts) [![typescript](https://img.shields.io/badge/typescript-586069?style=flat-square&logoColor=white)](../README.md#all-posts) [![ai-engineering](https://img.shields.io/badge/ai--engineering-586069?style=flat-square&logoColor=white)](../README.md#all-posts)
 
-**Series:** [Silent Failures →](../series/silent-failures.md)
+**Series:** [Silent Failures](../series/silent-failures.md)
 
 ## Related
 
@@ -110,4 +110,4 @@ This matters: your test pass or fail logic must account for what the framework a
 
 ---
 
-**→ Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Claude API bug was found 🔒
+**Project:** [chalo-trip-bot](https://github.com/Anmoll-W/chalo-trip-bot) — the bot where this Claude API bug was found 🔒
