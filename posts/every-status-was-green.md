@@ -94,6 +94,7 @@ The fix was a three-line loop — stage each path individually and let missing o
 - [How My Hermes Agent Works — and What It Does for Me, From a PM's Point of View](building-a-personal-ai-ops-layer.md) — the Telegram assistant whose sync job stars in failure three
 - [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](why-i-shut-down-hermes.md) — the shutdown post that names the split-brain failure described here as one of five reasons the system was decommissioned; this post is the concrete incident behind that section
 - [One Sheet I Can Trust](one-sheet-i-can-trust.md): the same green-is-not-proof lesson applied to a new system, where a contract eval's first act was catching a silent data coercion
+- [The Guard I Built, Measured, and Deleted](the-guard-i-measured-and-deleted.md): the other half of the green-result problem, where every mechanical check passed and verified in green while the one defect that mattered went uncaught
 
 ---
 

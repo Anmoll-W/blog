@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-08-09 | [The Guard I Built, Measured, and Deleted](posts/the-guard-i-measured-and-deleted.md) | - | automation, ai-coding, tooling, safety |
 | 2026-08-05 | [What the Model Should Not Decide](posts/what-the-model-should-not-decide.md) | - | ai, product-management, systems, ai-agents |
 | 2026-08-05 | [Most AI Builds Start at Step Four. Here Is the Order I Default To.](posts/the-order-you-build-ai-in.md) | - | ai, product-management, decision-frameworks, systems |
 | 2026-07-28 | [The Metric Did Not Improve. The Denominator Changed.](posts/the-denominator-changed.md) | - | analytics, product, data-integrity, metrics |
