@@ -50,9 +50,11 @@ Step 5 carries the weight. A single blended grade lets a confirmed pain smuggle 
 Copy the folder into your runtime's skills directory:
 
 ```bash
-git clone https://github.com/Anmoll-W/blog.git
-cp -r blog/skills/decision-support ~/.claude/skills/
+git clone https://github.com/Anmoll-W/decision-support.git
+cp -r decision-support ~/.claude/skills/
 ```
+
+The standalone repository is the canonical copy. This folder is a mirror kept in step with it.
 
 For Codex, Copilot CLI, or Gemini CLI, `~/.agents/skills/` works as a cross-runtime alias. No dependencies, no build step, no API key. It is three Markdown files plus this README.
 
