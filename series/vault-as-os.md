@@ -85,6 +85,9 @@ This series documents how each layer was built, what broke along the way, and wh
 24. [My Agents Were Calling Skills That Did Not Exist](../posts/agents-calling-skills-that-do-not-exist.md)
     The reachability layer: adding a new mode to a skill suite, discovering through a free-choice test that no agent ever selected it, and finding that forty-one skill names declared across persona and agent files resolved to nothing on disk. Covers the four declaration sites (and why the routing table is the one with teeth), a checker that produced false positives twice before it could be trusted, and why usage telemetry rather than absence on disk decided which dead routes to delete.
 
+25. [A Real Problem Is Not a Reason to Build](../posts/a-real-problem-is-not-a-reason-to-build.md)
+    The judgment layer: what the skill from the previous post actually does, and the first run of its newest mode, which takes a proposed solution as evidence about a problem rather than as a specification. Covers the seven-step contract, the split evidence grade that separates a confirmed pain from an untested fix, and the run where the mode recommended retiring one of its own neighbours and then refused to authorise the replacement.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

@@ -175,6 +175,7 @@ The tension I flagged in Part 2 does not go away by writing any of this down. I 
 - [A knowledge base an LLM can query, with no vector database](knowledge-base-no-vector-database.md): the deterministic-beats-clever argument applied to retrieval, where a generated index and a human-written summary line replaced infrastructure that had not been sized yet
 - [When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses](when-the-ai-fix-is-wrong.md): what happens when a model is handed a decision that needed a traced data path, four fixes that looked right in isolation and were wrong in context
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md): the output-format bucket failing in production, and a good illustration of why it is the visible, easy bucket rather than the dangerous one
+- [A Real Problem Is Not a Reason to Build](a-real-problem-is-not-a-reason-to-build.md): the decision one step earlier. Before scoping what the model owns, a check on whether the thing being scoped should exist at all
 
 ---
 

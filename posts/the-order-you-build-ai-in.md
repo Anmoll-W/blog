@@ -148,6 +148,7 @@ Starting at stage four would have produced a working classifier that is slower a
 - [A knowledge base an LLM can query, with no vector database](knowledge-base-no-vector-database.md): stage four applied to infrastructure. When the enumerable, deterministic option is genuinely cheaper than the probabilistic one, and how to prove it rather than assume it
 - [One Sheet I Can Trust](one-sheet-i-can-trust.md): stage six treated as a design input. Untrusted text and a too-broad write path, both found by asking how a system would be abused rather than whether it works
 - [The metric did not improve. The denominator changed.](the-denominator-changed.md): why stage seven comes last. A rate whose denominator was never specified moves for reasons that have nothing to do with the thing you built
+- [A Real Problem Is Not a Reason to Build](a-real-problem-is-not-a-reason-to-build.md): stage one and stage two enforced by a tool rather than by discipline, including the split evidence grade that separates a confirmed pain from an untested fix
 
 ---
 

@@ -93,6 +93,7 @@ Take it as a working artifact rather than a recommendation. The section above sa
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md): the earlier version of the same discovery, at the persona layer instead of the skill layer. Built, documented, wired together, and not actually reaching anything
 - [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md): the same failure shape one level up, where a passing result stands in for a check that never ran. Deleting those two routes would have produced exactly that
 - [What I Learned Auditing an AI Agent Repository Built by Another Product Manager](auditing-another-pms-agent-repo.md): the last time somebody else's agent work sent me back to my own. That audit started with their repository; this one started with their skill
+- [A Real Problem Is Not a Reason to Build](a-real-problem-is-not-a-reason-to-build.md): what the skill at the centre of this audit actually does, and the first run of its newest mode, which recommended retiring one of its neighbours
 
 ---
 
