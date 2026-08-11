@@ -85,6 +85,7 @@ On decisions: a quality problem in a system with no quality role is not a conten
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — Vera was one of the amber agents in this review: she had never run a ship-readiness eval despite a feature shipping the day before
 - [The Boot Sequence Was in the Docs. So Was Every Skipped Step.](claude-code-boot-sequence-as-infrastructure.md) — Vera ran a structured review of five new slash commands and found six issues before anything shipped; the same eval posture applied to Claude Code session infrastructure
 - [The Eval Layer Caught Me Violating My Own Rules](the-eval-layer-caught-me.md) — Vera applied to a system-wide discipline rollout: she caught a naming inconsistency, a duplicate file, and Tier B bloat that violated the very Simplicity First principle being installed
+- [The Eval Was Grading My Config, Not My Skill](the-eval-was-grading-my-config.md): the next question after this one. Once you have an agent whose only job is to find problems, who checks that the grader itself is clean? Here the harness was injecting 31 percent of the graded prompt and failing the skill for a character it never wrote
 
 ---
 *This post was distilled from a working session in my Obsidian vault. I build products with AI tools and write about the systems behind the work. [All posts](../README.md)*

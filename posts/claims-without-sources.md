@@ -93,3 +93,5 @@ The provenance layer is not overhead. It is the mechanism that makes the notes u
 [We Designed a Multi-Model Router. Then We Asked One Question.](right-model-wrong-problem.md): the Vera intervention pattern: how a decision eval caught a wrong default before it shipped, same mechanism that fixed the provenance tagging rule here
 
 [The Metric Did Not Improve. The Denominator Changed.](the-denominator-changed.md): the same problem in an analytics report instead of a vault. A number gets repeated with confidence because it carries a familiar label, not because anyone checked what it was actually measuring
+
+[The Eval Was Grading My Config, Not My Skill](the-eval-was-grading-my-config.md): the provenance rule applied to eval scores. A pass rate without its file hash and its isolation status is exactly a claim without a source, which is why every published figure in that suite now names both

@@ -75,6 +75,7 @@ The agents are better now. The context is leaner and higher-signal. The gates ar
 - [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md) — the monitoring layer this overhaul grew into: a boot status line that caught three silent failures the green checks missed
 - [My AI Agents Got Dumber. It Was Not a Model Downgrade.](why-my-agents-got-dumber.md) — context-as-program applied to cost: re-reading the same persona file every turn was crowding the window, fixed with load-once plus a compaction-safe reload so nothing operates on evicted context
 - [The Boot Hook That Refired on Every Compaction](the-boot-hook-that-refired-on-compaction.md) — extends this boot-budget work with a recurrence-over-size framework: the most expensive context is the piece that fires most often, not the largest one
+- [The Eval Was Grading My Config, Not My Skill](the-eval-was-grading-my-config.md): the same injection mechanism with the sign flipped. The hook described here as the feature that programs an agent was silently programming an eval harness too, and 31 percent of a graded prompt turned out to be the operator rather than the thing under test
 
 ---
 

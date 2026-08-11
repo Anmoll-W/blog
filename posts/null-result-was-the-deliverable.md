@@ -42,6 +42,7 @@ The lesson is that a null result reached honestly is more valuable than a positi
 - [The Metric Did Not Improve. The Denominator Changed.](the-denominator-changed.md): a companion case from the same reporting stack. A number that survived because nobody checked what it was actually measuring
 - [Analytics Said Zero. The Order System Said Otherwise.](analytics-said-zero.md): the same "check the number against a second source before you act on it" discipline, applied to a very different kind of claim
 - [The Guard I Built, Measured, and Deleted](the-guard-i-measured-and-deleted.md): the same measure-before-you-trust move applied to a safety check I had built and believed in, where the measurement said delete it
+- [The Eval Was Grading My Config, Not My Skill](the-eval-was-grading-my-config.md): the same statistical honesty applied to an eval suite. A 22 percent per-fixture flip rate against an unchanged file meant two "defects" were nearly fixed on noise, which is why the gate now demands two consecutive runs
 
 ---
 
