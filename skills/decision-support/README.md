@@ -1,8 +1,8 @@
 # decision-support
 
-Four modes that apply pressure to a decision before you commit to it. Built for Claude Code, portable to any runtime that loads skills from a directory.
+Three modes that apply pressure to a decision before you commit to it. Built for Claude Code, portable to any runtime that loads skills from a directory.
 
-**Status: partially proven.** GRILL, CHALLENGE, and PREP are consolidations of three skills that ran for months. INVERT is new as of 2026-08-11 and has one recorded run behind it. Read the honest limits at the bottom before you trust it with anything expensive.
+**Status: partially proven.** GRILL and CHALLENGE are consolidations of skills that ran for months. INVERT is new as of 2026-08-11 and has one recorded run behind it. A fourth mode, PREP, was retired on 2026-08-11, and the reasoning is in the honest limits at the bottom. Read those before you trust this with anything expensive.
 
 Written for a reader who already uses an agent runtime and wants a working artifact rather than a framework.
 
@@ -12,11 +12,10 @@ An agent will help you execute a decision far faster than it will question it. A
 
 So this is not a template library. It is a set of forcing functions. Each mode refuses to produce output until a specific kind of pressure has been applied, and each one ends with an artifact you can act on.
 
-## The four modes
+## The three modes
 
 | You type | Mode | What it does |
 |---|---|---|
-| "prep for X", "meeting prep" | **PREP** | A stakeholder brief under 300 words assembled from your own notes: recent decisions, live hypotheses, open tasks, last session. Its real output is the conflict check, where a decision you already made acts against a hypothesis you still hold. |
 | "grill me", "stress-test this plan" | **GRILL** | An interview. One question per turn, no exceptions, each built on your last answer. Ends with a written artifact: Resolved, Still open, Recommended next steps. |
 | "devil's advocate", "pre-mortem", "red team", "test my assumptions" | **CHALLENGE** | The agent produces the analysis. Steelman your position first, then the three to five strongest attacks only, then synthesis. Five lenses: Socratic, pre-mortem, red team, falsification, dialectic. |
 | "invert this", "what is the real problem here", "why do we need X" | **INVERT** | Takes a proposed solution as evidence rather than as a specification, and works backwards to the problem it implies. |
@@ -30,8 +29,6 @@ flowchart TD
     B -->|No| D{Who does the reasoning?}
     D -->|You answer questions| E[GRILL]
     D -->|The agent produces analysis| F[CHALLENGE]
-    A --> G{Preparing to meet a person?}
-    G -->|Yes| H[PREP]
 ```
 
 ## INVERT, in full
@@ -57,17 +54,17 @@ git clone https://github.com/Anmoll-W/blog.git
 cp -r blog/skills/decision-support ~/.claude/skills/
 ```
 
-For Codex, Copilot CLI, or Gemini CLI, `~/.agents/skills/` works as a cross-runtime alias. No dependencies, no build step, no API key. It is four Markdown files.
+For Codex, Copilot CLI, or Gemini CLI, `~/.agents/skills/` works as a cross-runtime alias. No dependencies, no build step, no API key. It is three Markdown files plus this README.
 
 Then type one of the trigger phrases from the table above. The mode announces itself before it starts.
 
 ## What is deliberately not in this repository
 
-`references/local-context.md` stays on the author's machine. It holds the stakeholder routing table PREP uses, which is a list of real people and real project mappings. The split is the point: `SKILL.md` is generic and publishable, and everything private lives in one file that a privacy guard keeps out of every publish. If you adopt PREP, write your own.
+`references/local-context.md` stays on the author's machine. It holds the filesystem paths and data-system names that are true only of one machine. The split is the point: `SKILL.md` is generic and publishable, and everything private lives in one file that a privacy guard keeps out of every publish. If you adopt this suite, write your own.
 
 ## Design notes
 
-**Why one suite and not four skills.** Four narrow skills would each be invoked twice and forgotten. These four share one job, applying pressure before commitment, so they share one entry point. The cost is real and worth naming: a suite is harder to discover than a single-purpose skill, and proving that cost took a full working session.
+**Why one suite and not separate skills.** Narrow single-mode skills each get invoked twice and forgotten, which is what the retired fourth mode did on its own. These three share one job, applying pressure before commitment, so they share one entry point. The cost is real and worth naming: a suite is harder to discover than a single-purpose skill, and proving that cost took a full working session.
 
 **Descriptions are the router, not the documentation.** A runtime decides whether to load a skill by reading its description. A description that summarises the workflow gets followed *instead of* the body, so this one names triggering conditions only and stops.
 
@@ -78,7 +75,7 @@ Then type one of the trigger phrases from the table above. The mode announces it
 ## Honest limits
 
 - INVERT has one recorded run. Problem evidence partial, mechanism evidence none. By its own rubric that is a candidate, not a proven tool.
-- PREP is the weak mode. In the stack it came from, it was invoked twice in two months while comparable skills sat at 73 and 61. It applies no judgment pressure, which is the job the other three share, and it is a live candidate for removal.
+- A fourth mode, PREP, was retired on 2026-08-11. It applied no judgment pressure, which is the job the other three share. The deciding evidence was not its invocation count but its output: PREP mandated two signatures, a `Routing to:` line and a `CONFLICT:` block, and in the 39 days it existed as a mode it produced neither, 0 times, anywhere in the author's notes. A mode that leaves no trace of completing is not in use.
 - The trigger phrases were regression tested against a fixture suite, and an over-breadth pass still caught two false positives that sentence anchoring had to fix. Expect to tune them for your own phrasing.
 - None of this makes the agent right. It makes the agent slower at the exact moment being slower is worth something.
 

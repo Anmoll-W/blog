@@ -1,11 +1,11 @@
 ---
 name: decision-support
-description: Use when a decision needs pressure before it ships. Four situations. (1) Someone hands over a solution, feature request, or roadmap item and it is not yet established what problem it solves, or an idea backlog needs triage. Triggers: "invert this", "what's the real problem", "why do we think we need X", "is this the right thing to build", "should we build this", "the team wants X", and any request to scope or spec a solution someone else proposed. (2) Stress-testing a plan the user will defend: "grill me", "stress-test this", "poke holes", "interview me about X". (3) Attacking a decision: "devil's advocate", "pre-mortem", "red team", "test my assumptions", "what could go wrong". (4) Preparing for a person: "prep for X", "meeting prep", "before the call", "/prep".
+description: Use when a decision needs pressure before it ships. Three situations. (1) Someone hands over a solution, feature request, or roadmap item and it is not yet established what problem it solves, or an idea backlog needs triage. Triggers: "invert this", "what's the real problem", "why do we think we need X", "is this the right thing to build", "should we build this", "the team wants X", and any request to scope or spec a solution someone else proposed. (2) Stress-testing a plan the user will defend: "grill me", "stress-test this", "poke holes", "interview me about X". (3) Attacking a decision: "devil's advocate", "pre-mortem", "red team", "test my assumptions", "what could go wrong".
 ---
 
 # Decision Support
 
-Four modes. State the mode first, in one line, before anything else.
+Three modes. State the mode first, in one line, before anything else.
 
 **Environment layer.** If `references/local-context.md` exists, read it before any mode
 that needs a person, a project, a data system, or a file path. It supplies all of them.
@@ -13,10 +13,10 @@ If it is absent, this skill still runs: ask one question for the routing you nee
 the user's own named systems, and say "no local context file, using what you gave me".
 Never invent a stakeholder, a path, or a data source.
 
-**Mode bodies.** `references/` holds the full originals for PREP (`prep.md`), GRILL
-(`grill-me.md`), and CHALLENGE (`the-fool.md`). Read the mode's file when it is present.
-When it is absent, the summary below is the complete instruction set, not a pointer:
-execute it as written. INVERT has no reference file by design and is fully inline.
+**Mode bodies.** `references/` holds the full originals for GRILL (`grill-me.md`) and
+CHALLENGE (`the-fool.md`). Read the mode's file when it is present. When it is absent,
+the summary below is the complete instruction set, not a pointer: execute it as written.
+INVERT has no reference file by design and is fully inline.
 
 ## Choosing the mode
 
@@ -25,44 +25,16 @@ alone, because the phrases overlap.
 
 | You want | Phrases | Mode |
 |---|---|---|
-| A pre-read on a person or project before a conversation. Nobody is challenged yet. | "prep for X", "meeting prep", "before the call", "/prep" | **PREP** |
 | To be interviewed. **You answer the questions**, one at a time, about a plan you will defend. | "grill me", "interview me", "stress-test this **plan**" | **GRILL** |
 | **I produce the analysis.** Counter-arguments, failure narratives, evidence audit, no questions back. | "devil's advocate", "pre-mortem", "red team", "test my assumptions", "what could go wrong", "poke holes", "stress-test this **artifact**" | **CHALLENGE** |
 | A solution is already on the table and the question is whether it aims at the right problem. | "invert this", "what's the real problem", "why do we need X", "should we build this", "the team wants X", "triage my idea backlog" | **INVERT** |
 
 Tiebreak, in this order: (1) Is a solution already proposed and unexamined? INVERT.
 (2) Who does the talking? User answers means GRILL, I answer means CHALLENGE.
-(3) Is anything being challenged at all? No means PREP.
+Nothing being challenged at all is not a mode in this suite: say so and ask what the
+user wants pressured, rather than stretching a mode to cover a pre-read.
 Say which tiebreak you used when the request was ambiguous. Offer a second mode at the
 end when it would add value.
-
-## PREP mode, stakeholder pre-read
-
-1. **Route.** Use the stakeholder table in `references/local-context.md`. No file, or no
-   match: ask ONE question ("Who is the conversation with, and which project?"). State
-   `Routing to: [Project], [role]`.
-2. **Load the context layers in parallel** from the paths in `references/local-context.md`:
-   decision log (last 3 in 30 days plus provenance tags), hypothesis list (all proposed or
-   candidate: claim, confidence, next test), today's task list (open items for this
-   project, max 5), session log (last 3 entries). Missing file: "Not found, context layer
-   skipped". No local context file at all: ask the user which files to read, or work from
-   what they paste, and label the brief `partial context`.
-3. **Conflict surface, the core value step.** For each live hypothesis, does a recent
-   decision act against it? Patterns: claims X is the bottleneck but a decision divested
-   from X; proposes test Y but a decision locked against Y; high confidence but the
-   decision was made without resolving it. Output a `CONFLICT:` block with a recommend
-   line, or the sentence "No hypothesis-decision conflicts detected."
-4. **Brief**, under 300 words: Recent Decisions, Open Hypotheses, Open Tasks, Last
-   Session, Conflicts, Suggested focus (1 to 3 bullets derived ONLY from loaded context).
-   Never fabricate. Overdue means next-test date earlier than today.
-5. **Post-meeting capture, required ritual, never optional.** On "done" or "meeting
-   wrapped", ask the 3 capture questions (verbal commitments, new evidence, new
-   hypotheses or questions) and route each: a verbal commitment to the decision log with
-   a verbal provenance tag and the date; evidence to the matching hypothesis; a new
-   hypothesis as `status: candidate`, `confidence: low`; a contradiction to counter
-   evidence plus a downgrade check. Confirm with a 3-line `Captured:` block.
-
-Reads only, except the capture loop.
 
 ## GRILL mode, the relentless interview
 
@@ -179,8 +151,6 @@ reasoning behind it.
 
 - **Every mode:** runs to completion with `references/local-context.md` absent. Any step
   that needed it said so instead of inventing a name, a path, or a data source.
-- **PREP:** brief under 300 words, every context layer cited or marked skipped, conflict
-  check explicitly run, capture loop fired after the meeting or explicitly declined.
 - **GRILL:** final artifact produced (Resolved, Still open, Next steps), and every turn
   carried exactly one question.
 - **CHALLENGE:** thesis steelmanned before the challenge, reasoning mode chosen with the
@@ -197,3 +167,4 @@ reasoning behind it.
 - [2026-08-11] Vera stress test for robustness and multi-user portability. Nine defects fixed. (1) Removed a fabricated frequency claim ("the most common honest outcome is real problem plus none mechanism") written the same day with zero INVERT runs behind it; it also anchored the verdict before the evidence was graded. (2) Three published triggers did not route, proven by executing the hook: "test my assumptions", "what could go wrong", "interview me about X"; added to SKILL_MAP with fixtures. (3) The mode table matched on phrases and sat above its own tiebreaker, so "stress test this skill" resolved to GRILL when CHALLENGE was correct; rows are now self-disambiguating and an explicit 3-step tiebreak follows. (4) Two-layer portability split: every stakeholder name, project name, data system and filesystem path moved to `references/local-context.md`, which SKILL.md reads only if present, so the skill runs standalone in any environment and carries no private names. (5) PREP and GRILL had no absent-reference-file fallback where CHALLENGE did; all three now state that the inline summary is the complete instruction set when the file is missing. (6) CHALLENGE step 2 hard-depended on an interactive question tool that does not exist in every harness; now degrades to a stated recommendation. (7) Step 4's "redo it" loop had no iteration cap; capped at one retry with an explicit stop clause, since a single-solution-space problem is a finding rather than a failure. (8) Step 5 defined 3 of 9 evidence-grade combinations; the pair is now read exhaustively, including the previously undefined case where a tested mechanism aims at a problem nobody has. (9) Removed a dangling pointer to "the original pack" and brand idiom meaningless outside this environment. Open fork, deliberately not decided: whether PREP belongs in this suite at all, given it applies no judgment pressure.
 - [2026-08-11] Agent-reachability pass, the third channel. The description reaches the main session, the `SKILL_MAP` hook reaches user prompts, and neither reaches a subagent, which receives skill names with no descriptions at all. Persona and agent-definition files are the only path in, so: INVERT added to `maya.md` (a content format proposed as the answer with no audience problem named) and `vera.md` (a solution handed to the eval gate before anyone checked it solves the right problem), the two personas that carried the suite but not the mode. `~/.claude/agents/code-review.md` and `qa-check.md` were still invoking `the-fool`, retired 2026-07-03, `qa-check` on every single run; both repointed with the mode named, and `qa-check` told what to do at CHALLENGE step 2, which normally asks the user to pick a reasoning mode and has no user to ask inside a subagent. `draft-post.md` deliberately got nothing: it is fire-and-forget drafting, and a skill reference it should not act on is worse than none. Two-layer split documented in `Knowledge/skills-registry.md`, not only in `decisions.md`. New guard `hooks/tests/retired-skill-refs.test.sh` derives retired names from the registry's own REMOVED tombstone rows, so retiring a skill arms the check with no second list to drift; it and the privacy guard now run daily as invariant F of `vault-runners/preflight-guard.sh`, because both had been scripts nothing scheduled ever ran. Verified: 180 route fixtures pass, both guards exit 0 clean and exit 1 with the file and line named when the real bug is replanted.
 - [2026-08-11] First INVERT run on a real decision, dogfooding the mode on the suite's own open fork: does PREP belong in this suite. Evidence pulled live, not recalled. (1) Skill telemetry: the standalone `prep` skill records 2 invocations ever, last one 2026-06-10, against `recall` at 73 and `decoder` at 61; the suite itself records 12 since 2026-07-03. (2) PREP's stakeholder routing table names people and projects whose working relationships have since ended, so the router's primary case no longer exists. (3) 0 entries in PREP's mandated `Provenance: Verbal, [stakeholder], [date]` capture format across all 13 decisions.md files, against 189 provenance lines in those same files carrying a lowercase `verbal` tag, so the capture behaviour happens constantly through the environment's general logging rule and never once through PREP's ritual. (4) The prep-shaped work that actually recurs is interview prep: 6 daily notes in 30 days, four named companies, a document hand-built each time and PREP invoked for none of them. Graded problem evidence partial (real for the interview case, weak for the stakeholder-meeting case) and mechanism evidence none, since nothing tests that a pre-loaded brief changes an outcome. Recommendation is to retire PREP from this suite and park interview-prep-as-a-mode as `status: candidate` rather than build it, which is what step 5's own rule prescribes for real-problem-plus-no-mechanism. Two corrections to a first pass of this entry, both caught by re-running the greps before publication: it claimed 0 verbal-provenance entries outright, from a case-insensitive misread, where the true split is 0 in PREP's format and 189 overall; and it claimed 0 route fixtures cover PREP, where 7 rows cover PREP's trigger phrases (6 HIT, 1 MISS). What is genuinely uncovered is any fixture asserting the MODE is selected, since every row tests suite routing only. The recommendation does not rest on either number.
+- [2026-08-11] PREP retired. The suite is three modes. The INVERT run above recommended this, but the ruling deliberately does not rest on INVERT, which is itself unproven and gated: it rests on two output signatures the mode mandates and a direct search for them. PREP step 1 requires the line `Routing to: [Project], [role]` and step 3 requires a `CONFLICT:` block, which the mode's own text calls "the core value step". Across every markdown file in the vault, excluding the skill and persona files that define them, both appear 0 times. In the 39 days PREP existed as a mode, from 2026-07-03 to today, it left no trace of ever running to completion. The invocation counts are the weaker half of the case and are stated with their limit: `skillUsage` records the standalone `prep` skill at 2 invocations, last 2026-06-10, which is its entire pre-consolidation life, and it cannot measure mode-level use since, because the telemetry keys on skills and not modes. Removed: the mode body, its verification row, its table row, `references/prep.md`, the tiebreak clause that made PREP the default when nothing was being challenged, and the trigger clause in the description. The `prep` SKILL_MAP route was removed with its fixtures rather than left pointing at a mode that no longer exists, which is the dead-route class this suite spent the day fixing. What was NOT done, deliberately: interview prep, the prep-shaped work that actually recurs, stays parked as a candidate rather than promoted into the vacancy, per step 5's own rule for real problem plus no mechanism. Recoverable from git history in three repositories if a role with recurring stakeholder meetings makes a pre-read mode earn its place again. Verified by executing the hook rather than reading it: 172 route fixtures pass and 0 fail, with the 7 former PREP rows now asserting MISS so the dead route cannot be reintroduced by pattern-matching an old changelog. Note for anyone auditing the entry above: it reports 180 fixtures, which was true when written and is not now, because the `lw-ops` rows were removed with that route in the same session.
