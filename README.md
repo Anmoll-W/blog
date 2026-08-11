@@ -23,7 +23,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 | Series | Posts | What It Covers |
 |--------|-------|----------------|
 | [Hermes as a PA](series/hermes-as-a-pa.md) | 1 | Giving the vault an always-on body — a Telegram assistant and scheduled jobs on a rented server, built one hardened problem at a time |
-| [Vault as OS](series/vault-as-os.md) | 18 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
+| [Vault as OS](series/vault-as-os.md) | 28 | Building an Obsidian vault into an automated knowledge system with AI personas, scheduled agents, and enforced session behavior |
 | [Silent Failures](series/silent-failures.md) | 10 | Bugs that pass tests and fail in production — Claude API, Telegram, Next.js, WordPress, launchd |
 | [GitHub is Your Portfolio](series/github-is-your-portfolio.md) | 3 | Why I archived a portfolio site and rebuilt my presence around GitHub — including Wikipedia-style READMEs |
 | [Building ChalotripBot](series/building-chalotripbot.md) | 2 | From broken prototype to shipped product — live test failures and a parallel agent sprint |
@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-08-11 | [My Agents Were Calling Skills That Did Not Exist](posts/agents-calling-skills-that-do-not-exist.md) | Vault as OS | ai-agents, claude, skills, tooling |
 | 2026-08-09 | [The Guard I Built, Measured, and Deleted](posts/the-guard-i-measured-and-deleted.md) | - | automation, ai-coding, tooling, safety |
 | 2026-08-05 | [What the Model Should Not Decide](posts/what-the-model-should-not-decide.md) | - | ai, product-management, systems, ai-agents |
 | 2026-08-05 | [Most AI Builds Start at Step Four. Here Is the Order I Default To.](posts/the-order-you-build-ai-in.md) | - | ai, product-management, decision-frameworks, systems |

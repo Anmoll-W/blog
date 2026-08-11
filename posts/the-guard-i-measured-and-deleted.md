@@ -78,6 +78,7 @@ The tool still has open items. Alt text is written as null on every image, on a 
 - [Every Status Was Green. Three of Them Were Lying.](every-status-was-green.md): a green result standing in for a verification that never ran, which is exactly what a wrong but valid draft identifier produces here
 - [I ran the stats hoping to prove it worked. It did not, and that was the deliverable.](null-result-was-the-deliverable.md): the companion case for measuring your own idea before you commit to it, and accepting the answer when the measurement says no
 - [When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses](when-the-ai-fix-is-wrong.md): the same gap between a fix that passes and a fix that is correct
+- [My Agents Were Calling Skills That Did Not Exist](agents-calling-skills-that-do-not-exist.md): the case where measuring a guard argued for keeping it and changing what it checked, rather than deleting it. Its first two versions manufactured their own false positives before the measurement was worth anything
 
 ---
 

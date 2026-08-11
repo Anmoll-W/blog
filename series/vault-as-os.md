@@ -82,6 +82,9 @@ This series documents how each layer was built, what broke along the way, and wh
 23. [The Boot Hook That Refired on Every Compaction](../posts/the-boot-hook-that-refired-on-compaction.md)
     The recurrence layer: a 30-day scan of 814 session transcripts found the SessionStart hook re-injecting the full boot payload on every compaction because it ignored the hook's `source` field, plus a boot payload padded with full-section duplicates of its own one-line summaries. Covers the recurrence-over-size classification framework (per-compaction, per-prompt, per-session, on-demand), the source-aware hook fix, and why the popular "make responses shorter" advice only ever had about 1.7 percent of the cost-weighted upside.
 
+24. [My Agents Were Calling Skills That Did Not Exist](../posts/agents-calling-skills-that-do-not-exist.md)
+    The reachability layer: adding a new mode to a skill suite, discovering through a free-choice test that no agent ever selected it, and finding that forty-one skill names declared across persona and agent files resolved to nothing on disk. Covers the four declaration sites (and why the routing table is the one with teeth), a checker that produced false positives twice before it could be trusted, and why usage telemetry rather than absence on disk decided which dead routes to delete.
+
 ## What Is Coming
 
 - The knowledge compression system: how the vault keeps its own files lean with weekly archival and monthly summarization

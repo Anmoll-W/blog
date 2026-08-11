@@ -177,3 +177,4 @@ This kind of drift is the maintenance cost of a system that spans many files. Th
 - [From Manual to Automatic: How I Built a Vault OS That Runs Itself](vault-os-that-runs-itself.md) — the automation layer that runs these agents on schedule
 - [Scheduling Claude: Expanding a Vault OS from 3 Automated Routines to 7](second-automation-layer.md) — the latest automation expansion, which added quality gates that now benefit from the skill wiring here
 - [My AI Agents Were Running. They Just Weren't Working.](self-correcting-agents.md) — what came next: a performance audit that found five agents not executing their protocols, and how self-correcting behaviors were baked into each identity
+- [My Agents Were Calling Skills That Did Not Exist](agents-calling-skills-that-do-not-exist.md): the wiring described here assumes every skill name an agent declares resolves to something real. A checker written later found forty-one that did not

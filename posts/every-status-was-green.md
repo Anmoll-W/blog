@@ -95,6 +95,7 @@ The fix was a three-line loop — stage each path individually and let missing o
 - [Why I Shut Down Hermes — a Multi-Agent AI System I Built Myself](why-i-shut-down-hermes.md) — the shutdown post that names the split-brain failure described here as one of five reasons the system was decommissioned; this post is the concrete incident behind that section
 - [One Sheet I Can Trust](one-sheet-i-can-trust.md): the same green-is-not-proof lesson applied to a new system, where a contract eval's first act was catching a silent data coercion
 - [The Guard I Built, Measured, and Deleted](the-guard-i-measured-and-deleted.md): the other half of the green-result problem, where every mechanical check passed and verified in green while the one defect that mattered went uncaught
+- [My Agents Were Calling Skills That Did Not Exist](agents-calling-skills-that-do-not-exist.md): a near miss of exactly this shape. Deleting two dead-looking routes would have turned the test suite green while making a real loss permanent, and usage telemetry was the only thing that caught it
 
 ---
 
