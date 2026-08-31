@@ -92,6 +92,7 @@ The skill is free and open source at [thepmcode.com/decoder](https://www.thepmco
 - [I ran the stats hoping to prove it worked. It did not, and that was the deliverable.](null-result-was-the-deliverable.md): the companion discipline on reading results honestly. A 22 percent flip rate is exactly the condition under which a single run tells you nothing, and two fixtures here were nearly "fixed" on noise.
 - [The Claims Were There. The Sources Were Not.](claims-without-sources.md): the provenance argument applied to a vault instead of an eval. A number without its hash and its isolation status is the same defect as a claim without its source.
 - [The Detector Scored Who Wrote It, Not How It Was Written](who-wrote-it-not-how-it-was-written.md): another measurement caught scoring a different axis than assumed. The classifier looked like a style grader and turned out to grade authorship, which only a controlled dose test revealed.
+- [Seven Skills That Have to Show Their Work](seven-skills-that-show-their-work.md): the hub that ships this Decoder eval, with six other skills held to the same kind of gate. This post is one eval measured in detail; that one is the collection it protects.
 
 ---
 

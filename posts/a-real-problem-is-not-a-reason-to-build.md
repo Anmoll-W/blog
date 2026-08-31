@@ -69,6 +69,7 @@ The four modes are here if you want to read them: [`skills/decision-support/SKIL
 - [I Ran the Stats Hoping to Prove It Worked. It Did Not, and That Was the Deliverable.](null-result-was-the-deliverable.md): what it looks like when the evidence refuses to support the thing you wanted to ship, at the level of a whole experiment rather than a single decision
 - [Most AI Builds Start at Step Four. Here Is the Order I Default To.](the-order-you-build-ai-in.md): the same argument at project scale, where customer and problem come before solution, and what skipping ahead actually costs
 - [What the Model Should Not Decide](what-the-model-should-not-decide.md): the companion question. Once you know the problem is real, how much of the decision should the model be allowed to own
+- [Seven Skills That Have to Show Their Work](seven-skills-that-show-their-work.md): the whole set this decision skill belongs to, and what each of the other six does. This post is one mode in depth; that one is the shelf it sits on
 
 ---
 
