@@ -80,6 +80,7 @@ The tool still has open items. Alt text is written as null on every image, on a 
 - [When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses](when-the-ai-fix-is-wrong.md): the same gap between a fix that passes and a fix that is correct
 - [My Agents Were Calling Skills That Did Not Exist](agents-calling-skills-that-do-not-exist.md): the case where measuring a guard argued for keeping it and changing what it checked, rather than deleting it. Its first two versions manufactured their own false positives before the measurement was worth anything
 - [A Real Problem Is Not a Reason to Build](a-real-problem-is-not-a-reason-to-build.md): the same measure-your-own-work discipline pointed at a feature rather than a guard, where the usage numbers argued for retiring the thing their author had just proposed relocating
+- [The Detector Scored Who Wrote It, Not How It Was Written](who-wrote-it-not-how-it-was-written.md): the same habit taken to an AI detector, where ten credits of controlled tests overturned the plan I walked in with and pointed at a different lever entirely
 
 ---
 

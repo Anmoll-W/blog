@@ -176,6 +176,7 @@ The tension I flagged in Part 2 does not go away by writing any of this down. I 
 - [When the AI Fix is Wrong: What Senior Review Catches That Pattern Matching Misses](when-the-ai-fix-is-wrong.md): what happens when a model is handed a decision that needed a traced data path, four fixes that looked right in isolation and were wrong in context
 - [Claude Appends Text After JSON: A Silent Bug Across 8 API Call Sites](claude-appends-text-after-json.md): the output-format bucket failing in production, and a good illustration of why it is the visible, easy bucket rather than the dangerous one
 - [A Real Problem Is Not a Reason to Build](a-real-problem-is-not-a-reason-to-build.md): the decision one step earlier. Before scoping what the model owns, a check on whether the thing being scoped should exist at all
+- [The Detector Scored Who Wrote It, Not How It Was Written](who-wrote-it-not-how-it-was-written.md): the same interpretation-versus-consequence split applied to writing, where the consequence is the authored sentence and a detector proves the model cannot own it without leaving a mark
 
 ---
 

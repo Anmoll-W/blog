@@ -36,6 +36,7 @@ Series are groups of posts that build on each other. Start here if you want cont
 
 | Date | Title | Series | Tags |
 |------|-------|--------|------|
+| 2026-08-31 | [The Detector Scored Who Wrote It, Not How It Was Written](posts/who-wrote-it-not-how-it-was-written.md) | - | ai, writing, detectors, product-management |
 | 2026-08-11 | [A Real Problem Is Not a Reason to Build](posts/a-real-problem-is-not-a-reason-to-build.md) | Vault as OS | ai-agents, claude, decision-frameworks, product-management |
 | 2026-08-11 | [My Agents Were Calling Skills That Did Not Exist](posts/agents-calling-skills-that-do-not-exist.md) | Vault as OS | ai-agents, claude, skills, tooling |
 | 2026-08-09 | [The Eval Was Grading My Config, Not My Skill](posts/the-eval-was-grading-my-config.md) | - | ai, evals, claude-code, prompt-engineering |
