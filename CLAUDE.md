@@ -105,6 +105,7 @@ Every spec, plan, PRD, and architecture doc must include:
 Run a quick check against these before every commit:
 
 - [ ] Filename is slug-only (no date)
+- [ ] **Human writing standard (TWV-1392)** post follows `/Users/aw/Library/Mobile Documents/com~apple~CloudDocs/Obsidian/Aw Vault/Knowledge/human-writing-standard.md` (HAVE/AVOID card at its top): no Tier 1 AI vocabulary, one sentence under 6 words and one over 25, a concrete anchor early, at least 3 true human markers, plain verbs. GitHub blog carries no AI detector, so the reader is the only judge.
 - [ ] No YAML frontmatter — metadata is the italic line below the title: `*YYYY-MM-DD · tags · Series*`
 - [ ] source_session is in an HTML comment above the title
 - [ ] Post has a `## Related` section with at least 2 links
